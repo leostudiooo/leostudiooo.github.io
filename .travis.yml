@@ -11,8 +11,8 @@ deploy:
   provider: pages
   cleanup: false
   github-token: $GH_TOKEN
-  keep-history: true
+  keep-history: false
   on:
     branch: sources
-  target_branch: master
+
   local-dir: public
