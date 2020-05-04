@@ -13,6 +13,6 @@ deploy:
   github-token: $GH_TOKEN
   keep-history: true
   on:
-    branch: gh-pages
+    branch: sources
   target_branch: master
   local-dir: public
