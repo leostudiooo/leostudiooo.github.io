@@ -9,7 +9,7 @@ script:
   - hexo generate # generate static files
 deploy:
   provider: pages
-  cleanup: false
+  skip_cleanup: false
   github-token: $GH_TOKEN
   keep-history: true
   local-dir: public
