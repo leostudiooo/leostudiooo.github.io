@@ -13,6 +13,6 @@ deploy:
   github-token: $GH_TOKEN
   keep-history: false
   on:
-    branch: sources
+    branch: master
 
   local-dir: public
