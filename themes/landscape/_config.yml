@@ -1,7 +1,8 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  主页: /
+  归档: /archives
+  时钟: /time.html
 rss: /atom.xml
 
 # Content
@@ -9,7 +10,7 @@ excerpt_link: Read More
 fancybox: true
 
 # Sidebar
-sidebar: right
+sidebar: left
 widgets:
 - category
 - tag
