@@ -1,7 +1,7 @@
 ---
 title: 友情链接
 date: 2020-05-05 21:14:06
-tags:
+tags: link
 ---
 [LRain 洛雨 #1](https://luotr.github.io/)
 [LRain 洛雨 #2](https://luotianyi.me/)
