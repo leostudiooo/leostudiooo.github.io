@@ -4,7 +4,7 @@ node_js:
 cache: npm
 branch: source # build source branch only
 script:
-  - hexo g && hexo d # generate static files
+  - hexo g # generate static files
 deploy:
   provider: pages
   cleanup: true
