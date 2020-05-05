@@ -3,7 +3,7 @@ menu:
   主页: /
   归档: /archives
   时钟: /time.html
-rss: /atom.xml
+  友情链接: /fl.html
 
 # Content
 excerpt_link: Read More
@@ -25,12 +25,10 @@ index_widgets:
  - archive
 
 # widget behavior
-archive_type: 'monthly'
+archive_type: 'daily'
 show_count: false
 
 # Miscellaneous
-google_analytics:
-gauges_analytics:
 favicon: /favicon.png
 twitter: leo_050408
 bilibili: '244815810'

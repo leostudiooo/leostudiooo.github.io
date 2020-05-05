@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-  - 10 # use nodejs v10 LTS
+  - 12 # use nodejs v10 LTS
 cache: npm
 branch: source # build source branch only
 script:
-  - hexo generate # generate static files
+  - hexo g && hexo d # generate static files
 deploy:
   provider: pages
   cleanup: true
   github_token: $GH_TOKEN
   keep_history: false
   on:
-    branch: master
-  local_dir: public
+    branch: source
+  local_dir: public/
