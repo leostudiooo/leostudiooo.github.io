@@ -2,16 +2,14 @@ language: node_js
 node_js:
   - 10 # use nodejs v10 LTS
 cache: npm
-branches: source # build source branch only
+branch: source # build source branch only
 script:
   - hexo generate # generate static files
 deploy:
   provider: pages
   cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: false
+  github_token: $GH_TOKEN
+  keep_history: false
   on:
-    repo: leostudiooo/leostudiooo.github.io
-    branches: source
-  target_branch: master
+    branch: master
   local_dir: public
