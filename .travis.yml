@@ -4,9 +4,9 @@ node_js:
 cache: npm
 branches:
   only:
-    - master # build master branch only
+    - source # build master branch only
 script:
-  - hexo clean && hexo generate # generate static files
+  - hexo generate # generate static files
 deploy:
   provider: pages
   cleanup: true
@@ -14,3 +14,4 @@ deploy:
   keep-history: false
   on:
     branch: master
+  local_dir: public
