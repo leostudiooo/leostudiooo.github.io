@@ -13,5 +13,8 @@ deploy:
   github-token: $GH_TOKEN
   keep-history: false
   on:
-    branch: master
+    repo: leostudiooo/leostudiooo.github.io
+    branches:    # ← new!
+      only:      # ← new!
+        - master # ← new!
   local_dir: public
