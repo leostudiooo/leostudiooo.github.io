@@ -2,9 +2,7 @@ language: node_js
 node_js:
   - 10 # use nodejs v10 LTS
 cache: npm
-branches:
-  only:
-    - source # build master branch only
+branches: source # build source branch only
 script:
   - hexo generate # generate static files
 deploy:
@@ -14,7 +12,6 @@ deploy:
   keep-history: false
   on:
     repo: leostudiooo/leostudiooo.github.io
-    branches:    # ← new!
-      only:      # ← new!
-        - master # ← new!
+    branches: source
+  target_branch: master
   local_dir: public
