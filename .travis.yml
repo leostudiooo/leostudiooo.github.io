@@ -4,12 +4,12 @@ node_js:
 cache: npm
 branch: source # build source branch only
 script:
-  - hexo generate && hexo deploy
+  - hexo generate
 deploy:
   provider: pages
   cleanup: true
   github_token: $GH_TOKEN
   keep_history: false
   on:
-    branch: source
+    branch: master
   local_dir: public/
