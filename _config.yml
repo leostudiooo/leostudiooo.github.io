@@ -99,6 +99,6 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/leostudiooo/leostudiooo.github.io
+  repo: https://gh_token@github.com/leostudiooo/leostudiooo.github.io.git
   # example, https://github.com/hexojs/hexojs.github.io
   branch: master
