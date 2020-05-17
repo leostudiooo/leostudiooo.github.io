@@ -15,10 +15,6 @@ branches:
   only:
     - source 
 
-# Start: Build Lifecycle
-install:
-  - npm install hexo-deployer-git --save
-
 # 执行清缓存，生成网页操作
 script:
   - hexo generate
