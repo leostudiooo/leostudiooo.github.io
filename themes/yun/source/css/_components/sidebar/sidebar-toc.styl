@@ -1,0 +1,42 @@
+.post-toc {
+  line-height: 1.8;
+  padding: 1rem;
+
+  ol {
+    list-style: none;
+    text-align: left;
+    padding-left: 1rem;
+    margin: 0;
+
+    .toc-link {
+      color: $colors.primary;
+
+      &:hover {
+        color: $colors.danger;
+      }
+    }
+
+    .toc-number {
+      font-family: $font-family-monospace;
+    }
+
+    .toc-child {
+      overflow: hidden;
+      transition: max-height 0.6s ease-in;
+      max-height: 0;
+    }
+
+    .toc-item {
+      &.active {
+        &>.toc-link {
+          color: $orange;
+          border-bottom: 1px solid $orange;
+        }
+
+        &>.toc-child {
+          max-height: 1000px;
+        }
+      }
+    }
+  }
+}

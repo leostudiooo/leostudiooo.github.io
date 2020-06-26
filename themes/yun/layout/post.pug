@@ -1,0 +1,36 @@
+extends _partial/layout.pug
+
+block content
+  - var post = page
+  #post
+    article.post-block(itemscope, itemtype='https://schema.org/Article')
+      include _partial/post/post-schema.pug
+      if post.type
+        - post_type = getPropertyByType(post.type)
+      header.post-header
+        h1.post-title(itemprop='name headline', style=post.type ? `color: ${post_type.color}` : '')
+          if post.type
+            +icon(post_type.icon)
+          | #{post.title}
+
+          if theme.post_edit.enable
+            include _partial/post/post-edit.pug
+
+        include _partial/post/post-meta.pug
+
+        if post.url
+          a.hty-button.hty-button--raised(href=url_for(post.url), style=`margin-top: 1rem;background-color:${typeColor}`)=__('post.view_link')
+
+      section.post-body(itemprop='articleBody')
+        .post-content(class='post-markdown')!=post.content
+
+        if page.reward !== undefined
+          - theme.reward_settings.enable = page.reward
+        if theme.reward_settings.enable
+          include _partial/post/reward.pug
+
+        if theme.creative_commons.license && theme.creative_commons.post
+          include _partial/post/post-copyright.pug
+
+    if post.prev || post.next
+      include _partial/post/post-nav.pug

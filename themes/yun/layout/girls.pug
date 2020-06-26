@@ -1,0 +1,25 @@
+extends _partial/layout.pug
+
+block preconnect
+  link(rel='preconnect' href='https://img.moegirl.org/', crossorigin)
+
+block content
+  #page
+    +page_header(page.title)
+    if page.girls
+      #girls
+        .girls-number!=page.girls.length
+        .girl-banner!=page.banner
+        ul.girl-items
+          for girl in page.girls
+            if !girl.url
+              - girl.url = 'https://zh.moegirl.org/' + girl.name
+            li.girl-item(id=girl.name)
+              a.girl-url(href=girl.url, title=girl.reason, alt='portrait' target='_blank' rel='noopener')
+                figure.girl-info
+                  img.girl-avatar(loading='lazy', src=girl.avatar, alt=girl.name, onerror='this.src=CONFIG.anonymous_image')
+                  figcaption.girl-name!=girl.name
+                  figcaption.girl-from!=girl.from
+    article.post-block
+      section.post-body(itemprop='articleBody')
+        .post-content(class='post-markdown')!= page.content

@@ -1,0 +1,111 @@
+.post-meta
+  .post-time(style=config.symbols_count_time && !post.type ? "display:block" : "display:inline-block")
+    - var date_diff = date(post.date) != date(post.updated)
+    - var time_diff = time(post.date) != time(post.updated)
+    - var datetime_diff = date_diff || time_diff
+    if theme.post_meta.created_at
+      span.post-meta-item-icon
+        +icon('icon-calendar-line')
+      |  
+      if theme.post_meta.item_text
+        span.post-meta-icon-text=__('post.posted')
+        |  
+      - var create_title = __('post.created') + __('symbol.colon') + full_date(post.date)
+      time(title=create_title, itemprop='dateCreated datePublished', datetime=moment(post.date).format())=date(post.date)
+
+    if theme.post_meta.updated_at && datetime_diff
+      - var display_updated = date_diff
+      if display_updated
+        if theme.post_meta.created_at && theme.post_meta.updated_at
+          span.post-meta-divider='-'
+          span.post-meta-item-icon
+            +icon('icon-calendar-2-line')
+          |  
+          if theme.post_meta.item_text
+            span.post-meta-icon-text=__('post.edited')
+            |  
+          - var update_title = __('post.modified') + __('symbol.colon') + full_date(post.updated)
+          time(title=update_title, itemprop='dateModified', datetime=moment(post.updated).format())=date(post.updated)
+
+  if config.symbols_count_time && !post.type
+    span.post-count
+      if config.symbols_count_time.symbols || config.symbols_count_time.time
+        span.post-symbolcount
+          if config.symbols_count_time.symbols
+            span.post-meta-item-icon(title=__('symbols_count_time.count'))
+              +icon('icon-file-word-line')
+            |  
+            span(title=__('symbols_count_time.count'))=symbolsCount(post.content)
+          if config.symbols_count_time.symbols && config.symbols_count_time.time
+            span.post-meta-divider='-'
+          if config.symbols_count_time.time
+            span.post-meta-item-icon(title=__('symbols_count_time.time'))
+              +icon('icon-timer-line')
+            |  
+            span(title=__('symbols_count_time.time'))=symbolsTime(post.content, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes'))
+
+
+
+  if is_post() && theme.busuanzi.enable && theme.busuanzi.page_pv
+    span.post-busuanzi
+      span.post-meta-divider='-'
+      span.post-meta-item-icon(title=__('post.views'))
+        +icon(theme.busuanzi.page_pv_icon)
+        |  
+        span#busuanzi_value_page_pv
+
+  if is_post() && theme.valine.enable && theme.valine.visitor
+    span.leancloud_visitors(id=url_for(post.path), data-flag-title=post.title)
+      span.post-meta-divider='-'
+      span.post-meta-item-icon(title=__('post.views'))
+        +icon(theme.busuanzi.page_pv_icon)
+        |  
+        span.leancloud-visitors-count
+
+  if theme.disqus.count
+    span.post-meta-divider='-'
+    span.post-meta-item-icon(title=__('post.comments_count'))
+      +icon(theme.comment.icon)
+    |  
+    a(href=url_for(page.path) + '#disqus_thread')
+
+  if is_post()
+    .post-classify
+      if post.categories && post.categories.length && theme.post_meta.categories
+        span.post-category
+          span.post-meta-item-icon
+            +icon('icon-folder-line')
+          |  
+          for category, index in post.categories.data
+            span(itemprop='about', itemscope, itemtype='https://schema.org/Thing')
+              - var categoryColor = "var(--hty-text-color)"
+              if category.name in theme.categories
+                - categoryColor = theme.categories[category.name]
+              a.category(href=url_for(category.path), style=`--text-color:${categoryColor}` itemprop='url' rel='index')
+                span(itemprop='text')=category.name
+                - var categoryColor = null
+
+            - var category_length = post.categories.length
+            if category_length > 1 && index != category_length - 1
+              |  > 
+
+      if post.tags && post.tags.length && theme.post_meta.tags
+        span.post-tag
+          if post.categories && post.categories.length && theme.post_meta.categories
+            span.post-meta-divider='-'
+          for tag in post.tags.data
+            - var tagColor = "var(--hty-text-color)"
+            if tag.name in theme.tags
+              - tagColor = theme.tags[tag.name]
+            a.tag(href=url_for(tag.path, rel='tag'), style=`--text-color:${tagColor}`)
+              - tagColor = null
+              span.post-meta-item-icon
+                +icon('icon-price-tag-3-line')
+              span.tag-name!=tag.name
+
+  if post.author
+    .post-author
+      if post.email
+        .author-avatar
+          img(src=gravatar(post.email, {s: 20, d: theme.anonymous_image}))
+      span.author-name=post.author
