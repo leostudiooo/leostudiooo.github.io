@@ -106,7 +106,7 @@ pages:
 
   - name: 时钟
     url: /time.html
-    icon: timer-line
+    icon: icon-time-line
     color: "#66CCFF"
 # pages
 # -------
@@ -345,7 +345,7 @@ font:
     family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
     weight: 300
   monospace:
-    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
+    family: "'Source Code Pro', Monaco, 'Courier New', Courier, Consolas, monospace"
 
 # custom your color in fireworks
 fireworks:
@@ -369,7 +369,7 @@ trianglify:
   opacity: 0.5
 
 cursor:
-  enable: false
+  enable: true
   default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
   pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
   text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
@@ -438,7 +438,7 @@ creative_commons:
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
 post_edit:
   enable: false
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source.
+  url: https://github.com/leostudiooo/leostudiooo.github.io/tree/source # Link for view source.
 
 # Footer Settings
 # ---------------
@@ -501,7 +501,8 @@ say:
   # https://developer.hitokoto.cn/sentence/
   hitokoto:
     enable: true
-    api: https://v1.hitokoto.cn
+    api: https://v1.hitokoto.cn?c=d&c=e&c=i&c=j&c=l
+    # https://v1.hitokoto.cn
     # api: https://v1.hitokoto.cn?c=a&c=b&c=c&c=d&c=k
 
 # you can new JSON file in your blog root folder
@@ -648,7 +649,7 @@ symbols_count_time:
 search:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
   dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain.jpg
-  # placeholder: 想要搜些什么？
+  placeholder: 想要搜些什么？
 
 engine_search:
   enable: false
@@ -691,33 +692,33 @@ google_tagmanager:
 # https://katex.org/
 katex:
   copy_tex: true
-  global: false
+  global: true
 
 # plugins
 aplayer:
-  global: false
+  global: true
   meting: true
   # https://github.com/metowolf/MetingJS/tree/v1.2#option
-  widget:
-    enable: false
-    autoplay: false
-    # theme: "#2980b9"
-    loop: all
-    order: list
-    preload: auto
-    volume: 0.7
-    mutex: true
-    lrcType: 0
-    listFolded: false
-    listMaxHeight: 340px
-    audio:
-      - name: 星宿计时
-        artist: 杉田朗/洛天依
-        url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
-        cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+  # widget:
+  #   enable: false
+  #   autoplay: false
+  #   # theme: "#2980b9"
+  #   loop: all
+  #   order: list
+  #   preload: auto
+  #   volume: 0.7
+  #   mutex: true
+  #   lrcType: 0
+  #   listFolded: false
+  #   listMaxHeight: 340px
+  #   audio:
+  #     - name: 星宿计时
+  #       artist: 杉田朗/洛天依
+  #       url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
+  #       cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
     meting:
       enable: true
-      id: 308168565
+      id: 2392000208
       server: netease
       type: playlist
 
