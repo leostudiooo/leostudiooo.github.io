@@ -6,8 +6,6 @@ tags:
   - surface dial
 ---
 
-# 教你做开源Surface Dial
-
 ## 介绍
 
 本项目由我和[B站UP主 EddyWang](https://space.bilibili.com/8555835)共同维护。[GitHub仓库](https://github.com/Eddddddddy/Surface_Dial_Arduino)中有此项目源文件，欢迎访问下载。
@@ -24,7 +22,7 @@ Lite版的视频暂时还没时间做。
 
 如图，点击clone下的Download zip（当然如果你有一定的GitHub基础可以直接clone到本地）
 
-<img src="./image-20200621184306016.png" alt="image-20200621184306016"  />
+<img src="/img/image-20200621184306016.png" alt="image-20200621184306016"  />
 
 下载完成后解压。
 
