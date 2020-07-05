@@ -22,7 +22,7 @@ Lite版的视频暂时还没时间做。
 
 如图，点击clone下的Download zip（当然如果你有一定的GitHub基础可以直接clone到本地）
 
-<img src="/img/image-20200621184306016.png" alt="image-20200621184306016"  />
+<img src="leostudiooo.github.io/img/image-20200621184306016.png" alt="image-20200621184306016"  />
 
 下载完成后解压。
 
