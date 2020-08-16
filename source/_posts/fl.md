@@ -1,6 +1,6 @@
 ---
 title: 友情链接
-date: 2020-05-05 21:14:06
+date: 2020-08-05 21:14:06
 tags: link
 ---
 
@@ -13,6 +13,8 @@ tags: link
 [Skip_M4](https://skipm4.com/)
 
 [和乐工作室](http://hlstudio.haku.ren)
+
+[Ted Fu(@icecream1507)](https://f-y.me)
 
 ------
 后续不定期更新
