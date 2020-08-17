@@ -22,7 +22,7 @@ tags:
 
 ## CUPS介绍
 
-[CUPS](cups.org)(Common UNIX Printing System，通用Unix打印系统)是Fedora Core3中支持的打印系统，它主要是使用IPP(Internet Printing Protocol)来管理打印工作及队列，但同时也支持"LPD"(Line Printer Daemon)和"SMB"(Server Message Block)以及AppSocket等通信协议。
+[CUPS](https://cups.org)(Common UNIX Printing System，通用Unix打印系统)是Fedora Core3中支持的打印系统，它主要是使用IPP(Internet Printing Protocol)来管理打印工作及队列，但同时也支持"LPD"(Line Printer Daemon)和"SMB"(Server Message Block)以及AppSocket等通信协议。
 
 Unix/Linux下打印总是有许多限制。但若安装了CUPS（Common UNIX Printing System），你将会得到一个完整的打印解决方案。
 
@@ -40,7 +40,7 @@ CUPS给Unix/Linux用户提供了一种可靠有效的方法来管理打印。它
 
 编辑`/etc/dhcpcd.conf`，在文件末尾添加如下内容：
 
-```c#
+```conf
 interface eth0
 
 static ip_address=192.168.0.10/24
@@ -110,7 +110,7 @@ sudo usermod -a -G lpadmin pi
 
 单击`Add Printer`，网页会要求你输入刚才配置的管理员账户的用户名和密码。
 
-![image-20200817123416365](//img//image-20200817123416365.png)
+![image-20200817123416365](https://leostudiooo.github.io/img/image-20200817123416365.png)
 
 
 
@@ -120,11 +120,11 @@ sudo usermod -a -G lpadmin pi
 
 如果没有问题，你现在应该看到这样一个界面：
 
-![image-20200817123822823](//img//image-20200817123822823.png)
+![image-20200817123822823](https://leostudiooo.github.io/img/image-20200817123822823.png)
 
 在`Local Printers`找到你的打印机并选中（我的就是那个`Canon MP280 Series`），如果没有请选择类似这样`usb://Canon/MP280%20series?serial=A0F451&interface=1`的选项。
 
-![image-20200817124230606](//img//image-20200817124230606.png)
+![image-20200817124230606](https://leostudiooo.github.io/img/image-20200817124230606.png)
 
 如果你的是网络打印机，请在`Network Printers`中选中相应协议，或添加已扫描到的打印机。
 
@@ -140,7 +140,7 @@ sudo usermod -a -G lpadmin pi
 
 记住勾选`Share This Printer`！
 
-![image-20200817124634571](//img//image-20200817124634571.png)
+![image-20200817124634571](https://leostudiooo.github.io/img/image-20200817124634571.png)
 
 
 
@@ -148,7 +148,7 @@ sudo usermod -a -G lpadmin pi
 
 一般选最靠上的那个就行了。看清楚驱动型号！
 
-![image-20200817124956133](//img//image-20200817124956133.png)
+![image-20200817124956133](https://leostudiooo.github.io/img/image-20200817124956133.png)
 
 
 

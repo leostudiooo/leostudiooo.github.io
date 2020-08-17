@@ -39,7 +39,7 @@
 }
 body {
   font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   line-height: 2;
@@ -70,23 +70,23 @@ h6 {
 }
 h1 {
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 h2 {
   font-size: 2.2rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 h3 {
   font-size: 1.9rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 h4 {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 h5 {
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 h6 {
   font-size: 1rem false;
@@ -168,6 +168,21 @@ body::before {
   to {
     opacity: 1;
   }
+}
+body {
+  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur"), auto;
+}
+a {
+  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), auto;
+}
+a:hover {
+  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), auto;
+}
+.hty-icon-button {
+  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), pointer;
+}
+input {
+  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur"), auto;
 }
 :root {
   --banner-line-color: #000;
@@ -716,7 +731,7 @@ body::before {
 }
 .wordcloud #wordcloud-canvas,
 .wordcloud #wordcloud-sidebar-canvas {
-  cursor: url("$cursor-pointer"), pointer;
+  cursor: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur"), pointer;
 }
 .wordcloud #wordbox {
   pointer-events: none;

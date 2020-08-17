@@ -97,6 +97,11 @@ social:
   #  icon: icon-send-plane-2-line
   #  color: black
 
+codeblock:
+  prismjs:
+    light: default
+    dark: tomorrow
+
 # Extra links
 pages:
   - name: 我的小伙伴们
