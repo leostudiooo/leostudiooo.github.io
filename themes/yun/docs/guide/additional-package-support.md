@@ -4,35 +4,27 @@
 
 ## 字数统计
 
-安装 [hexo-symbols-count-time](https://github.com/theme-next/hexo-symbols-count-time)
+> v0.9.4 使用 [hexo-wordcount](https://github.com/willin/hexo-wordcount) 替代 [hexo-symbols-count-time](https://github.com/theme-next/hexo-symbols-count-time)
+
+安装 [hexo-wordcount](https://github.com/willin/hexo-wordcount)
 
 ```sh
-npm install hexo-symbols-count-time
+npm install hexo-wordcount
 # or
-# yarn add hexo-symbols-count-time
+# yarn add hexo-wordcount
 ```
 
-进入博客根目录的配置文件 `_config.yml`
+在配置文件 `source/_data/yun.yml` 中：
+
+- `count`: 字数统计
+- `time`: 阅读时间
 
 ```yaml
-symbols_count_time:
-  symbols: true
+wordcount:
+  enable: true
+  count: true
   time: true
-  total_symbols: true
-  total_time: true
 ```
-
-进入博客根目录的配置文件 `source/_data/yun.yml`
-
-```yaml
-symbols_count_time:
-  item_text_post: true
-  item_text_total: true
-  awl: 2
-  wpm: 250
-```
-
-> 更多信息及使用方法请参见 [hexo-symbols-count-time | GitHub](https://github.com/theme-next/hexo-symbols-count-time)。
 
 ## RSS
 
@@ -61,6 +53,8 @@ social:
 在 Hexo 根目录下运行一下命令，以移除默认索引生成器，并使用具有置顶功能的索引生成器。
 
 原插件的置顶功能等了很久还没有合并。[#26](https://github.com/hexojs/hexo-generator-index/pull/26)
+
+（[1.1](https://github.com/hexojs/hexo-generator-index/pull/56) 快了）
 
 ```sh
 npm uninstall hexo-generator-index --save
@@ -145,11 +139,39 @@ live2d:
   #   hitokoto: true
 ```
 
+## 文章短链接
+
+将文章链接优化为短链接，需要安装 [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink) 插件；具体例子 参考 [#39](https://github.com/YunYouJun/hexo-theme-yun/issues/39)
+
+- 需要额外设置，执行： `npm install hexo-abbrlink --save` 安装插件，由于插件官网前几天更新， 需要额外做一些设置
+
+> 在 `hexo/_config.yml` 找到 和 `permalink:` 相关代码片， 修改为如下：
+
+```yaml
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yoursite.com
+root: /
+# permalink: :year/:month/:day/:title/  # 旧的注释掉
+# permalink_defaults:                   # 旧的注释掉
+permalink: posts/:abbrlink/
+abbrlink:
+  alg: crc32 #support crc16(default) and crc32
+  rep: hex #support dec(default) and hex
+  drafts: false #(true)Process draft,(false)Do not process draft
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+    enable: false #默认为 true， 手改改为 false
+    depth:
+```
+
 ## 标签云（词云）
 
-在 `yun.yml` 中开启在侧边栏下方显示
+在 `yun.yml` 中设置，在标签页中使用彩色词云替代原生标签云。
 
-- `enable`: 开启后，将在标签页显示彩色词云
+- `enable`: 是否开启
+- `height`: 词云高度
 
 ```yaml
 wordcloud:
@@ -307,8 +329,22 @@ katex: true
 
 你可以使用如下方式包裹公式。
 
+如下包裹，公式将被居中展示。
+
+```latex
+$$ E = mc^2 $$
+\[ E = mc^2 \]
+```
+
+如下包裹，公式将以行内形式展示。
+
+```latex
+$E = mc^2$
+\( E = mc^2 \)
+```
+
 ::: tip
-注意，在 Markdown 文件中直接书写时，你需要多一个 `\` 来转译 `\`。
+注意，在 Markdown 文件中直接书写时，你需要多一个 `\` 来转译 `\`。（或者使用 `$E=mc^2$` 的方式）
 
 使用 `\\[ E = mc^2 \\]` 而不是 `\[ E = mc^2 \]`。
 
@@ -324,21 +360,17 @@ katex: true
 
 :::
 
-如下包裹，公式将被居中展示。
-
-```latex
-$$ E = mc^2 $$
-\[ E = mc^2 \]
-```
-
-如下包裹，公式将以行内形式展示。
-
-```latex
-\( E = mc^2 \)
-```
-
 > 你可以访问 [Yun Test](https://www.yunyoujun.cn/yun/) 来查看实际效果。
 > 你可能需要一点时间来等待 `KaTeX` 库的加载，或刷新重试。
+
+## pjax
+
+使用 [pjax](https://github.com/MoOx/pjax) 实现。
+
+```yaml
+pjax:
+  enable: true
+```
 
 ## 其他可用插件推荐
 
@@ -349,12 +381,3 @@ $$ E = mc^2 $$
 ### [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt)
 
 你可以使用它来加密一些私密的文章页面。
-
-## pjax
-
-使用 [pjax](https://github.com/MoOx/pjax) 实现。
-
-```yaml
-pjax:
-  enable: true
-```

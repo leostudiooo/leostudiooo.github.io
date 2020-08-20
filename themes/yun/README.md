@@ -14,7 +14,12 @@
 
 > A light & fast & lovely hexo theme.
 
-- Docs | 一份详细的使用文档: <https://yun.yunyoujun.cn>
+## Docs
+
+一份详细的使用文档
+
+- 最新文档（dev）: <https://yun.yunyoujun.cn>
+- 主分支文档（master）: <https://hexo-theme-yun.vercel.app/>
 
 ![index-preview.jpg](https://i.loli.net/2020/03/23/bTmpQe6tgf35nj2.jpg)
 
@@ -76,7 +81,7 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://www.addesp.com/" target="_blank">
+      <a href="https://sblog.addesp.com/" target="_blank">
         <img width="80px" src="https://www.addesp.com/avatar.jpg"/>
         <br />
         <sub title="记录回忆，分享笔记。">ADD-SP的博客</sub>
@@ -113,7 +118,7 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
       </a>
     </td>
     <td>
-      <a href="https://gloomym.github.io/" target="_blank">
+      <a href="http://www.romastar.cn/" target="_blank">
         <img width="80px" src="https://personalblog-1301685299.cos.ap-nanjing.myqcloud.com/MyBlog-Images/Personal-Info/Avatar.jpg"/>
         <br />
         <sub title="记录我的生活经历以及学习历程~~">柠檬君的小站</sub>
@@ -133,11 +138,18 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="待我熬尽一日苦，喂你一口甜！">陌上花的小栈</sub>
       </a>
     </td>
+    <td>
+      <a href="https://lymtics.top" target="_blank">
+        <img width="80px" src="https://gitee.com/Renen/blogpic/raw/master/sources/BlogAvatar.jpg"/>
+        <br />
+        <sub title="Love You More Than I Can Say.">Lymtics</sub>
+      </a>
+    </td>
   </tr>
   <tr align="center">
     <td>
       <a href="https://qingxu.ga" target="_blank">
-        <img width="80px" src="https://cdn.jsdelivr.net/gh/huanruomengyun/PicGoBed/blog/ass/avatar.jpg"/>
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/huanruomengyun/PicGoBed/blog/ass/avatar.png"/>
         <br />
         <sub title="人生如逆旅，我亦是行人">Qingxu's Blog</sub>
       </a>
@@ -170,6 +182,27 @@ If you are using this theme, welcome to leave your site in [Demo Sites | Example
         <sub title="去探索，去发现">Eden瞎写小屋</sub>
       </a>
     </td>
+    <td>
+      <a href="https://justwb.me" target="_blank">
+        <img width="80px" src="https://justwb.me/avatar.jpeg"/>
+        <br />
+        <sub title="D.C.Forever">琴社迷思</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://chitang233.github.io/" target="_blank">
+        <img width="80px" src="https://s1.ax1x.com/2020/06/27/N63K8e.jpg"/>
+        <br />
+        <sub title="只是一个普通的初中生罢了">池某的小博客</sub>
+      </a>
+    </td>
+    <td>
+      <a href="https://xmuli.tech" target="_blank">
+        <img width="80px" src="https://cdn.jsdelivr.net/gh/xmuli/xmuliPic@pic/2020/xmuli_yj_256px.png"/>
+        <br />
+        <sub title="与子偕臧">偕臧的小站</sub>
+      </a>
+    </td>
   </tr>
 </table>
 
@@ -184,12 +217,6 @@ If you don't have jade & stylus renderer:
 ```sh
 npm install hexo-render-pug hexo-renderer-stylus
 ```
-
-### Plugins
-
-Deprecated highlight.js in Hexo.
-
-> More info [here](https://yun.yunyoujun.cn/guide/config.html#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE).
 
 ## Usage
 
@@ -212,6 +239,10 @@ git pull
 ```
 
 ## [About](https://yun.yunyoujun.cn/guide/about.html)
+
+We uses [SATA License](https://github.com/zTrix/sata-license).
+
+> You don’t know what this means? In short, if you use this theme, you need to Star this repo non-stop, and then you can use it as you like.
 
 本主题采用 [SATA License](https://github.com/zTrix/sata-license)。
 

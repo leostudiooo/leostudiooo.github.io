@@ -7,19 +7,24 @@ const rootElementDarkModeAttributeName = "data-user-color-scheme";
 const setLS = (k, v) => {
   try {
     localStorage.setItem(k, v);
-  } catch (e) {}
+  } catch (e) {
+    console.log(e.message);
+  }
 };
 
 const removeLS = (k) => {
   try {
     localStorage.removeItem(k);
-  } catch (e) {}
+  } catch (e) {
+    console.log(e.message);
+  }
 };
 
 const getLS = (k) => {
   try {
     return localStorage.getItem(k);
   } catch (e) {
+    console.log(e.message);
     return null;
   }
 };
@@ -74,8 +79,25 @@ const toggleCustomDarkMode = () => {
 
 applyCustomDarkModeSettings();
 
-document.addEventListener("DOMContentLoaded", () => {
+function bindToggleButton() {
   document.getElementById("toggle-mode-btn").addEventListener("click", () => {
-    applyCustomDarkModeSettings(toggleCustomDarkMode());
+    const mode = toggleCustomDarkMode();
+    applyCustomDarkModeSettings(mode);
+    toggleCodeblockCss(mode);
   });
-});
+}
+
+/**
+ * toggle prism css for light and dark
+ * @param {*} mode 模式
+ */
+function toggleCodeblockCss(mode) {
+  const invertMode = invertDarkModeObj[mode];
+  document
+    .getElementById(`${invertMode}-prism-css`)
+    .setAttribute("media", "(prefers-color-scheme: no-preference)");
+  document.getElementById(`${mode}-prism-css`).removeAttribute("media");
+}
+
+document.addEventListener("DOMContentLoaded", bindToggleButton);
+document.addEventListener("pjax:success", bindToggleButton);

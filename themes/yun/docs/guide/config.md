@@ -30,6 +30,8 @@ language: zh-CN
 
 配置方式参考下例：
 
+> 各语言对应属性和内容见 `themes/yun/languages`，覆盖对应项即可。
+
 ```yaml
 en: # 将要覆盖的语言
   menu:
@@ -196,7 +198,7 @@ cdn:
     base:
     async:
       # 默认引入的图标资源，使用 iconfont
-      iconfont: //at.alicdn.com/t/font_1140697_asgm6pccckc.js
+      iconfont: //at.alicdn.com/t/font_1140697_stqaphw3j4.js
     defer:
 ```
 
@@ -306,7 +308,7 @@ head:
   js:
     async:
       # 这里是你从 iconfont 处获得的图标链接。
-      iconfont: //at.alicdn.com/t/font_1623879_a03x3er7qur.js
+      iconfont: //at.alicdn.com/t/font_1140697_stqaphw3j4.js
 ```
 
 ### [Remix Icon](https://remixicon.com/)
@@ -519,6 +521,7 @@ social:
 
 - `enable`: 是否开启
 - `title`: 设置文字内容
+- `border`: 是否开启标语中字符的左右边框
 - `cloud`: 在首页下方显示流动的云
   - `enable`: 是否开启
   - `color`: 自定义色彩
@@ -529,12 +532,24 @@ banner:
   enable: true
   title: 云游君的小站
   src: /js/ui/banner.js
+  border: true
   cloud:
     enable: true
     color: "white"
   go_down:
     enable: true
     icon: icon-arrow-down-s-line
+```
+
+你可以通过数组形式来自定义字符的分割，例如：
+
+```yaml
+banner:
+  title:
+    - Yun
+    - You
+    - Jun
+    - Blog
 ```
 
 ### 公告
@@ -589,7 +604,7 @@ head:
 > 你可以仅覆盖你想覆盖的字体族。
 
 - 衬线字体（Serif）：较粗表强调，通常用于首页标语（Banner）、Say、站点与文章标题（以及 links、girls 等页面的作品名称）等处。
-- 无衬线字体（Sans Serif）：较细以营造轻盈之感，通常为普通文本内容。（如果你的字体显示较粗，可能是你在 Windows 系统上安装了 `PingFang SC` 字体，却没有安装对应字重。）
+- 无衬线字体（Sans Serif）：通常为普通文本内容。（如果你的字体显示较粗，可能是你在 Windows 系统上安装了 `PingFang SC` 字体，却没有安装对应字重。）
 - 等宽字体（monospace）：字符均具有相同宽度，通常用于需要相同宽度以对齐之处（如日期、序号）。
 
 将 `font.cdn.enable` 设置为 `false` 以全部使用系统默认字体，达到最佳访问速度。（默认开启时，使用 `media="none" onload="this.media='all'"` 实现 css 样式的异步加载。）
@@ -599,13 +614,13 @@ font:
   cdn:
     enable: true
     lib:
-      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Source+Code+Pro&display=swap
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
   serif:
     family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
     weight: 900
   sans_serif:
     family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
-    weight: 300
+    weight: 400
   monospace:
     family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
 ```
@@ -1004,6 +1019,7 @@ title: 一级标题
 - `max_depth`: 生成 TOC 的最大深度
 - `min_depth`: 生成 TOC 的最小深度
 - `placeholder`: 当目录不存在时，显示的话。
+- `collapse`: 是否折叠目录（默认折叠，即隐藏次级目录，滚到到相关位置时才展开）
 
 ```yaml
 toc:
@@ -1011,6 +1027,7 @@ toc:
   max_depth: 6
   min_depth: 1
   placeholder: 很遗憾，咱没写啥目录
+  collapse: false
 ```
 
 > [辅助函数 ｜ Hexo](https://hexo.io/zh-cn/docs/helpers#toc)
@@ -1035,38 +1052,40 @@ post_edit:
 
 设置代码高亮
 
-由于性能问题，抛弃 `highlight.js` ，使用 [prism](https://github.com/PrismJS/prism)。
+由于性能及定位问题，且 [Hexo 5.0](https://blog.skk.moe/post/hexo-5/) 已原生支持 prism，本主题更推荐使用 [prismjs](https://github.com/PrismJS/prism) 而非 `highlight.js`。
 
-请参考 [hexo-prism-plugin](https://github.com/ele828/hexo-prism-plugin) 使用。
+> 请升级 Hexo 至 5.0。`npm install hexo@latest`
 
-等待 [Hexo 5.0.0 Roadmap](https://github.com/hexojs/hexo/issues/4002) 原生支持 Prism 。
+PrismJS 是一个轻量级的代码高亮库，相比 highlight.js，prismjs 可以在 Node.js 环境执行（即：可在 Hexo 生成页面时进行代码高亮）。
+
+我们可以通过 CDN 快速切换主题，本主题也支持为亮暗模式设置不同的代码高亮主题。
 
 > 当前 Prism 支持的语言：<https://prismjs.com/#supported-languages>
 
-```sh
-npm install hexo-prism-plugin
-```
-
-在 Hexo 工作目录下的 `_config.yml` 中配置：
+在 Hexo （须升级至 5.0 以上版本）工作目录下的 `_config.yml` 中配置：
 
 ```yaml
-# https://github.com/ele828/hexo-prism-plugin
-prism_plugin:
-  mode: preprocess # realtime/preprocess
-  theme: default
-  line_number: false # default false
-  # custom_css: "path/to/your/custom.css" # optional
-```
-
-关闭 Hexo 自带的 `highlight`（此处在 Hexo 工作目录的 `_config.yml` 中）
-
-```yaml
+# 关闭 highlight
 highlight:
   enable: false
+# 启用 prism
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: false
+  tab_replace: ""
+```
+
+在 `yun.yml` 中：
+
+```yaml
+codeblock:
+  prismjs:
+    light: default
+    dark: tomorrow
 ```
 
 > 建议关闭行号，[这里](https://highlightjs.readthedocs.io/en/latest/line-numbers.html)是 highlight 作者写的为什么 highlight 不支持行号。
-> hexo-prism-plugin 开启行号后，也会存在样式上的些许不协调。
 > 行号是否存在影响不大，当去掉时可以节约出一部分空间，譬如一些原先需要滚动条的代码，去掉后，就可以完全显示出来。
 
 ### 版权
@@ -1074,6 +1093,7 @@ highlight:
 设置您的文章的分享版权
 
 > [关于许可协议](https://creativecommons.org/licenses/)
+> 默认使用 署名-非商业性使用-相同方式共享 4.0，即 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)。
 
 - `license`: 设置证书 (by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero)
 - `language`: 设置语言 (deed.zh | deed.en | deed.ja ｜ ...)
@@ -1111,27 +1131,13 @@ lazyload:
 
 ## 打赏
 
-开启后，将在每篇文章或页面末尾显示打赏按钮。
+开启后，将在每篇文章 `post` 末尾显示打赏按钮。（`page` 页面默认不显示，你需要设置 `reward: true` 以强制打开。）
 
 - `enable`: 开启打赏
 - `icon`: 打赏图标
 - `comment`: 在打赏按钮下显示你想说的话
 - `url`: 你的打赏链接（当你开启打赏链接时，将自动跳转你的外部链接而不是展开二维码）
-
-```yaml
-reward_settings:
-  enable: true
-  icon: icon-hand-coin-line
-  comment: I'm so cute. Please give me money.
-  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
-```
-
-您也可以在某篇文章的首部单独设置是否开启打赏。
-
-```yaml
-reward: true
-# reward: false
-```
+- `methods`: 数组，打赏方式
 
 ### 打赏二维码
 
@@ -1142,30 +1148,38 @@ reward: true
 - `color`: 图标颜色
 - `icon`: 图标名称
 
+在 `yun.yml` 中进行覆盖。
+
+::: warning
+v0.9.2 将原先的 `reward_settings` 与 `reward` 配置合并。
+:::
+
 ```yaml
 reward:
-  - name: 支付宝
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-    color: "#00A3EE"
-    icon: icon-alipay-line
-  - name: QQ 支付
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-    color: "#12B7F5"
-    icon: icon-qq-line
-  - name: 微信支付
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-    color: "#2DC100"
-    icon: icon-wechat-pay-line
+  enable: true
+  icon: icon-hand-coin-line
+  comment: I'm so cute. Please give me money.
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  methods:
+    - name: 支付宝
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    - name: QQ 支付
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+      color: "#12B7F5"
+      icon: icon-qq-line
+    - name: 微信支付
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line
 ```
 
-你可以在 `yun.yml` 中进行覆盖。
+您也可以在某篇文章的首部单独设置是否开启打赏。
 
 ```yaml
-reward:
-  - name: 支付宝
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-    color: "#00A3EE"
-    icon: icon-alipay-line
+reward: true
+# reward: false
 ```
 
 ## 页脚

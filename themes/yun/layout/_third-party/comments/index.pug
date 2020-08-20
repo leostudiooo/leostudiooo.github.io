@@ -11,11 +11,11 @@
     include disqus.pug
   if theme.disqusjs && theme.disqusjs.enable
     include disqusjs.pug
-  if theme.gitalk && theme.gitalk.enable
-    include gitalk.pug
   if theme.livere && theme.livere.enable
     include livere.pug
   if theme.minivaline && theme.minivaline.enable
     include minivaline.pug
   if theme.valine && theme.valine.enable
     include valine.pug
+  if theme.utterances && theme.utterances.enable
+    include utterances.pug

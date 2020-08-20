@@ -6,7 +6,7 @@
 
 ## 评论
 
-- `enable`: 默认开启
+- `enable`: 默认开启（代表整体的评论区块，你开启任意类型评论系统都须保持其开启）
 - `tips`: 评论上方的提示，您可以使用数组的形式修改为任意的话（若不想显示，可以留空）
 
 ```yaml
@@ -39,6 +39,40 @@ github_issues:
 在项目 `Settings -> Options -> Features -> Issues -> Set up templates` 中为 GitHub Issues 设置 Comment 模版，第一个创建评论的人可以根据这个模版创建 Issue。
 
 也可以参考我的 [comment.md](https://github.com/YunYouJun/yunyoujun.github.io/blob/hexo/.github/ISSUE_TEMPLATE/comment.md)。
+
+### [Gitalk](https://github.com/gitalk/gitalk)
+
+Gitalk 是一个基于 GitHub Issue 的评论插件。
+
+::: danger
+
+本主题不支持 Gitalk ，如果你真的想用，不妨自行添加或尝试一下 [utterances](https://utteranc.es/)。
+
+:::
+
+基于以下理由，v0.9.7 将移除 Gitalk。
+
+- 存在安全隐患，须授予公开项目读**写**权限
+- CSS 无独立命名空间（甚至覆盖了主题的 markdown 样式）
+- 无亮暗模式
+- 部分 z-index 过高不合理，超过 sidebar
+- 不支持重载以实现 pjax，[如何支持 pjax](https://github.com/gitalk/gitalk/issues/205)
+- ...
+
+最后我发现了 [utterances](https://utteranc.es/)，基本可以完美取代，所以决定彻底移除，今后大概也不会再加回来。
+
+### [utterances](https://utteranc.es/)
+
+一个轻量的基于 GitHub Issue 的评论插件。请求更少的权限，使用起来更为方便。（如果你打算使用 Gitalk，不妨尝试一下 utterances。）
+
+```yaml
+utterances:
+  enable: false
+  repo: owner/repo
+  issue-term: pathname
+  # label: comment
+  theme: github-light
+```
 
 ### [Disqus](https://disqus.com/)
 
@@ -73,24 +107,6 @@ disqusjs:
   apikey:
 ```
 
-### [Gitalk](https://github.com/gitalk/gitalk)
-
-Gitalk 是一个基于 GitHub Issue 的评论插件。（有安全隐患，慎重使用，详情见上方文章）
-
-> 不支持 PJAX：[如何支持 pjax](https://github.com/gitalk/gitalk/issues/205)
-
-```yaml
-gitalk:
-  enable: true
-  clientID:
-  clientSecret:
-  repo:
-  owner:
-  admin:
-  id:
-  distractionFreeMode:
-```
-
 ### Valine
 
 参见 [Valine](https://valine.js.org) 官方文档进行配置。语言默认跟随 Hexo 的语言设置。
@@ -107,7 +123,7 @@ language: zh-CN
 
 - `visitor`: 文章阅读量统计（请最好不要与 [不蒜子](#busuanzi) 同时启用）
 
-> [更多配置项](https://valine.js.org/configuration.html)
+> [更多配置项](https://valine.js.org/configuration.html) 写在 `yun.yml` 中。
 
 ```yaml
 valine:

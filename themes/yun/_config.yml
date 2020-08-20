@@ -29,7 +29,7 @@ sidebar:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
   bg_position: bottom 1rem center
   tagcloud:
-    enable: false
+    enable: true
     amount: 20
 
 toc:
@@ -37,6 +37,7 @@ toc:
   max_depth: 6
   min_depth: 1
   # placeholder: 很遗憾，咱没写啥目录
+  collapse: true
 
 # Social Links.
 social:
@@ -105,7 +106,7 @@ codeblock:
 # Extra links
 pages:
   - name: 我的小伙伴们
-    url: /2020/05/05/fl/
+    url: /2020/08/05/fl/
     icon: icon-genderless-line
     color: dodgerblue
 
@@ -129,12 +130,12 @@ girls:
 # Sidebar Avatar
 avatar:
   enable: true
-  url: /Yun.png
+  url: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/avatar.jpg
   # If true, the avatar would be dispalyed in circle.
   rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
-  mickey_mouse: false
+  mickey_mouse: true
 
 # main menu navigation
 menu:
@@ -261,7 +262,7 @@ js:
 head:
   css:
   js:
-    base:
+    base: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/js/searchengine.js
     async:
     defer:
 
@@ -270,11 +271,8 @@ cdn:
   pre: ""
   # pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io
   css:
-  # Todo:
-  # markdown
-  # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
-  # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css/dist/planet/planet-markdown.min.css
-  # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css/dist/blood/blood-common.min.css
+    yun-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.19/dist/yun/yun-markdown.min.css
+    # github-markdown-css: https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.css
   js:
     base:
     async:
@@ -283,53 +281,13 @@ cdn:
 
 # cdn for third-party library (alternative include)
 vendors:
-  algolia_search: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
-  instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
-  anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-  valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
-  minivaline_js: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
-  gitalk:
-    css: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
-    js: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
-  scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
-  katex:
-    js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
-    css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
-    auto_render: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js
-    copy_tex:
-      css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css
-      js: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
-  aplayer:
-    css: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
-    js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
-    meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
-  trianglify: https://cdn.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js
-  lightgallery:
-    css: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/css/lightgallery.min.css
-    js: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/js/lightgallery.min.js
-  pjax: https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js
-  crypto_js:
-    all: https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.js
-  wordcloud: https://cdn.jsdelivr.net/npm/wordcloud@1.1.1/src/wordcloud2.js
-  # https://github.com/SukkaW/DisqusJS
-  disqusjs:
-    css: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqusjs.css
-    js: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js
-  revealjs:
-    css: https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css
-    js: https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js
-    plugin:
-      markdown: https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js
-      notes: https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js
-      highlight:
-        js: https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js
-        monokai: https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/monokai.css
 
 # UI
 banner:
   enable: true
   title: LeoStudio
   src: /js/ui/banner.js
+  border: true
   cloud:
     enable: true
     color: "white"
@@ -350,7 +308,7 @@ font:
     family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
     weight: 500
   monospace:
-    family: "Monaco, 'Source Code Pro', 'Courier New', Courier, Consolas, monospace"
+    family: "'Monaco', 'Source Code Pro', 'Courier New', Courier, Consolas, monospace"
 
 # custom your color in fireworks
 fireworks:
@@ -390,38 +348,37 @@ scrollreveal:
 
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg # recomend image related to your mode
-  dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
+  url: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/bg_light.png # recomend image related to your mode
+  dark: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/bg_dark.png
   # blur: 30px
   opacity: 1
 
 # Reward (Donate)
-reward_settings:
-  # If true, reward would be displayed in every posts and pages by default.
-  # You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
-  enable: false
+# If enable true, reward would be displayed in every posts and pages by default.
+# You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
+reward:
+  enable: true
   icon: icon-hand-coin-line
   comment: I'm so cute. Please give me money.
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
-
-reward:
-  - name: 支付宝
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
-    color: "#00A3EE"
-    icon: icon-alipay-line
-  - name: QQ 支付
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-    color: "#12B7F5"
-    icon: icon-qq-line
-  - name: 微信支付
-    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
-    color: "#2DC100"
-    icon: icon-wechat-pay-line
-  # - name: paypal
-  #   link: https://paypal.com
-  #   path: https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg
-  #   color: "#2D70B5"
-  #   icon: icon-paypal-line
+  methods:
+    - name: 支付宝
+      path: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/alipay-qrcode.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    # - name: QQ 支付
+    #   path: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/qqpay-qrcode.png
+    #   color: "#12B7F5"
+    #   icon: icon-qq-line
+    - name: 微信支付
+      path: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/wechatpay-qrcode.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line
+    # - name: paypal
+    #   link: https://paypal.com
+    #   path: https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg
+    #   color: "#2D70B5"
+    #   icon: icon-paypal-line
 
 # Creative Commons 4.0 International License.
 # https://creativecommons.org/licenses/
@@ -433,7 +390,7 @@ creative_commons:
   license: by-nc-sa
   language: deed.zh
   post: true
-  clipboard: false
+  clipboard: true
 
 # AddThis Share, See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
@@ -448,7 +405,7 @@ post_edit:
 # Footer Settings
 # ---------------
 footer:
-  since: 2019
+  since: 2020
 
   # Icon between year and copyright info.
   icon:
@@ -473,7 +430,7 @@ footer:
     enable: false
     prefix: 本博客已萌萌哒地运行
     suffix: (●'◡'●)
-    start_time: "2019-04-12T00:00:00"
+    start_time: "2020-03-12T00:00:00"
 
   # Any custom text can be defined here.
   # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
@@ -620,16 +577,13 @@ livere:
   enable: false
   uid:
 
-# https://gitalk.github.io/
-gitalk:
+# https://github.com/utterance/utterances
+utterances:
   enable: false
-  clientID:
-  clientSecret:
   repo:
-  owner:
-  admin:
-  id:
-  distractionFreeMode:
+  issue-term: pathname
+  # label: comment
+  theme: github-light
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
@@ -642,26 +596,25 @@ busuanzi:
   page_pv: true
   page_pv_icon: icon-eye-line
 
-# Post wordcount display settings
-# Dependencies: https://github.com/theme-next/hexo-symbols-count-time
-symbols_count_time:
-  item_text_post: true
-  item_text_total: true
-  awl: 2
-  wpm: 275
+# Post wordcount
+# https://github.com/willin/hexo-wordcount
+wordcount:
+  enable: false
+  count: true
+  time: true
 
 # search
 search:
   bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
-  dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain.jpg
+  dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain-blur-30px.jpg
   # placeholder: 想要搜些什么？
 
 engine_search:
   enable: false
-  href: "https://www.google.com/search?q=site:"
+  # href: "https://www.google.com/search?q=site:"
   # href: "https://www.baidu.com/s?wd=site:"
-  # href: "https://www.bing.com/search?q=site:"
-  domain: yunyoujun.cn
+  href: "https://www.bing.com/search?q=site:"
+  domain: leostudiooo.github.io
 
 # https://github.com/wzpan/hexo-generator-search
 local_search:
@@ -736,7 +689,7 @@ mourn:
 
 # SEO
 # https://ziyuan.baidu.com/linksubmit/index
-baidu_push: true
+baidu_push: false
 
 # custom (You can use variables.)
 custom:
