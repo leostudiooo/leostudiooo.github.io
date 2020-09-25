@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Autobullshiter - 胡说自动机</title>
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="https://f-y-blog.oss-cn-shenzhen.aliyuncs.com/style.css">
+    <link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto+Serif+SC" />
+</head>
+
+<body>
+    <h1>Autobullshiter - 胡说自动机</h1>
+    <blockquote>
+        你好，这里是由<a href="https://f-y.me" target="_blank">Ted Fu</a>开发的，基于机器学习的Autobullshiter - 胡说自动机。你可以在下面键入一段文字作为开头，并键入你希望机器人生成的文本的词数（也就是不包括你已经给出的文本的词数），机器人就会根据你键入的信息自动接出后面的话。下面也默认给出了一种填法，你可以试一试。
+    </blockquote>
+    <div id="app">
+        <el-input type="textarea" :rows="4" placeholder="开头的一段话" v-model="prestr" maxlength="200" show-word-limit>
+        </el-input>
+        <div style="margin: 20px 0;"></div>
+        <el-input type="number" placeholder="长度" v-model="length">
+        </el-input>
+        <div style="margin: 20px 0;"></div>
+        <el-button type="primary" v-on:click="generate" round>生成</el-button>
+        <h2>生成的胡话</h2>
+        <blockquote>注意：下面的文字均由程序自动生成，不代表任何事实或观点，任何人也不对下面的文字负责，请勿相信下面的文字。</blockquote>
+        <p>{{ result }}</p>
+    </div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<!-- import Axios -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            prestr: '数学是利用符号语言研究数量、结构、变化以及空间等概念的一门学科',
+            length: 200,
+            result: ''
+        },
+        methods: {
+            generate: function() {
+                let data = {
+                    "prestr": this.prestr,
+                    "length": Number(this.length)
+                }
+
+                const h = this.$createElement;
+
+                this.$notify({
+                    title: '正在思考胡话中',
+                    message: h('i', {
+                        style: 'color: teal'
+                    }, '这可能在瞬间完成，也可能需要一些时间，取决于生成的长度。想好了就在下面告诉你！')
+                });
+
+                axios
+                    .post('http://localhost:1323/api/generate', data)
+                    .then(response => (this.result = response.data))
+            }
+        }
+    })
+</script>
+
+</html>
