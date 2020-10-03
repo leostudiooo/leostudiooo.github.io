@@ -49,7 +49,7 @@ highlight:
   enable: false
 prismjs:
   enable: true
-  preprocess: false
+  preprocess: true
   line_number: false
   tab_replace: ''
 
