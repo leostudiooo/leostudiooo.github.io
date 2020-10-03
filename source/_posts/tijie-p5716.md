@@ -4,7 +4,7 @@ date: 2020-10-02 21:59:59
 tags: 
   - 题解
   - 洛谷
-  - python
+  - Python
   - oi
 ---
 
