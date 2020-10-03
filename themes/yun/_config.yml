@@ -99,6 +99,7 @@ social:
   #  color: black
 
 codeblock:
+  copy_btn: true
   prismjs:
     light: default
     dark: tomorrow
