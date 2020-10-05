@@ -1,69 +1,214 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>Autobullshiter - 胡说自动机</title>
-    <!-- import CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-    <link rel="stylesheet" href="https://f-y-blog.oss-cn-shenzhen.aliyuncs.com/style.css">
-    <link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto+Serif+SC" />
-</head>
-
-<body>
-    <h1>Autobullshiter - 胡说自动机</h1>
-    <blockquote>
-        你好，这里是由<a href="https://f-y.me" target="_blank">Ted Fu</a>开发的，基于机器学习的Autobullshiter - 胡说自动机。你可以在下面键入一段文字作为开头，并键入你希望机器人生成的文本的词数（也就是不包括你已经给出的文本的词数），机器人就会根据你键入的信息自动接出后面的话。下面也默认给出了一种填法，你可以试一试。
-    </blockquote>
-    <div id="app">
-        <el-input type="textarea" :rows="4" placeholder="开头的一段话" v-model="prestr" maxlength="200" show-word-limit>
-        </el-input>
-        <div style="margin: 20px 0;"></div>
-        <el-input type="number" placeholder="长度" v-model="length">
-        </el-input>
-        <div style="margin: 20px 0;"></div>
-        <el-button type="primary" v-on:click="generate" round>生成</el-button>
-        <h2>生成的胡话</h2>
-        <blockquote>注意：下面的文字均由程序自动生成，不代表任何事实或观点，任何人也不对下面的文字负责，请勿相信下面的文字。</blockquote>
-        <p>{{ result }}</p>
+  <head>
+    <title>狗屁不通文章生成器</title>
+    <meta http-equiv="content-type" content="txt/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="data:image/ico;base64,aWNv">
+    <script src="https://hm.baidu.com/hm.js?058d1e446dd338b69f2e385ba2f930f2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM8WXEWW3P"></script>
+  </head>
+  <body>
+    <div id="主体">
+      <div id="标题">文章生成器</div>
+      <div id="主题">
+        <span>主题</span>
+        <input></input>
+        <button onclick="生成文章()">生成</button>
+      </div>
+      <div id="文章"></div>
     </div>
-</body>
-<!-- import Vue before Element -->
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
-<!-- import JavaScript -->
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
-<!-- import Axios -->
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script>
-    new Vue({
-        el: '#app',
-        data: {
-            prestr: '数学是利用符号语言研究数量、结构、变化以及空间等概念的一门学科',
-            length: 200,
-            result: ''
-        },
-        methods: {
-            generate: function() {
-                let data = {
-                    "prestr": this.prestr,
-                    "length": Number(this.length)
-                }
-
-                const h = this.$createElement;
-
-                this.$notify({
-                    title: '正在思考胡话中',
-                    message: h('i', {
-                        style: 'color: teal'
-                    }, '这可能在瞬间完成，也可能需要一些时间，取决于生成的长度。想好了就在下面告诉你！')
-                });
-
-                axios
-                    .post('http://localhost:1323/api/generate', data)
-                    .then(response => (this.result = response.data))
-            }
-        }
-    })
-</script>
-
+    <div id="声明">
+      <p id="声明文字">请勿将生成的文章用于正规用途</p>
+      <p><a class="链接" href="声明.txt">声明</a></p>
+    </div>
+    <div id="页脚">
+      <p>
+        网页版
+        <a class="链接" href="https://github.com/suulnnka/BullshitGenerator"><svg class="图标" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+        @<a class="链接" href="https://www.zhihu.com/people/su-lan-qia">suulnnka</a>
+       </p>
+      <p>
+        原版
+        <a class="链接" href="https://github.com/menzi11/BullshitGenerator"><svg class="图标" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+        @<a class="链接" href="https://www.zhihu.com/people/ke-meng-90">menzi11</a>
+      </p>
+    </div>
+  </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/js/bullshit.js"></script>
+<style>
+  @media screen and (max-width: 1024px) {
+    html{
+      font-size: 2vw;
+      color: #333333;
+    }
+    body{
+      margin: 0;
+    }
+    #主体{
+      border: 2px solid #333333;
+      margin: 6px;
+      padding: 6px;
+      background: #f8f8f8;
+    }
+    #标题{
+      font-size: 3rem;
+      line-height: 3rem;
+      text-align: center;
+    }
+    #主题{
+      text-align: center;
+      margin-top: 6px;
+      font-size: 0px;
+    }
+    #主题 span{
+      font-size: 2rem;
+      vertical-align: baseline;
+      margin-left: 6px;
+    }
+    #主题 input{
+      border: none;
+      border-bottom: #666666 2px solid;
+      padding: 1px 0 0 0;
+      margin: 0px 6px 0 6px;
+      vertical-align: baseline;
+      font-size: 2rem;
+      background: #f8f8f8;
+      color: #333333;
+      text-align: center;
+      min-width: 20%;
+    }
+    #主题 button{
+      border: 0;
+      padding: 3px 7px 3px 7px;
+      margin: 0;
+      vertical-align: top;
+      font-size: 1.4rem;
+      background: #454545;
+      color: #efefef;
+    }
+    #文章 div{
+      margin-top: 6px;
+      font-size: 2rem;
+      text-align: justify;
+    }
+    #声明{
+      float: left;
+      margin: 0 0 0 6px;
+    }
+    #声明 p{
+      margin: 0 0 3px 3px;
+      font-size: 1.4rem;
+    }
+    #声明文字{
+      display: none;
+    }
+    #页脚{
+      margin: 6px;
+    }
+    #页脚 p{
+      margin: 3px;
+      font-size: 1.4rem;
+      text-align: right;
+    }
+    .链接{
+      color: #666666;
+    }
+    .图标{
+      height: 1rem;
+      width: 1rem;
+      vertical-align: top;
+      margin-top: 2px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    html{
+      font-size: 1.3vw;
+      color: #333333;
+    }
+    body{
+      margin: 0;
+    }
+    #主体{
+      border: 2px solid #333333;
+      margin: 20px;
+      padding: 20px;
+      background: #f8f8f8;
+    }
+    #标题{
+      font-size: 1.9rem;
+      line-height: 1.9rem;
+      text-align: center;
+    }
+    #主题{
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0px;
+    }
+    #主题 span{
+      font-size: 1rem;
+      vertical-align: baseline;
+      margin-left: 20px;
+    }
+    #主题 input{
+      border: none;
+      border-bottom: #666666 2px solid;
+      padding: 1px 0 0 0;
+      margin: 0px 20px 0 20px;
+      vertical-align: baseline;
+      font-size: 1rem;
+      background: #f8f8f8;
+      color: #333333;
+      text-align: center;
+      min-width: 20%;
+    }
+    #主题 button{
+      border: 0;
+      padding: 5px 15px 5px 15px;
+      margin: 0;
+      vertical-align: top;
+      font-size: 0.75rem;
+      background: #454545;
+      color: #efefef;
+    }
+    #文章 div{
+      margin-top: 20px;
+      text-align: justify;
+    }
+    #声明{
+      float: left;
+      margin: 0 0 0 20px;
+    }
+    #声明 p{
+      margin: 0 0 5px 5px;
+      font-size: 0.75rem;
+    }
+    #声明文字{
+      display: none;
+    }
+    #页脚{
+      margin: 20px;
+    }
+    #页脚 p{
+      margin: 5px;
+      font-size: 0.75rem;
+      text-align: right;
+    }
+    .链接{
+      color: #666666;
+    }
+    #页脚 span{
+      padding: 2px 0 0 0;
+      vertical-align: baseline;
+    }
+    .图标{
+      height: 0.7rem;
+      width: 0.7rem;
+      vertical-align: top;
+      margin-top: 4px;
+    }
+  }
+
+</style>

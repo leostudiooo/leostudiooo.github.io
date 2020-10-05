@@ -112,9 +112,14 @@ pages:
     color: dodgerblue
 
   - name: 时钟
-    url: /time.html
-    icon: icon-timer-line
+    url: /time/
+    icon: icon-time-line
     color: "#66CCFF"
+  
+  - name: 番茄钟
+    url: /pomodoro/
+    icon: icon-timer-line
+    color: "#00A2FF"
 # pages
 # -------
 # friend

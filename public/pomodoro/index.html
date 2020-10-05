@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoro Clock</title>
+    <script src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/js/jquery-2.2.4.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/css/pomodoro-style.css">
+    <script src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/js/pomodoro.js"></script>
+</head> 
+
+
+
+    <body>
+        <h1>PomoDoro Clock</h1>
+        <div class="intro">
+
+            <div id="sess">
+                <h3>Session Length</h3>
+                <i class="ibutts" onclick="pomo.sin()">+</i>
+                <span id="sminutes">1</span>
+                <span>:</span>
+                <span id="sseconds">00</span>
+                <i class="ibutts" onclick="pomo.sdec()">-</i>
+            </div>
+
+            <div id="break">
+                <h3>Break Length</h3>
+                <i class="ibutts" onclick="pomo.bin()">+</i>
+                <span id="bminutes">5</span>
+                <span>:</span>
+                <span id="bseconds">00</span>
+                <i class="ibutts" onclick="pomo.bdec()">-</i>
+
+            </div>
+
+
+            <br>
+
+
+
+
+            <div id="cont">
+
+                <div class="display">
+                    <div id="dis">
+                        <span class="g" id="dmin">00</span>
+                        <span class="g">:</span>
+                        <span class="g" id="dsec">00</span>
+                    </div>
+                </div>
+                <div id="mid" class="x"></div>
+                <div id="bot"></div>
+            </div>
+
+        </div>
+        <br>
+        <div class="controls">
+            <div id="butt">
+                <button id="start" onclick="pomo.start()">Start</button>
+                <button id="pause" onclick="pomo.pause()">Pause</button>
+                <button id="reset" onclick="pomo.resets()">Reset</button>
+            </div>
+        </div>
+
+    </body>
+
+
+
+</html>
