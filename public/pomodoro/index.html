@@ -1,73 +1,64 @@
-<html lang="en">
-
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pomodoro Clock</title>
-    <script src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/js/jquery-2.2.4.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/css/pomodoro-style.css">
-    <script src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/js/pomodoro.js"></script>
-</head> 
-
-
-
-    <body>
-        <h1>PomoDoro Clock</h1>
-        <div class="intro">
-
-            <div id="sess">
-                <h3>Session Length</h3>
-                <i class="ibutts" onclick="pomo.sin()">+</i>
-                <span id="sminutes">1</span>
-                <span>:</span>
-                <span id="sseconds">00</span>
-                <i class="ibutts" onclick="pomo.sdec()">-</i>
-            </div>
-
-            <div id="break">
-                <h3>Break Length</h3>
-                <i class="ibutts" onclick="pomo.bin()">+</i>
-                <span id="bminutes">5</span>
-                <span>:</span>
-                <span id="bseconds">00</span>
-                <i class="ibutts" onclick="pomo.bdec()">-</i>
-
-            </div>
-
-
-            <br>
-
-
-
-
-            <div id="cont">
-
-                <div class="display">
-                    <div id="dis">
-                        <span class="g" id="dmin">00</span>
-                        <span class="g">:</span>
-                        <span class="g" id="dsec">00</span>
-                    </div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Pomodoro Timer</title>
+    <link href="/favicon-20120525-favicon.ico" rel="icon" type="image/x-icon" />
+    <meta name="description" content="A lightweight Pomodoro timer build in pure HTML and JavaScript. It offers basic configuration of work, break, and rest length. Perfect for keeping track of your Pomodoros.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body tabindex="0">
+    <!--[if lt IE 9]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this app. This site app does not work in your browser!</p><![endif]-->
+    <div id="container">
+        <header>
+            <h1>Pomodoro Timer</h1>
+        </header>
+        <div role="main">
+            <div id="state"><span class="value">Stopped</span> <span class="info">(click or press ENTER to start/stop)</span></div>
+            <div id="timer">00:00</div>
+            <div id="pomodoro-count">Pomodoro #<span class="value">0</span> <span class="info">(rest after every four pomodoros)</span></div>
+            <fieldset>
+                <legend>Options</legend>
+                <div>
+                    <label for="work"><span>Work:</span> <input id="work" type="number" min="20" max="50" value="25" step="5" autocomplete="true"/> minutes</label>
                 </div>
-                <div id="mid" class="x"></div>
-                <div id="bot"></div>
-            </div>
-
+                <div>
+                    <label for="break"><span>Break:</span> <input id="break" type="number" min="1" max="15" value="5" step="1" autocomplete="true" /> minutes</label>
+                </div>
+                <div>
+                    <label for="rest"><span>Rest:</span> <input id="rest" type="number" min="20" max="50" value="25" step="5" autocomplete="true" /> minutes</label>
+                </div>
+            </fieldset>
         </div>
-        <br>
-        <div class="controls">
-            <div id="butt">
-                <button id="start" onclick="pomo.start()">Start</button>
-                <button id="pause" onclick="pomo.pause()">Pause</button>
-                <button id="reset" onclick="pomo.resets()">Reset</button>
-            </div>
-        </div>
+        <footer>
+            <p>A lightweight <a href="http://www.pomodorotechnique.com/">Pomodoro</a> timer by <a href="http://egilhansen.com/" title="Visit Egil Hansen's website">Egil Hansen</a>.<br /> Source code available at <a href="https://github.com/egil/pomodoro-timer">github.com</a>.</p>
+        </footer>
+    </div>
+    <script src="//cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/js/jquery-1.7.2.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="//cdn.bootcdn.net/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-ui-1.7.2.min.js"><\/script>')</script>
 
-    </body>
+    <!-- scripts concatenated and minified via ant build script-->
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <!-- end scripts-->
 
+    <script type="text/javascript">
+        // REMOVE if placed on other site than egilhansen.com!
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18582601-1']);
+        _gaq.push(['_setDomainName', 'egilhansen.com']);
+        _gaq.push(['_trackPageview']);
 
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
 
+    </script>
+</body>
 </html>
