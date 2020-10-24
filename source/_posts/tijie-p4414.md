@@ -8,6 +8,8 @@ tags:
   - 题解
 ---
 
+纪念史上首次[一次性AC](https://www.luogu.com.cn/record/40400035)。
+
 ## 思路
 
 输入三个数到数组中并排序；
