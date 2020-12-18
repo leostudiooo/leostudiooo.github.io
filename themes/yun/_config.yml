@@ -268,7 +268,7 @@ js:
 head:
   css:
   js:
-    base: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/js/searchengine.js
+    base: 
     async:
     defer:
 
