@@ -38,7 +38,7 @@
   text-align: center;
 }
 body {
-  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
+  font-family: 'PingFang SC', 'Source Han Sans SC', 'Noto Sans SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
   font-weight: 500;
   margin: 0;
   padding: 0;
@@ -210,7 +210,7 @@ input {
   bottom: 0;
 }
 .char {
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'Songti SC', 'Source Han Serif SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
   font-size: var(--banner-char-size, 1rem);
   font-weight: 900;
   background-color: rgba(255,255,255,0.5);
@@ -646,7 +646,7 @@ input {
   padding-left: 0.6rem;
 }
 .link-item .link-blog {
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'Songti SC', 'Source Han Serif SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
   font-weight: 900;
   margin: 0.42rem 0;
 }
@@ -1136,7 +1136,7 @@ input {
   background: rgba(0,120,231,0.3);
 }
 .post-collapse .collection-title .archive-year {
-  font-family: 'Monaco', 'Source Code Pro', 'Courier New', Courier, Consolas, monospace;
+  font-family: 'Source Code Pro', 'Monaco', 'Courier New', Courier, Consolas, monospace;
   color: #0078e7;
   margin: 0 1.5rem;
 }
@@ -1200,7 +1200,7 @@ input {
   margin-right: 0.3rem;
 }
 .post-collapse .post-header .post-meta {
-  font-family: 'Monaco', 'Source Code Pro', 'Courier New', Courier, Consolas, monospace;
+  font-family: 'Source Code Pro', 'Monaco', 'Courier New', Courier, Consolas, monospace;
   font-size: 1rem;
   margin: 1rem 0 1rem 1.2rem;
   white-space: nowrap;
@@ -1219,7 +1219,7 @@ input {
   padding: 10px;
   font-size: 1.5rem;
   font-weight: 900;
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'Songti SC', 'Source Han Serif SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
 }
 .post-header .post-title .icon {
   width: 1.6rem;
@@ -1493,7 +1493,7 @@ input {
   line-height: 1.8;
   padding: 1rem;
   font-size: 1.1rem;
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'Songti SC', 'Source Han Serif SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
 }
 .post-toc ol {
   list-style: none;
@@ -1508,7 +1508,7 @@ input {
   color: #db2828;
 }
 .post-toc ol .toc-number {
-  font-family: 'Monaco', 'Source Code Pro', 'Courier New', Courier, Consolas, monospace;
+  font-family: 'Source Code Pro', 'Monaco', 'Courier New', Courier, Consolas, monospace;
 }
 .post-toc ol .toc-child {
   font-size: 1rem;
@@ -1674,7 +1674,7 @@ input {
 }
 .site-name {
   color: var(--hty-text-color);
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'Songti SC', 'Source Han Serif SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
   font-weight: 900;
 }
 .site-subtitle {
@@ -1784,7 +1784,7 @@ input {
   color: var(--hty-text-color);
   display: block;
   text-align: center;
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'Songti SC', 'Source Han Serif SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
   font-weight: bold;
   padding: 0.5rem;
   border-top: 1px solid var(--hty-secondary-text-color);

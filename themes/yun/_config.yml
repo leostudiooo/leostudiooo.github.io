@@ -306,15 +306,15 @@ font:
   cdn:
     enable: true
     lib:
-      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&family=Source+Code+Pro&display=swap
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Source+Code+Pro&famiy=Noto+Sans+SC&display=swap
   serif:
-    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    family: "'Songti SC', 'Source Han Serif SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
     weight: 900
   sans_serif:
-    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    family: "'PingFang SC', 'Source Han Sans SC', 'Noto Sans SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
     weight: 500
   monospace:
-    family: "'Monaco', 'Source Code Pro', 'Courier New', Courier, Consolas, monospace"
+    family: "'Source Code Pro', 'Monaco', 'Courier New', Courier, Consolas, monospace"
 
 # custom your color in fireworks
 fireworks:
@@ -324,8 +324,10 @@ fireworks:
     - "102, 167, 221"
     - "62, 131, 225"
     - "33, 78, 194"
-    # - '3, 28, 95'
-    # - '0, 8, 55'
+    - '3, 28, 95'
+    - '0, 8, 55'
+    - '102, 204, 255'
+    - '200, 192, 85'
 
 # https://github.com/qrohlf/trianglify
 trianglify:
@@ -486,6 +488,7 @@ comment:
   tips:
     - 点击按钮跳转 GitHub Issues 评论。
     - 若没有本文 Issue，您可以使用 Comment 模版新建。
+    - 你也可以直接在下面的评论区进行评论。
 
 # GitHub Issues Link Button
 # https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests
@@ -500,20 +503,20 @@ github_issues:
 # More info available at https://valine.js.org
 # extend: https://github.com/DesertsP/Valine-Admin
 valine:
-  enable: false
-  appId: # your leancloud application appid
-  appKey: # your leancloud application appkey
+  enable: true
+  appId: uArs3msOxUAWs7n5oCOm5sKU-gzGzoHsz
+  appKey: Ij94t7TRAmVxTvbkRPNNyxPO
   placeholder: Just go go # comment box placeholder
-  avatar: # gravatar style
-  # meta:
-  #   - nick
-  #   - mail
-  #   - link
+  avatar: 
+    meta:
+     - nick
+     - mail
+     - link
   pageSize: 10 # pagination size
-  # lang: zh-CN
+  lang: zh-CN
   visitor: false
   highlight: true
-  recordIP: false
+  recordIP: true
   # serverURLs:
   # Emoji See: https://valine.js.org/emoji.html
   # emojiCDN: //i0.hdslb.com/bfs/emote/
