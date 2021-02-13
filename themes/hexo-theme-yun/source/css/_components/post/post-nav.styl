@@ -1,0 +1,62 @@
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+
+  +mobile() {
+    margin: 0;
+  }
+
+  &-item {
+    display: inline-block;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 3rem;
+    line-height: 2.9rem;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: rgba($colors.primary, 0.1);
+    }
+  }
+
+  &-prev {
+    padding-right: 0.5rem;
+  }
+
+  &-next {
+    padding-left: 0.5rem;
+  }
+
+  &-prev, &-next {
+    display: inline-flex;
+    align-items: center;
+    color: $colors.primary;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    the-transition();
+
+    +mobile() {
+      max-width: 10rem;
+    }
+
+    &:active {
+      color: white;
+    }
+
+    .icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
