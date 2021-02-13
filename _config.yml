@@ -94,7 +94,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yun
+theme: hexo-theme-yun
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
