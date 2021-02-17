@@ -356,9 +356,9 @@ scrollreveal:
 
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/Beach%20Day.png
+  url: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/Beach%20Day.svg
   # https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/bg_light.png # recomend image related to your mode
-  dark: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/Beach%20Night.png
+  dark: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/Beach%20Night.svg
   # https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/bg_dark.png
   # blur: 30px
   opacity: 1
