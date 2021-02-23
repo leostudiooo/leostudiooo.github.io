@@ -67,7 +67,7 @@
 		}
 		return obj;
 	}
-	let playlist = "2717890285", songs = [], currentPlaying = null, lrc = null, lrcStartPos = 0, transLrc = null, transLrcStartPos = 0, overlayAval = false, cPos = { x: 0, y: 0 }, errorCount = 0, lastMainLrc = "", lastSubLrc = "", cUrlReq = null;
+	let playlist = "6630417901", songs = [], currentPlaying = null, lrc = null, lrcStartPos = 0, transLrc = null, transLrcStartPos = 0, overlayAval = false, cPos = { x: 0, y: 0 }, errorCount = 0, lastMainLrc = "", lastSubLrc = "", cUrlReq = null;
 	function randNfloor(min, max) {
 		return Math.random() * (max - min + 1) + min;
 	}
