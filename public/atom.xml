@@ -6,7 +6,7 @@
   <link href="https://leostudiooo.github.io/atom.xml" rel="self"/>
   
   <link href="https://leostudiooo.github.io/"/>
-  <updated>2021-01-30T07:28:35.176Z</updated>
+  <updated>2021-02-23T11:53:50.601Z</updated>
   <id>https://leostudiooo.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Hexo在GitHub Pages部署属于你自己的博客！</title>
+    <link href="https://leostudiooo.github.io/2021/02/23/hexo/"/>
+    <id>https://leostudiooo.github.io/2021/02/23/hexo/</id>
+    <published>2021-02-23T09:52:20.000Z</published>
+    <updated>2021-02-23T11:53:50.601Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前期准备工作"><a href="#前期准备工作" class="headerlink" title="前期准备工作"></a>前期准备工作</h2><h3 id="创建一个GitHub账号（如有可跳过此步骤）"><a href="#创建一个GitHub账号（如有可跳过此步骤）" class="headerlink" title="创建一个GitHub账号（如有可跳过此步骤）"></a>创建一个GitHub账号（如有可跳过此步骤）</h3><p>点击<a href="http://www.github.com/">此链接</a>跳转到GitHub，全球最大的代码托管网站。</p><p><img src="https://leostudiooo.github.io/img/gitsup.jpg" alt="img"></p><p>注册过程十分简单，这里不再赘述。</p><h3 id="在GitHub上创建一个新的项目。"><a href="#在GitHub上创建一个新的项目。" class="headerlink" title="在GitHub上创建一个新的项目。"></a>在GitHub上创建一个新的项目。</h3><p>单击 右上角【+】- New Repository新建项目。（以下简称仓库）</p><p><img src="https://img2018.cnblogs.com/blog/1212465/201909/1212465-20190904143955779-1300863677.png" alt="img"></p><p>然后填写项目信息。</p><p>仓库的名字格式应为：<code>你的用户名.github.io</code> 。</p><p>比如我的用户名是<code>leostudiooo</code>，那么我的仓库就叫<code>leostudiooo.github.io</code>。</p><p>在<em>description</em>一栏填写简介。</p><p><img src="https://img-blog.csdnimg.cn/20181218144438464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvaGFpeng=,size_16,color_FFFFFF,t_70" alt="img"></p><p>此处选择<em>Public</em>。</p><p>然后勾选<em>Initialize the repository with a README</em>。（此步的作用是用一个README.md对这个仓库进行初始化）</p><p>完成后点击下面的<em>Create Repository</em>。</p><p>除此之外，你还需要一个能写Markdown的编辑器。我使用的是<a href="https://typora.io">Typora</a>。</p><h2 id="部署Hexo"><a href="#部署Hexo" class="headerlink" title="部署Hexo"></a>部署Hexo</h2><h3 id="下载Git和Node-js"><a href="#下载Git和Node-js" class="headerlink" title="下载Git和Node.js"></a>下载Git和Node.js</h3><p>可以根据<a href="http://bbs.jnschool.com/hexo.io">Hexo</a>官网的教程下载。</p><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>在安装完git和node.js以后，我们需要打开<code>cmd.exe</code>（如果你配置好了执行策略，<code>powershell</code>也是一个不错的选择 。）</p><p><em>咋打开就不用说了吧…… Win+R输入<code>cmd</code>回车</em></p><p>运行<code>npm install -g hexo-cli</code>来安装Hexo。</p><p>使用<code>git clone</code>命令克隆到本地。</p><p><code>cd</code>切换到这个文件夹，运行<code>npm install</code>。</p><p>这时候，你的文件夹里面会多出一堆文件。不要慌，慢慢来。</p><p>你的文件夹结构应该大致是这样：</p><pre class="language-none"><code class="language-none">.├── config.yml├── package.json├── scaffolds├── source|  ├── _drafts|  └── _posts└── themes</code></pre><p>然后，你可以参照<a href="https://hexo.io/zh-cn/docs/configuration.html">hexo的官方教程</a>对<code>_config.yml</code>进行配置。<br>接下来是几个常用命令：</p><p><code>hexo new</code>文章名称（之后你需要在<code>/source/_posts/</code>下找到你刚创建的 文章名称.md并对其内容进行修改。）</p><p><code>hexo generate</code>（生成页面文件到/public/ 下）</p><p><code>hexo server</code>（本地服务器，用浏览器访问 localhost:4000 ）</p><p><code>hexo clean</code>（清除/public/ 下缓存文件，慎用！）</p><h3 id="安装一个好看的主题"><a href="#安装一个好看的主题" class="headerlink" title="安装一个好看的主题"></a>安装一个好看的主题</h3><p>安装<a href="">hexo-theme-yun</a></p><h3 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h3><p>编辑_config.yml，在末尾添加如下内容：</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">deploy</span><span class="token punctuation">:</span>  <span class="token key atrule">type</span><span class="token punctuation">:</span> git<span class="token key atrule">repo</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//github.com/你的用户名/你的仓库 <span class="token comment">#e.g. https://github.com/leostudiooo/leostudiooo.github.io</span>  <span class="token key atrule">branch</span><span class="token punctuation">:</span> master <span class="token comment">#设置分支为master，默认是gh-pages</span></code></pre><p>然后在此目录下（命令行中）执行npm install hexo-deployer-git。</p><p>接下来，执行hexo deploy部署到GitHub。期间，会要求你登录。（如果你有其他文件需要一同部署到GitHub Pages，请将它们复制到/public/ 下。）</p><p>部署完成后，就大功告成啦！<br>如果你愿意折腾，也可以去试试Travis CI的自动部署。这是<a href="https://blog.csdn.net/Xiong_IT/article/details/78675874">我参考的教程</a>。**</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前期准备工作&quot;&gt;&lt;a href=&quot;#前期准备工作&quot; class=&quot;headerlink&quot; title=&quot;前期准备工作&quot;&gt;&lt;/a&gt;前期准备工作&lt;/h2&gt;&lt;h3 id=&quot;创建一个GitHub账号（如有可跳过此步骤）&quot;&gt;&lt;a href=&quot;#创建一个GitHub账号（如有</summary>
+      
+    
+    
+    
+    
+    <category term="教程" scheme="https://leostudiooo.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>2021寒假计划</title>

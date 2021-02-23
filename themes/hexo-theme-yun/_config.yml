@@ -248,7 +248,7 @@ preconnect:
 
 # img loading="lazy"
 lazyload:
-  enable: true
+  enable: false
 
 # pjax
 pjax:
@@ -258,11 +258,16 @@ pjax:
 # stylesheets loaded in the <head>
 css:
   - /css/hexo-theme-yun.css
+  - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css
+  - https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/css/pplayer.css
 
 # scripts loaded in the end of the body
 js:
+  - https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/js/jquery-2.2.4.min.js
+  - /js/pplayer.js
   - /js/utils.js
-  - /js/hexo-theme-yun.js
+  - /js/hexo-theme-yun.js  
+  # - /js/run-tplayer.js
 
 # custom your assets in head
 head:
@@ -629,7 +634,7 @@ engine_search:
 
 # https://github.com/wzpan/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   src: /js/search/local-search.js
 
 # https://github.com/oncletom/hexo-algolia
@@ -693,7 +698,7 @@ aplayer:
 
 # special
 mourn:
-  enable: false
+  enable: true
   days:
     - "4-4"
     - "9-18"
