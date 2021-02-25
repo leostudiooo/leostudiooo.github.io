@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>使用Hexo在GitHub Pages部署属于你自己的博客！</title>
+      <link href="2021/02/23/hexo/"/>
+      <url>2021/02/23/hexo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前期准备工作"><a href="#前期准备工作" class="headerlink" title="前期准备工作"></a>前期准备工作</h2><h3 id="创建一个GitHub账号（如有可跳过此步骤）"><a href="#创建一个GitHub账号（如有可跳过此步骤）" class="headerlink" title="创建一个GitHub账号（如有可跳过此步骤）"></a>创建一个GitHub账号（如有可跳过此步骤）</h3><p>点击<a href="http://www.github.com/">此链接</a>跳转到GitHub，全球最大的代码托管网站。</p><p><img src="https://leostudiooo.github.io/img/gitsup.jpg" alt="img"></p><p>注册过程十分简单，这里不再赘述。</p><h3 id="在GitHub上创建一个新的项目。"><a href="#在GitHub上创建一个新的项目。" class="headerlink" title="在GitHub上创建一个新的项目。"></a>在GitHub上创建一个新的项目。</h3><p>单击 右上角【+】- New Repository新建项目。（以下简称仓库）</p><p><img src="https://img2018.cnblogs.com/blog/1212465/201909/1212465-20190904143955779-1300863677.png" alt="img"></p><p>然后填写项目信息。</p><p>仓库的名字格式应为：<code>你的用户名.github.io</code> 。</p><p>比如我的用户名是<code>leostudiooo</code>，那么我的仓库就叫<code>leostudiooo.github.io</code>。</p><p>在<em>description</em>一栏填写简介。</p><p><img src="https://img-blog.csdnimg.cn/20181218144438464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvaGFpeng=,size_16,color_FFFFFF,t_70" alt="img"></p><p>此处选择<em>Public</em>。</p><p>然后勾选<em>Initialize the repository with a README</em>。（此步的作用是用一个README.md对这个仓库进行初始化）</p><p>完成后点击下面的<em>Create Repository</em>。</p><p>除此之外，你还需要一个能写Markdown的编辑器。我使用的是<a href="https://typora.io">Typora</a>。</p><h2 id="部署Hexo"><a href="#部署Hexo" class="headerlink" title="部署Hexo"></a>部署Hexo</h2><h3 id="下载Git和Node-js"><a href="#下载Git和Node-js" class="headerlink" title="下载Git和Node.js"></a>下载Git和Node.js</h3><p>可以根据<a href="http://bbs.jnschool.com/hexo.io">Hexo</a>官网的教程下载。</p><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>在安装完git和node.js以后，我们需要打开<code>cmd.exe</code>（如果你配置好了执行策略，<code>powershell</code>也是一个不错的选择 。）</p><p><em>咋打开就不用说了吧…… Win+R输入<code>cmd</code>回车</em></p><p>运行<code>npm install -g hexo-cli</code>来安装Hexo。</p><p>使用<code>git clone</code>命令克隆到本地。</p><p><code>cd</code>切换到这个文件夹，运行<code>npm install</code>。</p><p>这时候，你的文件夹里面会多出一堆文件。不要慌，慢慢来。</p><p>你的文件夹结构应该大致是这样：</p><pre class="language-none"><code class="language-none">.├── config.yml├── package.json├── scaffolds├── source|  ├── _drafts|  └── _posts└── themes</code></pre><p>然后，你可以参照<a href="https://hexo.io/zh-cn/docs/configuration.html">hexo的官方教程</a>对<code>_config.yml</code>进行配置。<br>接下来是几个常用命令：</p><p><code>hexo new</code>文章名称（之后你需要在<code>/source/_posts/</code>下找到你刚创建的 文章名称.md并对其内容进行修改。）</p><p><code>hexo generate</code>（生成页面文件到/public/ 下）</p><p><code>hexo server</code>（本地服务器，用浏览器访问 localhost:4000 ）</p><p><code>hexo clean</code>（清除/public/ 下缓存文件，慎用！）</p><h3 id="安装一个好看的主题"><a href="#安装一个好看的主题" class="headerlink" title="安装一个好看的主题"></a>安装一个好看的主题</h3><p>安装<a href="">hexo-theme-yun</a></p><h3 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h3><p>编辑_config.yml，在末尾添加如下内容：</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">deploy</span><span class="token punctuation">:</span>  <span class="token key atrule">type</span><span class="token punctuation">:</span> git<span class="token key atrule">repo</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//github.com/你的用户名/你的仓库 <span class="token comment">#e.g. https://github.com/leostudiooo/leostudiooo.github.io</span>  <span class="token key atrule">branch</span><span class="token punctuation">:</span> master <span class="token comment">#设置分支为master，默认是gh-pages</span></code></pre><p>然后在此目录下（命令行中）执行npm install hexo-deployer-git。</p><p>接下来，执行hexo deploy部署到GitHub。期间，会要求你登录。（如果你有其他文件需要一同部署到GitHub Pages，请将它们复制到/public/ 下。）</p><p>部署完成后，就大功告成啦！<br>如果你愿意折腾，也可以去试试Travis CI的自动部署。这是<a href="https://blog.csdn.net/Xiong_IT/article/details/78675874">我参考的教程</a>。**</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2021寒假计划</title>
+      <link href="2021/01/30/wintervacation-plan/"/>
+      <url>2021/01/30/wintervacation-plan/</url>
+      
+        <content type="html"><![CDATA[<h2 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h2><h3 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h3><h4 id="语文"><a href="#语文" class="headerlink" title="语文"></a>语文</h4><h5 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h5><ul><li><p>巴黎圣母院</p></li><li><p>家</p></li></ul><h5 id="书面"><a href="#书面" class="headerlink" title="书面"></a>书面</h5><ul><li>语文报三个专题</li><li>推荐两本书</li></ul><h4 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h4><h5 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h5><ul><li>必修一到必修四 三角函数</li></ul><h5 id="预习"><a href="#预习" class="headerlink" title="预习"></a>预习</h5><ul><li>向量、三角恒等变换</li></ul><h5 id="书面-1"><a href="#书面-1" class="headerlink" title="书面"></a>书面</h5><ul><li>并完成相应作业（-2）</li></ul><h5 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h5><ul><li>高层小区调查表</li></ul><h4 id="英语"><a href="#英语" class="headerlink" title="英语"></a>英语</h4><ul><li>英语周报</li><li>背单词</li><li>presentation</li><li>字帖</li></ul><h4 id="物理"><a href="#物理" class="headerlink" title="物理"></a>物理</h4><ul><li>黄金假日</li><li>学科论文</li><li>科技制作</li></ul><h4 id="化学"><a href="#化学" class="headerlink" title="化学"></a>化学</h4><ul><li>赢在假期</li><li>梳理教材</li></ul><h4 id="生物"><a href="#生物" class="headerlink" title="生物"></a>生物</h4><ul><li>假期百分百 1~9</li></ul><h4 id="地理"><a href="#地理" class="headerlink" title="地理"></a>地理</h4><ul><li>填充图册 15-25,61-77,81-84</li></ul><h4 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h4><ul><li>假期百分百</li></ul><h4 id="政治"><a href="#政治" class="headerlink" title="政治"></a>政治</h4><ul><li>观看新闻类节目并作时政评析（4篇）</li></ul><h3 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h3><blockquote><p>2021年寒假：2021-2-1到2021-2-27，共27天。</p></blockquote><p>见 Microsoft To-do &amp; 番茄 Todo。</p><h4 id="作息"><a href="#作息" class="headerlink" title="作息"></a>作息</h4><table><thead><tr><th>时间</th><th>内容</th></tr></thead><tbody><tr><td>0645</td><td>起床洗漱</td></tr><tr><td>0700</td><td>跑步</td></tr><tr><td>0730</td><td>背单词</td></tr><tr><td>0800</td><td>早餐</td></tr><tr><td>0830</td><td>作业（25+5, 3x）</td></tr><tr><td>1000</td><td>休息（运动等）</td></tr><tr><td>1030</td><td>作业（25+5, 3x）</td></tr><tr><td>1200</td><td>午餐</td></tr><tr><td>1230</td><td>午休</td></tr><tr><td>1400</td><td>阅读</td></tr><tr><td>1440</td><td>休息</td></tr><tr><td>1450</td><td>阅读</td></tr><tr><td>1530</td><td>休息</td></tr><tr><td></td><td>自由安排</td></tr><tr><td>1800</td><td>晚餐</td></tr><tr><td>1900</td><td>晚自习（2.1~2.5,2.21~2.25）</td></tr><tr><td>2130</td><td>洗漱</td></tr><tr><td>2240</td><td>就寝</td></tr></tbody></table><blockquote><p> P.S. 学校作业完成后可在作业时间安排复习。</p></blockquote><h4 id="时间计划"><a href="#时间计划" class="headerlink" title="时间计划"></a>时间计划</h4><blockquote><p>标准时间为25min，即一个标准番茄钟。</p></blockquote><table><thead><tr><th>项目</th><th>时间</th><th>数量</th></tr></thead><tbody><tr><td>语文报</td><td>2x2</td><td>1/3</td></tr><tr><td>英语周报</td><td>1x2</td><td>1/6</td></tr><tr><td>数学</td><td>1x1</td><td>1/16</td></tr><tr><td>英语字帖</td><td>1x1</td><td>3/37</td></tr><tr><td>物理 黄金假日</td><td>1x1</td><td>1/11</td></tr><tr><td>生物</td><td>1x1</td><td>1/9</td></tr><tr><td>化学</td><td>1x1</td><td>1/14</td></tr><tr><td>地理</td><td>1x1</td><td>10/30</td></tr><tr><td>政治</td><td>1x2</td><td>1/4</td></tr><tr><td>历史</td><td>1x1</td><td>5/14</td></tr></tbody></table><blockquote><p>P.S. 根据时间计划安排。</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 计划 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>题解-7940(OpenJudge)</title>
+      <link href="2020/12/26/openjudge-7940/"/>
+      <url>2020/12/26/openjudge-7940/</url>
+      
+        <content type="html"><![CDATA[<p>也是一次AC！（虽然有一次格式错误但我相信你们不会在意的对吧）</p><h2 id="题目传送门"><a href="#题目传送门" class="headerlink" title="题目传送门"></a>题目传送门</h2><p><a href="http://noi.openjudge.cn/ch0111/01">http://noi.openjudge.cn/ch0111/01</a></p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><ul><li>特判 如大于所有数据或小于所有数据</li><li>其他 用二分法搜索最接近数据，再比较距离，然后输出</li></ul><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/*http://noi.openjudge.cn/ch0111/01*/</span><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h></span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token comment">// struct record&#123;本来想用结构体写功能，后来放弃了</span><span class="token comment">// long long arrn;</span><span class="token comment">// long long arrl;</span><span class="token comment">// long long arrr;</span><span class="token comment">// &#125;;</span><span class="token keyword">long</span> <span class="token keyword">long</span> <span class="token function">sch</span><span class="token punctuation">(</span><span class="token keyword">long</span> <span class="token keyword">long</span> <span class="token operator">*</span>arr<span class="token punctuation">,</span><span class="token keyword">long</span> <span class="token keyword">long</span> lim<span class="token punctuation">,</span><span class="token keyword">int</span> l<span class="token punctuation">,</span><span class="token keyword">int</span> r<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">int</span> mid<span class="token operator">=</span><span class="token punctuation">(</span>l<span class="token operator">+</span>r<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">abs</span><span class="token punctuation">(</span>l<span class="token operator">-</span>r<span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">abs</span><span class="token punctuation">(</span>lim<span class="token operator">-</span>arr<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">></span><span class="token function">abs</span><span class="token punctuation">(</span>lim<span class="token operator">-</span>arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token keyword">return</span> arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">else</span> <span class="token keyword">return</span> arr<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token keyword">if</span><span class="token punctuation">(</span>lim<span class="token operator">></span>arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token keyword">return</span> arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">if</span><span class="token punctuation">(</span>lim<span class="token operator">&lt;</span>arr<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token keyword">return</span> arr<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">if</span><span class="token punctuation">(</span>lim<span class="token operator">==</span>arr<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token keyword">return</span> arr<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">if</span><span class="token punctuation">(</span>lim<span class="token operator">></span>arr<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token function">sch</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span>lim<span class="token punctuation">,</span>mid<span class="token punctuation">,</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">if</span><span class="token punctuation">(</span>lim<span class="token operator">&lt;</span>arr<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token function">sch</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span>lim<span class="token punctuation">,</span>l<span class="token punctuation">,</span>mid<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token comment">//freopen("7940.in","r",stdin);</span><span class="token keyword">int</span> n<span class="token punctuation">;</span>cin<span class="token operator">>></span>n<span class="token punctuation">;</span><span class="token keyword">long</span> <span class="token keyword">long</span> a<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>cin<span class="token operator">>></span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token function">sort</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>a<span class="token operator">+</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//防止测试点数据乱序</span><span class="token keyword">int</span> m<span class="token punctuation">;</span>cin<span class="token operator">>></span>m<span class="token punctuation">;</span><span class="token keyword">long</span> <span class="token keyword">long</span> num<span class="token punctuation">[</span>m<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>m<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>cin<span class="token operator">>></span>num<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>cout<span class="token operator">&lt;&lt;</span><span class="token function">sch</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>num<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> oi </tag>
+            
+            <tag> openjudge </tag>
+            
+            <tag> C++ </tag>
+            
+            <tag> 题解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>题解-P4414</title>
+      <link href="2020/10/24/tijie-p4414/"/>
+      <url>2020/10/24/tijie-p4414/</url>
+      
+        <content type="html"><![CDATA[<p>纪念史上首次<a href="https://www.luogu.com.cn/record/40400035">一次性AC</a>。</p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>输入三个数到数组中并排序；<br>输入三个字母 <code>A</code> <code>B</code> <code>C</code> ；<br>通过 <code>switch</code> 语句进行分类讨论输出；</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h></span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">int</span> n<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span><span class="token number">2</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>cin<span class="token operator">>></span>n<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token function">sort</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span>n<span class="token operator">+</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//cout&lt;&lt;n[0]&lt;&lt;n[1]&lt;&lt;n[2];（debug测试用）</span><span class="token keyword">char</span> a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">;</span>cin<span class="token operator">>></span>a<span class="token operator">>></span>b<span class="token operator">>></span>c<span class="token punctuation">;</span><span class="token comment">//scanf("%c%c%c",&amp;a,&amp;b,&amp;c);（用scanf我发现读入不了c所以改用cin）</span><span class="token keyword">switch</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">case</span> <span class="token string">'A'</span><span class="token operator">:</span>cout<span class="token operator">&lt;&lt;</span>n<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token string">" "</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token keyword">case</span> <span class="token string">'B'</span><span class="token operator">:</span>cout<span class="token operator">&lt;&lt;</span>n<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token string">" "</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token keyword">case</span> <span class="token string">'C'</span><span class="token operator">:</span>cout<span class="token operator">&lt;&lt;</span>n<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token string">" "</span><span class="token punctuation">;</span><span class="token keyword">default</span><span class="token operator">:</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token keyword">switch</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">case</span> <span class="token string">'A'</span><span class="token operator">:</span>cout<span class="token operator">&lt;&lt;</span>n<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token string">" "</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token keyword">case</span> <span class="token string">'B'</span><span class="token operator">:</span>cout<span class="token operator">&lt;&lt;</span>n<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token string">" "</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token keyword">case</span> <span class="token string">'C'</span><span class="token operator">:</span>cout<span class="token operator">&lt;&lt;</span>n<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token string">" "</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token keyword">default</span><span class="token operator">:</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token keyword">switch</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">case</span> <span class="token string">'A'</span><span class="token operator">:</span>cout<span class="token operator">&lt;&lt;</span>n<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token keyword">case</span> <span class="token string">'B'</span><span class="token operator">:</span>cout<span class="token operator">&lt;&lt;</span>n<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token keyword">case</span> <span class="token string">'C'</span><span class="token operator">:</span>cout<span class="token operator">&lt;&lt;</span>n<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token keyword">default</span><span class="token operator">:</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span></code></pre><h2 id="PS"><a href="#PS" class="headerlink" title="PS"></a>PS</h2><p>祝各位1024节快乐！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> oi </tag>
+            
+            <tag> C++ </tag>
+            
+            <tag> 题解 </tag>
+            
+            <tag> 洛谷 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>题解 - P1085</title>
+      <link href="2020/10/03/tijie-p1085/"/>
+      <url>2020/10/03/tijie-p1085/</url>
+      
+        <content type="html"><![CDATA[<p>最近开始搞OI了，在 luogu.com.cn 刷题</p><pre class="language-python" data-language="python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">0</span>b <span class="token operator">=</span> <span class="token number">0</span>maxtime <span class="token operator">=</span> <span class="token number">0</span>answer <span class="token operator">=</span> <span class="token number">0</span>  <span class="token comment">#初始化输出answer为0</span><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token comment">#重复7次</span>    a<span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">#读入a和b</span>    a <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>    b <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>    <span class="token keyword">if</span> a<span class="token operator">+</span>b <span class="token operator">></span> maxtime <span class="token keyword">and</span> a<span class="token operator">+</span>b <span class="token operator">></span> <span class="token number">8</span><span class="token punctuation">:</span>   <span class="token comment">#判断ab之和是否大于当前最大时间且大于8h（用>而不用>=是因为要求输出更靠前的一天）</span>        answer <span class="token operator">=</span> i<span class="token operator">+</span><span class="token number">1</span>        maxtime <span class="token operator">=</span> a<span class="token operator">+</span>b<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>answer<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">#输出answer</span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> oi </tag>
+            
+            <tag> 题解 </tag>
+            
+            <tag> 洛谷 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>题解 - P5716</title>
+      <link href="2020/10/02/tijie-p5716/"/>
+      <url>2020/10/02/tijie-p5716/</url>
+      
+        <content type="html"><![CDATA[<p>原题链接：<a href="https://www.luogu.com.cn/problem/P5716">https://www.luogu.com.cn/problem/P5716</a></p><pre class="language-python" data-language="python"><code class="language-python">yr<span class="token punctuation">,</span> mon <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">#输入年份和月份</span>yr <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>yr<span class="token punctuation">)</span>mon <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>mon<span class="token punctuation">)</span>runvar <span class="token operator">=</span> <span class="token boolean">False</span><span class="token comment">#该变量的值用来判定是否为闰年（若闰年则为True，非闰年则为False）</span>days <span class="token operator">=</span> <span class="token number">0</span><span class="token keyword">def</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token comment">#定义用于判断闰年的函数</span>    <span class="token keyword">global</span> runvar    yr1 <span class="token operator">=</span> yr <span class="token operator">%</span> <span class="token number">100</span>    <span class="token comment">#判断年份是否能被100整除</span>    <span class="token keyword">if</span> yr1 <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">:</span>        <span class="token keyword">if</span> yr <span class="token operator">%</span> <span class="token number">4</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span><span class="token comment">#判断年份是否能被4整除</span>            runvar <span class="token operator">=</span> <span class="token boolean">True</span>        <span class="token keyword">else</span><span class="token punctuation">:</span>            runvar <span class="token operator">=</span> <span class="token boolean">False</span>        <span class="token keyword">elif</span> yr1 <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>        <span class="token keyword">if</span> yr <span class="token operator">%</span> <span class="token number">400</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">:</span>            runvar <span class="token operator">=</span> <span class="token boolean">False</span>        <span class="token keyword">else</span><span class="token punctuation">:</span>            runvar <span class="token operator">=</span> <span class="token boolean">True</span><span class="token keyword">def</span> <span class="token function">day</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token comment">#定义用于判断天数的函数</span>    <span class="token keyword">global</span> days    <span class="token keyword">if</span> mon <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">:</span><span class="token comment">#2月单独作为一种情况</span>        <span class="token keyword">if</span> runvar <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">:</span>            days <span class="token operator">=</span> <span class="token number">29</span>        <span class="token keyword">else</span><span class="token punctuation">:</span>            days <span class="token operator">=</span> <span class="token number">28</span>    <span class="token keyword">elif</span> mon <span class="token operator">==</span> <span class="token number">1</span> <span class="token keyword">or</span> mon <span class="token operator">==</span> <span class="token number">3</span> <span class="token keyword">or</span> mon <span class="token operator">==</span> <span class="token number">5</span> <span class="token keyword">or</span> mon <span class="token operator">==</span> <span class="token number">7</span> <span class="token keyword">or</span> mon <span class="token operator">==</span> <span class="token number">8</span> <span class="token keyword">or</span> mon <span class="token operator">==</span> <span class="token number">10</span> <span class="token keyword">or</span> mon <span class="token operator">==</span> <span class="token number">12</span><span class="token punctuation">:</span>        days <span class="token operator">=</span> <span class="token number">31</span>    <span class="token keyword">else</span><span class="token punctuation">:</span>        days <span class="token operator">=</span> <span class="token number">30</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>day<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>days<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">#输出</span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> oi </tag>
+            
+            <tag> 题解 </tag>
+            
+            <tag> 洛谷 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用树莓派搭建无线打印机</title>
+      <link href="2020/08/17/raspberry-pi-cups-wireless-printer/"/>
+      <url>2020/08/17/raspberry-pi-cups-wireless-printer/</url>
+      
+        <content type="html"><![CDATA[<h1 id="使用树莓派搭建无线打印机"><a href="#使用树莓派搭建无线打印机" class="headerlink" title="使用树莓派搭建无线打印机"></a>使用树莓派搭建无线打印机</h1><h2 id="所需器材"><a href="#所需器材" class="headerlink" title="所需器材"></a>所需器材</h2><ul><li><input checked="" disabled="" type="checkbox"> 树莓派</li><li><input checked="" disabled="" type="checkbox"> 打印机</li><li><input checked="" disabled="" type="checkbox"> 数据线</li><li><input disabled="" type="checkbox"> 网线（可选）</li><li><input checked="" disabled="" type="checkbox"> 网络连接(LAN/WLAN)</li></ul><h2 id="CUPS介绍"><a href="#CUPS介绍" class="headerlink" title="CUPS介绍"></a>CUPS介绍</h2><p><a href="https://cups.org">CUPS</a>(Common UNIX Printing System，通用Unix打印系统)是Fedora Core3中支持的打印系统，它主要是使用IPP(Internet Printing Protocol)来管理打印工作及队列，但同时也支持”LPD”(Line Printer Daemon)和”SMB”(Server Message Block)以及AppSocket等通信协议。</p><p>Unix/Linux下打印总是有许多限制。但若安装了CUPS（Common UNIX Printing System），你将会得到一个完整的打印解决方案。</p><p>在UNIX/Linux 下打印的方法很久以来都是用lpd（命令行方式的打印守护程序），它不支持IPP（Internet打印协议），而且也不支持同时使用多个打印设备。</p><p>CUPS给Unix/Linux用户提供了一种可靠有效的方法来管理打印。它支持IPP，并提供了LPD，SMB（服务消息块，如配置为微软WINDOWS的打印机）、JetDirect等接口。CUPS还可以浏览网络打印机。</p><p><em>(以上内容来自百度百科)</em></p><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><h3 id="静态IP设置"><a href="#静态IP设置" class="headerlink" title="静态IP设置"></a>静态IP设置</h3><p>编辑<code>/etc/dhcpcd.conf</code>，在文件末尾添加如下内容：</p><pre class="language-conf" data-language="conf"><code class="language-conf">interface eth0static ip_address&#x3D;192.168.0.10&#x2F;24static routers&#x3D;192.168.0.1static domain_name_servers&#x3D;192.168.0.1interface wlan0static ip_address&#x3D;192.168.0.200&#x2F;24static routers&#x3D;192.168.0.1static domain_name_servers&#x3D;192.168.0.1</code></pre><p>其中，<code>eth0</code>是有线的配置，<code>wlan0</code>是无线配置</p><p> <code>ip_address</code>就是静态IP，后面要接<code>/24</code>(e.g 192.168.1.12/24)</p><p> <code>routers</code>是网关(e.g. 192.168.1.1)</p><p> <code>static domain_name_servers</code>是DNS(e.g. 192.168.1.1)</p><p> 然后再在命令行执行：</p><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">reboot</span></code></pre><h3 id="安装CUPS"><a href="#安装CUPS" class="headerlink" title="安装CUPS"></a>安装CUPS</h3><p>在终端中执行：</p><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> cups</code></pre><p>或者</p><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> cups</code></pre><p>然后静待安装。</p><h3 id="配置CUPS"><a href="#配置CUPS" class="headerlink" title="配置CUPS"></a>配置CUPS</h3><h4 id="添加pi到管理员账户"><a href="#添加pi到管理员账户" class="headerlink" title="添加pi到管理员账户"></a>添加pi到管理员账户</h4><p>继续执行：</p><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">usermod</span> -a -G lpadmin pi</code></pre><p>这一步的作用是令<code>pi</code>用户（或者其他用户，这里以<code>pi</code>为例）成为管理员，否则我们无法通过该用户配置打印机。</p><p>现在，将打印机的USB线缆插入到树莓派的USB端口中。</p><h4 id="登陆CUPS后台"><a href="#登陆CUPS后台" class="headerlink" title="登陆CUPS后台"></a>登陆CUPS后台</h4><p>用浏览器访问<code>刚才设置的静态IP地址:631/admin</code>。</p><p>单击<code>Add Printer</code>，网页会要求你输入刚才配置的管理员账户的用户名和密码。</p><p><img src="https://leostudiooo.github.io/img/image-20200817123416365.png" alt="image-20200817123416365"></p><h4 id="配置打印机"><a href="#配置打印机" class="headerlink" title="配置打印机"></a>配置打印机</h4><h5 id="选择打印机"><a href="#选择打印机" class="headerlink" title="选择打印机"></a>选择打印机</h5><p>如果没有问题，你现在应该看到这样一个界面：</p><p><img src="https://leostudiooo.github.io/img/image-20200817123822823.png" alt="image-20200817123822823"></p><p>在<code>Local Printers</code>找到你的打印机并选中（我的就是那个<code>Canon MP280 Series</code>），如果没有请选择类似这样<code>usb://Canon/MP280%20series?serial=A0F451&amp;interface=1</code>的选项。</p><p><img src="https://leostudiooo.github.io/img/image-20200817124230606.png" alt="image-20200817124230606"></p><p>如果你的是网络打印机，请在<code>Network Printers</code>中选中相应协议，或添加已扫描到的打印机。</p><p>然后单击<code>Continue</code>。</p><h5 id="添加描述并共享打印机"><a href="#添加描述并共享打印机" class="headerlink" title="添加描述并共享打印机"></a>添加描述并共享打印机</h5><p>描述随便写（默认就行）。但一定要尽量短。</p><p><code>Location</code>随便填就行，如<code>Pi</code>, <code>Lab</code>等等。</p><p>记住勾选<code>Share This Printer</code>！</p><p><img src="https://leostudiooo.github.io/img/image-20200817124634571.png" alt="image-20200817124634571"></p><h5 id="选择驱动"><a href="#选择驱动" class="headerlink" title="选择驱动"></a>选择驱动</h5><p>一般选最靠上的那个就行了。看清楚驱动型号！</p><p><img src="https://leostudiooo.github.io/img/image-20200817124956133.png" alt="image-20200817124956133"></p><p>至此，打印机的配置就完成了。[]~(￣▽￣)~</p><p>你可以在<code>树莓派IP:631</code>管理你的打印机。</p><h3 id="配置电脑端"><a href="#配置电脑端" class="headerlink" title="配置电脑端"></a>配置电脑端</h3><h4 id="Windows-10"><a href="#Windows-10" class="headerlink" title="Windows 10"></a>Windows 10</h4><p>打开<code>设置-设备-打印机和扫描仪</code>。点击<code>添加打印机和扫描仪</code>。</p><p>此时，电脑会自动开始搜索打印机设备。</p><p>一般来说，电脑可以自动搜索到你的打印机，且命名格式为<code>你的打印机名称@树莓派IP</code>。</p><p>如果没有搜索到，请点击<code>我需要的打印机不在列表中</code>，并参照Windows 7及以下的方法操作。</p><h4 id="Windows-7及以下"><a href="#Windows-7及以下" class="headerlink" title="Windows 7及以下"></a>Windows 7及以下</h4><p>打开<code>控制面板-设备和打印机-添加打印机</code>。</p><p>点击<code>按名称选择共享打印机</code>。</p><p>打开刚才的网页，复制地址（如<a href="https://192.168.1.12:631/printers/Canon_MP280_series），粘贴到文本框中。">https://192.168.1.12:631/printers/Canon_MP280_series），粘贴到文本框中。</a></p><p>选择合适的驱动。</p><p>然后点击完成（推荐打印一张测试页）。</p><h4 id="macOS"><a href="#macOS" class="headerlink" title="macOS"></a>macOS</h4><p>见<a href="https://support.apple.com/zh-cn/guide/mac-help/mh14004/10.15/mac/10.15">Apple支持文档</a><code>按 IP 地址添加网络打印机</code>部分，填入地址（如<a href="https://192.168.1.12:631/printers/Canon_MP280_series）。">https://192.168.1.12:631/printers/Canon_MP280_series）。</a></p><h4 id="GNU-Linux"><a href="#GNU-Linux" class="headerlink" title="GNU/Linux"></a>GNU/Linux</h4><p>这篇教程就是针对Linux的啊喂。</p><p>按照<a href="###安装CUPS">上面的操作步骤</a>添加打印机（协议为http或者https）。</p><p>至此，本教程圆满结束！(完结撒花.jpg)</p><p>哔哩哔哩：<a href="https://space.bilibili.com/244815810">https://space.bilibili.com/244815810</a></p><p>GitHub：<a href="https://github.com/leostudiooo">https://github.com/leostudiooo</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> how </tag>
+            
+            <tag> raspberrypi </tag>
+            
+            <tag> printer </tag>
+            
+            <tag> cups </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友情链接</title>
+      <link href="2020/08/05/fl/"/>
+      <url>2020/08/05/fl/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://luotr.github.io/">LRain 洛雨 #1</a></p><p><a href="https://luotianyi.me/">LRain 洛雨 #2</a></p><p><a href="https://www.drblack-system.com/">Dr_Black</a></p><p><a href="https://skipm4.com/">Skip_M4</a></p><p><a href="http://hlstudio.haku.ren">和乐工作室</a></p><p><a href="https://f-y.me">Ted Fu(@icecream1507)</a></p><p><a href="https://yunyoujun.cn">云游君</a></p><p><a href="https://luoyuer.com/">Rainy</a></p><hr><p>后续不定期更新</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> link </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何制作开源Surface Dial</title>
+      <link href="2020/07/04/how-to-make-an-open-source-dial/"/>
+      <url>2020/07/04/how-to-make-an-open-source-dial/</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>本项目由我和<a href="https://space.bilibili.com/8555835">B站UP主 EddyWang</a>共同维护。<a href="https://github.com/Eddddddddy/Surface_Dial_Arduino">GitHub仓库</a>中有此项目源文件，欢迎访问下载。</p><p>目前，该项目有两个版本(Pro&amp;Lite)，后期会进行整合。</p><h3 id="如何制作？"><a href="#如何制作？" class="headerlink" title="如何制作？"></a>如何制作？</h3><p> <a href="https://www.bilibili.com/video/BV17K411W78w"><img src="https://leostudiooo.github.io/img/bili.png" alt="视频教程(Pro版，由Eddy制作)"></a></p><p>Lite版的视频暂时还没时间做。</p><h4 id="1-将项目clone到本地"><a href="#1-将项目clone到本地" class="headerlink" title="1. 将项目clone到本地"></a>1. 将项目clone到本地</h4><p>如图，点击clone下的Download zip（当然如果你有一定的GitHub基础可以直接clone到本地）</p><img src="leostudiooo.github.io/img/image-20200621184306016.png" alt="image-20200621184306016"  /><p>下载完成后解压。</p><p>文件目录结构如下：</p><pre class="language-none"><code class="language-none">Surface_Dial_Arduino│  .gitignore│  bom.xlsx│  LICENSE│  README.md│├─lib &#x2F;&#x2F;所需库│  └─TrinketHidCombo│├─PCB_with_gerber &#x2F;&#x2F;PCB和打板文件│  │  Gerber_2in1.zip &#x2F;&#x2F;二合一打板文件│  │  README.md│  ││  ├─Lite│  │      BOM_Project Dial Lite.csv│  │      Gerber_Project Dial Lite.zip &#x2F;&#x2F;Lite打板文件│  │      Project Dial Lite.json│  ││  └─Pro│      │  Project Dial attiny v2 github.zip &#x2F;&#x2F;Pro打板文件│      │  Project Dial MLB attiny.PcbDoc│      │  Project Dial MLB Gerber.zip│      │  Project Dial MLB LCEDA.json│├─src &#x2F;&#x2F;代码目录│  ├─attiny_fuse_2│  │      attiny_fuse_2.ino &#x2F;&#x2F;熔丝恢复器│  ││  └─Surface_Dial_attiny &#x2F;&#x2F;主体代码目录│      │  Surface_Dial_attiny.ino│      │  Surface_Dial_attiny_Lite.ino│      ││      └─micronucleus-1.11│├─stl model &#x2F;&#x2F;3D打印文件目录│      surface dial t v2.3.STL│      surface dial v2.3.STL│└─tools    └─avrdudess_20191012 &#x2F;&#x2F;工具</code></pre><h4 id="2-购买元器件"><a href="#2-购买元器件" class="headerlink" title="2. 购买元器件"></a>2. 购买元器件</h4><table><thead><tr><th>元器件名</th><th>数量</th></tr></thead><tbody><tr><td>attiny85-20su soic8</td><td>1</td></tr><tr><td>ec11e1834403</td><td>1</td></tr><tr><td>usb type-c 母座 16p 沉板1.6mm</td><td>1</td></tr><tr><td>0603 自恢复保险丝 0.5A 6v</td><td>1</td></tr><tr><td>s0805 J3Y 三极管 SOT-23 <em>可选</em></td><td>1</td></tr><tr><td>0603 1.5k电阻</td><td>1</td></tr><tr><td>0603 4.7k电阻</td><td>3</td></tr><tr><td>0603 5.1k电阻</td><td>2</td></tr><tr><td>0603 66.5欧电阻 <em>可替换为22欧</em></td><td>2</td></tr><tr><td>0603 0.1uf 电容</td><td>1</td></tr><tr><td>0603 4.7uf 电容</td><td>1</td></tr><tr><td>1206 3.6v 齐纳二极管</td><td>2</td></tr><tr><td>M2*6 平头螺丝</td><td>3</td></tr><tr><td>M4*8 圆头螺丝</td><td>3</td></tr><tr><td>0.5mm 硅胶防滑垫</td><td>5*5cm</td></tr><tr><td>48mm 铝合金旋钮帽</td><td>1</td></tr><tr><td>iPhone 7 taptic engine 线性马达 <em>可选</em></td><td>1</td></tr></tbody></table><h4 id="3-打板"><a href="#3-打板" class="headerlink" title="3. 打板"></a>3. 打板</h4><ul><li>用<code>Gerber_2in1.zip</code><strong>（强烈推荐）</strong><code>Gerber_Project Dial Lite.zip</code>或<code>Project Dial attiny v2 github.zip</code>打板。</li><li>服务商可选择<a href="sz-jlc.com">嘉立创</a>（因为他家有5元样板服务，5张还包邮）</li><li>尺寸：<code>4x4</code>或<code>3.95x4.05</code>cm</li><li>过孔盖油</li><li>其他都选默认</li><li>PS 记得备注两条内容：1. 此项目是开源项目，并非拆单；2. 请勿做半孔处理。</li></ul><h4 id="4-3D打印"><a href="#4-3D打印" class="headerlink" title="4. 3D打印"></a>4. 3D打印</h4><ul><li>把<code>surface dial t v2.3.STL</code>和<code>surface dial v2.3.STL</code>都打出来。</li><li><strong><em>记得一定要把它翻平再打印！</em></strong></li><li>你可以<del>白嫖</del>使用我们学校的3D打印机进行打印。</li></ul><h4 id="5-手工制作"><a href="#5-手工制作" class="headerlink" title="5. 手工制作"></a>5. 手工制作</h4><ul><li>请耐心等待视频教程。</li><li>可以在<a href="github.com/leostudiooo">GitHub</a>和<a href="space.bilibili.com/244815810">哔哩哔哩</a>上关注我</li><li>个人网站：<a href="leostudiooo.github.io">Github Pages</a></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> how </tag>
+            
+            <tag> surface dial </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>主题【云】部署成功！</title>
+      <link href="2020/06/26/yun/"/>
+      <url>2020/06/26/yun/</url>
+      
+        <content type="html"><![CDATA[<p>好像还有点好看。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> celebrate </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>9,000-Man-made-Things-Flying-in-Space</title>
+      <link href="2020/05/04/9-000-Man-made-Things-Flying-in-Space/"/>
+      <url>2020/05/04/9-000-Man-made-Things-Flying-in-Space/</url>
+      
+        <content type="html"><![CDATA[<p>Including:</p><table><thead><tr><th align="center">30% of them</th><th align="center">Satellites</th></tr></thead><tbody><tr><td align="center">10% of them</td><td align="center">Spaceships</td></tr><tr><td align="center">The rest of them (60%)</td><td align="center">Space rubbish</td></tr></tbody></table><p>Scientists say that there are 9,000 man-made things flying in space. About 30% of these are satellites, 10% are spaceships and the rest are space rubbish.</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> none </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>热烈庆祝Hexo部署成功！</title>
+      <link href="2020/05/03/celebrate/"/>
+      <url>2020/05/03/celebrate/</url>
+      
+        <content type="html"><![CDATA[<p>这是我的第一个POST。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
