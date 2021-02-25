@@ -269,7 +269,7 @@ js:
   - /js/utils.js
   - /js/hexo-theme-yun.js  
   - https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn/js/jquery-2.2.4.min.js
-  - /js/pplayer.minjs
+  - /js/pplayer.js
   # - /js/run-tplayer.js
 
 # custom your assets in head
@@ -293,8 +293,6 @@ cdn:
       iconfont: //at.alicdn.com/t/font_1140697_ed8vp4atwoj.js
     defer:
 
-# cdn for third-party library (alternative include)
-vendors:
 
 # UI
 banner:
