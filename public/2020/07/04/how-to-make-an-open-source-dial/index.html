@@ -1,0 +1,222 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="Lingfeng Li"><meta name="copyright" content="Lingfeng Li"><meta name="generator" content="Hexo 5.2.0"><meta name="theme" content="hexo-theme-yun"><title>如何制作开源Surface Dial | LeoStudio</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&amp;family=Source+Code+Pro&amp;famiy=Noto+Sans+SC&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.24/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_ed8vp4atwoj.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer></script><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><link id="light-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism.css" media="(prefers-color-scheme: light)"><link id="dark-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-tomorrow.css" media="(prefers-color-scheme: dark)"><link rel="shortcut icon" type="image/svg+xml" href="/favicon.ico"><link rel="mask-icon" href="/favicon.ico" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"leostudiooo.github.io","root":"/","title":"LeoStudio","version":"1.5.1","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn?c=d&c=e&c=i&c=j&c=l","hitokoto":true},"local_search":{"path":"/search.xml"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194","3, 28, 95","0, 8, 55","102, 204, 255","200, 192, 85"]}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="/css/pplayer.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><script src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn/js/jquery-2.2.4.min.js"></script><script src="/js/pplayer.js"></script><link rel="alternate" href="/atom.xml" title="LeoStudio" type="application/atom+xml"><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><meta name="description" content="介绍本项目由我和B站UP主 EddyWang共同维护。GitHub仓库中有此项目源文件，欢迎访问下载。 目前，该项目有两个版本(Pro&amp;Lite)，后期会进行整合。 如何制作？  Lite版的视频暂时还没时间做。 1. 将项目clone到本地如图，点击clone下的Download zip（当然如果你有一定的GitHub基础可以直接clone到本地）   下载完成后解压。 文件目录结构如下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何制作开源Surface Dial">
+<meta property="og:url" content="https://leostudiooo.github.io/2020/07/04/how-to-make-an-open-source-dial/index.html">
+<meta property="og:site_name" content="LeoStudio">
+<meta property="og:description" content="介绍本项目由我和B站UP主 EddyWang共同维护。GitHub仓库中有此项目源文件，欢迎访问下载。 目前，该项目有两个版本(Pro&amp;Lite)，后期会进行整合。 如何制作？  Lite版的视频暂时还没时间做。 1. 将项目clone到本地如图，点击clone下的Download zip（当然如果你有一定的GitHub基础可以直接clone到本地）   下载完成后解压。 文件目录结构如下">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://leostudiooo.github.io/img/bili.png">
+<meta property="og:image" content="https://leostudiooo.github.io/2020/07/04/how-to-make-an-open-source-dial/leostudiooo.github.io/img/image-20200621184306016.png">
+<meta property="article:published_time" content="2020-07-04T04:11:42.000Z">
+<meta property="article:modified_time" content="2020-12-26T04:00:40.283Z">
+<meta property="article:author" content="Lingfeng Li">
+<meta property="article:tag" content="how">
+<meta property="article:tag" content="surface dial">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://leostudiooo.github.io/img/bili.png"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info mickey-mouse"><a class="site-author-avatar" href="/about/" title="Lingfeng Li"><img width="96" loading="lazy" src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/avatar.jpg" alt="Lingfeng Li"></a><div class="site-author-name"><a href="/about/">Lingfeng Li</a></div><span class="site-name">LeoStudio</span><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">15</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">18</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://wpa.qq.com/msgrd?v=3&amp;uin=1806941781&amp;site=qq&amp;menu=yes" title="QQ" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/leostudiooo" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/artist?id=34438980" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/lingling0408/" title="知乎" target="_blank" style="color:#0084FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhihu-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/244815810" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://twitter.com/Leo_050408" title="Twitter" target="_blank" style="color:#1da1f2"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-twitter-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:lilingfeng0408@outlook.com" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://travellings.now.sh/" title="Travelling" target="_blank" style="color:var(--hty-text-color)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-send-plane-2-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/2020/08/05/fl/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a><a class="links-item hty-icon-button" href="/time/" title="时钟" style="color:#66CCFF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-time-line"></use></svg></a><a class="links-item hty-icon-button" href="/pomodoro/" title="番茄钟" style="color:#00A2FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">如何制作？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%B0%86%E9%A1%B9%E7%9B%AEclone%E5%88%B0%E6%9C%AC%E5%9C%B0"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 将项目clone到本地</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E8%B4%AD%E4%B9%B0%E5%85%83%E5%99%A8%E4%BB%B6"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. 购买元器件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E6%89%93%E6%9D%BF"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. 打板</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3D%E6%89%93%E5%8D%B0"><span class="toc-number">1.1.4.</span> <span class="toc-text">4. 3D打印</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C"><span class="toc-number">1.1.5.</span> <span class="toc-text">5. 手工制作</span></a></li></ol></li></ol></li></ol></div></div></div><div class="tag-cloud"><div class="tag-cloud-tags"><a href="/tags/C/" style="font-size: 18px; color: #668eb3">C++</a> <a href="/tags/Python/" style="font-size: 18px; color: #668eb3">Python</a> <a href="/tags/celebrate/" style="font-size: 12px; color: #999">celebrate</a> <a href="/tags/cups/" style="font-size: 12px; color: #999">cups</a> <a href="/tags/how/" style="font-size: 18px; color: #668eb3">how</a> <a href="/tags/link/" style="font-size: 12px; color: #999">link</a> <a href="/tags/none/" style="font-size: 12px; color: #999">none</a> <a href="/tags/oi/" style="font-size: 30px; color: #0078e7">oi</a> <a href="/tags/openjudge/" style="font-size: 12px; color: #999">openjudge</a> <a href="/tags/printer/" style="font-size: 12px; color: #999">printer</a> <a href="/tags/raspberrypi/" style="font-size: 12px; color: #999">raspberrypi</a> <a href="/tags/surface-dial/" style="font-size: 12px; color: #999">surface dial</a> <a href="/tags/%E5%B0%8F%E8%AE%BA%E6%96%87/" style="font-size: 24px; color: #3383cd">小论文</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 12px; color: #999">教程</a> <a href="/tags/%E6%B4%9B%E8%B0%B7/" style="font-size: 24px; color: #3383cd">洛谷</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 24px; color: #3383cd">物理</a> <a href="/tags/%E8%AE%A1%E5%88%92/" style="font-size: 12px; color: #999">计划</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 30px; color: #0078e7">题解</a></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://leostudiooo.github.io/2020/07/04/how-to-make-an-open-source-dial/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Lingfeng Li"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="LeoStudio"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">如何制作开源Surface Dial</h1><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2020-07-04 12:11:42" itemprop="dateCreated datePublished" datetime="2020-07-04T12:11:42+08:00">2020-07-04</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="修改时间：2020-12-26 12:00:40" itemprop="dateModified" datetime="2020-12-26T12:00:40+08:00">2020-12-26</time></div><div class="post-classify"><span class="post-tag"><a class="tag" href="/tags/how/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">how</span></a><a class="tag" href="/tags/surface-dial/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">surface dial</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>本项目由我和<a target="_blank" rel="noopener" href="https://space.bilibili.com/8555835">B站UP主 EddyWang</a>共同维护。<a target="_blank" rel="noopener" href="https://github.com/Eddddddddy/Surface_Dial_Arduino">GitHub仓库</a>中有此项目源文件，欢迎访问下载。</p>
+<p>目前，该项目有两个版本(Pro&amp;Lite)，后期会进行整合。</p>
+<h3 id="如何制作？"><a href="#如何制作？" class="headerlink" title="如何制作？"></a>如何制作？</h3><p> <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17K411W78w"><img src="https://leostudiooo.github.io/img/bili.png" alt="视频教程(Pro版，由Eddy制作)"></a></p>
+<p>Lite版的视频暂时还没时间做。</p>
+<h4 id="1-将项目clone到本地"><a href="#1-将项目clone到本地" class="headerlink" title="1. 将项目clone到本地"></a>1. 将项目clone到本地</h4><p>如图，点击clone下的Download zip（当然如果你有一定的GitHub基础可以直接clone到本地）</p>
+<img src="leostudiooo.github.io/img/image-20200621184306016.png" alt="image-20200621184306016"  />
+
+<p>下载完成后解压。</p>
+<p>文件目录结构如下：</p>
+<pre class="language-none"><code class="language-none">Surface_Dial_Arduino
+│  .gitignore
+│  bom.xlsx
+│  LICENSE
+│  README.md
+│
+├─lib &#x2F;&#x2F;所需库
+│  └─TrinketHidCombo
+│
+├─PCB_with_gerber &#x2F;&#x2F;PCB和打板文件
+│  │  Gerber_2in1.zip &#x2F;&#x2F;二合一打板文件
+│  │  README.md
+│  │
+│  ├─Lite
+│  │      BOM_Project Dial Lite.csv
+│  │      Gerber_Project Dial Lite.zip &#x2F;&#x2F;Lite打板文件
+│  │      Project Dial Lite.json
+│  │
+│  └─Pro
+│      │  Project Dial attiny v2 github.zip &#x2F;&#x2F;Pro打板文件
+│      │  Project Dial MLB attiny.PcbDoc
+│      │  Project Dial MLB Gerber.zip
+│      │  Project Dial MLB LCEDA.json
+│
+├─src &#x2F;&#x2F;代码目录
+│  ├─attiny_fuse_2
+│  │      attiny_fuse_2.ino &#x2F;&#x2F;熔丝恢复器
+│  │
+│  └─Surface_Dial_attiny &#x2F;&#x2F;主体代码目录
+│      │  Surface_Dial_attiny.ino
+│      │  Surface_Dial_attiny_Lite.ino
+│      │
+│      └─micronucleus-1.11
+│
+├─stl model &#x2F;&#x2F;3D打印文件目录
+│      surface dial t v2.3.STL
+│      surface dial v2.3.STL
+│
+└─tools
+    └─avrdudess_20191012 &#x2F;&#x2F;工具</code></pre>
+
+
+
+<h4 id="2-购买元器件"><a href="#2-购买元器件" class="headerlink" title="2. 购买元器件"></a>2. 购买元器件</h4><table>
+<thead>
+<tr>
+<th>元器件名</th>
+<th>数量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>attiny85-20su soic8</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ec11e1834403</td>
+<td>1</td>
+</tr>
+<tr>
+<td>usb type-c 母座 16p 沉板1.6mm</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0603 自恢复保险丝 0.5A 6v</td>
+<td>1</td>
+</tr>
+<tr>
+<td>s0805 J3Y 三极管 SOT-23 <em>可选</em></td>
+<td>1</td>
+</tr>
+<tr>
+<td>0603 1.5k电阻</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0603 4.7k电阻</td>
+<td>3</td>
+</tr>
+<tr>
+<td>0603 5.1k电阻</td>
+<td>2</td>
+</tr>
+<tr>
+<td>0603 66.5欧电阻 <em>可替换为22欧</em></td>
+<td>2</td>
+</tr>
+<tr>
+<td>0603 0.1uf 电容</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0603 4.7uf 电容</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1206 3.6v 齐纳二极管</td>
+<td>2</td>
+</tr>
+<tr>
+<td>M2*6 平头螺丝</td>
+<td>3</td>
+</tr>
+<tr>
+<td>M4*8 圆头螺丝</td>
+<td>3</td>
+</tr>
+<tr>
+<td>0.5mm 硅胶防滑垫</td>
+<td>5*5cm</td>
+</tr>
+<tr>
+<td>48mm 铝合金旋钮帽</td>
+<td>1</td>
+</tr>
+<tr>
+<td>iPhone 7 taptic engine 线性马达 <em>可选</em></td>
+<td>1</td>
+</tr>
+</tbody></table>
+<h4 id="3-打板"><a href="#3-打板" class="headerlink" title="3. 打板"></a>3. 打板</h4><ul>
+<li>用<code>Gerber_2in1.zip</code><strong>（强烈推荐）</strong><code>Gerber_Project Dial Lite.zip</code>或<code>Project Dial attiny v2 github.zip</code>打板。</li>
+<li>服务商可选择<a href="sz-jlc.com">嘉立创</a>（因为他家有5元样板服务，5张还包邮）</li>
+<li>尺寸：<code>4x4</code>或<code>3.95x4.05</code>cm</li>
+<li>过孔盖油</li>
+<li>其他都选默认</li>
+<li>PS 记得备注两条内容：1. 此项目是开源项目，并非拆单；2. 请勿做半孔处理。</li>
+</ul>
+<h4 id="4-3D打印"><a href="#4-3D打印" class="headerlink" title="4. 3D打印"></a>4. 3D打印</h4><ul>
+<li>把<code>surface dial t v2.3.STL</code>和<code>surface dial v2.3.STL</code>都打出来。</li>
+<li><strong><em>记得一定要把它翻平再打印！</em></strong></li>
+<li>你可以<del>白嫖</del>使用我们学校的3D打印机进行打印。</li>
+</ul>
+<h4 id="5-手工制作"><a href="#5-手工制作" class="headerlink" title="5. 手工制作"></a>5. 手工制作</h4><ul>
+<li>请耐心等待视频教程。</li>
+<li>可以在<a href="github.com/leostudiooo">GitHub</a>和<a href="space.bilibili.com/244815810">哔哩哔哩</a>上关注我</li>
+<li>个人网站：<a href="leostudiooo.github.io">Github Pages</a></li>
+</ul>
+</div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">I'm so cute. Please give me money.</div><div id="qr" style="display:none;"><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/alipay-qrcode.jpg"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/alipay-qrcode.jpg" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-alipay-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/wechatpay-qrcode.jpg"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/wechatpay-qrcode.jpg" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-pay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>Lingfeng Li</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://leostudiooo.github.io/2020/07/04/how-to-make-an-open-source-dial/" title="如何制作开源Surface Dial">https://leostudiooo.github.io/2020/07/04/how-to-make-an-open-source-dial/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> 许可协议。</li></ul><script>document.addEventListener('copy', function (event) {
+  const clipboardData = event.clipboardData || window.clipboardData;
+  if (!clipboardData) { return; }
+  const text = window.getSelection().toString();
+  if (text) {
+    event.preventDefault();
+    clipboardData.setData('text/plain', text + '\n\n本文作者：Lingfeng Li\n本文链接：https://leostudiooo.github.io/2020/07/04/how-to-make-an-open-source-dial/\n版权声明：本博客所有文章除特别声明外，均默认采用 CC BY-NC-SA 4.0 许可协议。');
+  }
+});</script></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2020/08/05/fl/" rel="prev" title="友情链接"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">友情链接</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2020/06/26/yun/" rel="next" title="主题【云】部署成功！"><span class="post-nav-text">主题【云】部署成功！</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>点击按钮跳转 GitHub Issues 评论。</span><br><span>若没有本文 Issue，您可以使用 Comment 模版新建。</span><br><span>你也可以直接在下面的评论区进行评论。</span><br><a class="hty-button hty-button--raised" id="github-issues" target="_blank" rel="noopener" href="https://github.com/leostudiooo/leostudiooo.github.io/issues?q=is:issue+如何制作开源Surface Dial">GitHub Issues</a></div><div id="valine-container"></div><script>Yun.utils.getScript("https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js", () => {
+  const valineConfig = {"enable":true,"appId":"uArs3msOxUAWs7n5oCOm5sKU-gzGzoHsz","appKey":"Ij94t7TRAmVxTvbkRPNNyxPO","placeholder":"Just go go","avatar":{"meta":["nick","mail","link"]},"pageSize":10,"visitor":false,"highlight":true,"recordIP":true,"enableQQ":true,"lang":"zh-cn","el":"#valine-container"}
+  valineConfig.path = "/2020/07/04/how-to-make-an-open-source-dial/"
+  new Valine(valineConfig)
+}, window.Valine);</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2020 – 2021 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> Lingfeng Li</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.2.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.5.1</span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/js/search/local-search.js" defer></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div id="local-search-result"></div></div><script>const date = new Date();
+const today = (date.getMonth() + 1) + "-" + date.getDate()
+const mourn_days = ["4-4","9-18"]
+if (mourn_days.includes(today)) {
+  document.documentElement.style.filter = "grayscale(1)";
+}</script></div></body></html>

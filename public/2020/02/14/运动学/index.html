@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="Lingfeng Li"><meta name="copyright" content="Lingfeng Li"><meta name="generator" content="Hexo 5.2.0"><meta name="theme" content="hexo-theme-yun"><title>运动学公式梳理和选用原则 | LeoStudio</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&amp;family=Source+Code+Pro&amp;famiy=Noto+Sans+SC&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.24/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_ed8vp4atwoj.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer></script><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><link id="light-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism.css" media="(prefers-color-scheme: light)"><link id="dark-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-tomorrow.css" media="(prefers-color-scheme: dark)"><link rel="shortcut icon" type="image/svg+xml" href="/favicon.ico"><link rel="mask-icon" href="/favicon.ico" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"leostudiooo.github.io","root":"/","title":"LeoStudio","version":"1.5.1","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn?c=d&c=e&c=i&c=j&c=l","hitokoto":true},"local_search":{"path":"/search.xml"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194","3, 28, 95","0, 8, 55","102, 204, 255","200, 192, 85"]}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="/css/pplayer.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><script src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn/js/jquery-2.2.4.min.js"></script><script src="/js/pplayer.js"></script><link rel="alternate" href="/atom.xml" title="LeoStudio" type="application/atom+xml"><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><meta name="description" content="位移 位移在一维直线坐标系中的表示 $\Delta x&#x3D;x_2-x_1$ 其中，$\Delta x$为位移，起始位置为$x_1$，停止位置为$x_2$。   速度和速率速度 速度的表达式 $v&#x3D;\frac{\Delta x}{\Delta t}$ 其中，$v$为速度，$x$为位移，$t$为发生这段位移所用的时间。 速度是矢量。 P.S. 速度一般指瞬时速度。  平均速度的表达式 $\bar v&#x3D;\">
+<meta property="og:type" content="article">
+<meta property="og:title" content="运动学公式梳理和选用原则">
+<meta property="og:url" content="https://leostudiooo.github.io/2020/02/14/%E8%BF%90%E5%8A%A8%E5%AD%A6/index.html">
+<meta property="og:site_name" content="LeoStudio">
+<meta property="og:description" content="位移 位移在一维直线坐标系中的表示 $\Delta x&#x3D;x_2-x_1$ 其中，$\Delta x$为位移，起始位置为$x_1$，停止位置为$x_2$。   速度和速率速度 速度的表达式 $v&#x3D;\frac{\Delta x}{\Delta t}$ 其中，$v$为速度，$x$为位移，$t$为发生这段位移所用的时间。 速度是矢量。 P.S. 速度一般指瞬时速度。  平均速度的表达式 $\bar v&#x3D;\">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-14T06:56:00.000Z">
+<meta property="article:modified_time" content="2021-02-26T03:13:07.012Z">
+<meta property="article:author" content="Lingfeng Li">
+<meta property="article:tag" content="物理">
+<meta property="article:tag" content="小论文">
+<meta name="twitter:card" content="summary"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info mickey-mouse"><a class="site-author-avatar" href="/about/" title="Lingfeng Li"><img width="96" loading="lazy" src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/avatar.jpg" alt="Lingfeng Li"></a><div class="site-author-name"><a href="/about/">Lingfeng Li</a></div><span class="site-name">LeoStudio</span><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">15</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">18</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://wpa.qq.com/msgrd?v=3&amp;uin=1806941781&amp;site=qq&amp;menu=yes" title="QQ" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/leostudiooo" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/artist?id=34438980" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/lingling0408/" title="知乎" target="_blank" style="color:#0084FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhihu-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/244815810" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://twitter.com/Leo_050408" title="Twitter" target="_blank" style="color:#1da1f2"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-twitter-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:lilingfeng0408@outlook.com" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://travellings.now.sh/" title="Travelling" target="_blank" style="color:var(--hty-text-color)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-send-plane-2-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/2020/08/05/fl/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a><a class="links-item hty-icon-button" href="/time/" title="时钟" style="color:#66CCFF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-time-line"></use></svg></a><a class="links-item hty-icon-button" href="/pomodoro/" title="番茄钟" style="color:#00A2FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8D%E7%A7%BB"><span class="toc-number">1.</span> <span class="toc-text">位移</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9F%E5%BA%A6%E5%92%8C%E9%80%9F%E7%8E%87"><span class="toc-number">2.</span> <span class="toc-text">速度和速率</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9F%E5%BA%A6"><span class="toc-number">2.1.</span> <span class="toc-text">速度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9F%E7%8E%87"><span class="toc-number">2.2.</span> <span class="toc-text">速率</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A0%E9%80%9F%E5%BA%A6%E5%92%8C%E5%8C%80%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8"><span class="toc-number">3.</span> <span class="toc-text">加速度和匀变速直线运动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E9%80%9F%E5%BA%A6"><span class="toc-number">3.1.</span> <span class="toc-text">加速度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%80%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8"><span class="toc-number">3.2.</span> <span class="toc-text">匀变速直线运动</span></a></li></ol></li></ol></div></div></div><div class="tag-cloud"><div class="tag-cloud-tags"><a href="/tags/C/" style="font-size: 18px; color: #668eb3">C++</a> <a href="/tags/Python/" style="font-size: 18px; color: #668eb3">Python</a> <a href="/tags/celebrate/" style="font-size: 12px; color: #999">celebrate</a> <a href="/tags/cups/" style="font-size: 12px; color: #999">cups</a> <a href="/tags/how/" style="font-size: 18px; color: #668eb3">how</a> <a href="/tags/link/" style="font-size: 12px; color: #999">link</a> <a href="/tags/none/" style="font-size: 12px; color: #999">none</a> <a href="/tags/oi/" style="font-size: 30px; color: #0078e7">oi</a> <a href="/tags/openjudge/" style="font-size: 12px; color: #999">openjudge</a> <a href="/tags/printer/" style="font-size: 12px; color: #999">printer</a> <a href="/tags/raspberrypi/" style="font-size: 12px; color: #999">raspberrypi</a> <a href="/tags/surface-dial/" style="font-size: 12px; color: #999">surface dial</a> <a href="/tags/%E5%B0%8F%E8%AE%BA%E6%96%87/" style="font-size: 24px; color: #3383cd">小论文</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 12px; color: #999">教程</a> <a href="/tags/%E6%B4%9B%E8%B0%B7/" style="font-size: 24px; color: #3383cd">洛谷</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 24px; color: #3383cd">物理</a> <a href="/tags/%E8%AE%A1%E5%88%92/" style="font-size: 12px; color: #999">计划</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 30px; color: #0078e7">题解</a></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://leostudiooo.github.io/2020/02/14/%E8%BF%90%E5%8A%A8%E5%AD%A6/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Lingfeng Li"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="LeoStudio"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">运动学公式梳理和选用原则</h1><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2020-02-14 14:56:00" itemprop="dateCreated datePublished" datetime="2020-02-14T14:56:00+08:00">2020-02-14</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="修改时间：2021-02-26 11:13:07" itemprop="dateModified" datetime="2021-02-26T11:13:07+08:00">2021-02-26</time></div><div class="post-classify"><span class="post-tag"><a class="tag" href="/tags/%E7%89%A9%E7%90%86/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">物理</span></a><a class="tag" href="/tags/%E5%B0%8F%E8%AE%BA%E6%96%87/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">小论文</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><h2 id="位移"><a href="#位移" class="headerlink" title="位移"></a>位移</h2><ol>
+<li><p>位移在<strong>一维</strong>直线坐标系中的表示</p>
+<p>$\Delta x=x_2-x_1$</p>
+<p>其中，$\Delta x$为位移，起始位置为$x_1$，停止位置为$x_2$。</p>
+</li>
+</ol>
+<h2 id="速度和速率"><a href="#速度和速率" class="headerlink" title="速度和速率"></a>速度和速率</h2><h3 id="速度"><a href="#速度" class="headerlink" title="速度"></a>速度</h3><ol>
+<li><p>速度的表达式</p>
+<p>$v=\frac{\Delta x}{\Delta t}$</p>
+<p>其中，$v$为速度，$x$为位移，$t$为发生这段位移所用的时间。</p>
+<p>速度是<strong>矢量</strong>。</p>
+<p><strong><em>P.S.</em></strong> <em>速度一般指<strong>瞬时速度</strong>。</em></p>
+</li>
+<li><p>平均速度的表达式</p>
+<p>$\bar v=\frac{\Delta x}{\Delta t}$</p>
+<p>其中，$\bar v$为平均速度，$\Delta x$和$\Delta t$分别为位移和发生这段位移所用的时间。</p>
+<p><strong><em>P.S.</em></strong> <em>平均速度是对物体运动方向和快慢的<strong>粗略描述</strong>。</em></p>
+</li>
+<li><p>瞬时速度的表达式</p>
+<p>$\lim\limits_{\Delta t\to0}$ $v=\frac{\Delta x}{\Delta t}$</p>
+<p>当$\Delta t$无限小时，算出来的速度就是物体在这个瞬间的瞬时速度。</p>
+<p><strong><em>P.S.</em></strong> <em>瞬时速度是对物体运动方向和快慢的<strong>精确描述</strong>。</em></p>
+</li>
+</ol>
+<h3 id="速率"><a href="#速率" class="headerlink" title="速率"></a>速率</h3><ol>
+<li><p>速率的表达式</p>
+<p>$v_{速率}=\frac{\Delta s}{\Delta t}$</p>
+<p>与速度不同，在速率的表达式中，$s$为路程。</p>
+<p>因此，速率是<strong>标量</strong>。</p>
+</li>
+<li><p>平均速率和瞬时速率的表达式</p>
+<p>与平均速度和瞬时速度的表达式相似，不再赘述。</p>
+<p>$\bar v_{速率}=\frac{\Delta s}{\Delta t}$</p>
+<p>$\lim\limits_{\Delta t\to0}$ $v_{速率}=\frac{\Delta s}{\Delta t}$</p>
+</li>
+</ol>
+<h2 id="加速度和匀变速直线运动"><a href="#加速度和匀变速直线运动" class="headerlink" title="加速度和匀变速直线运动"></a>加速度和匀变速直线运动</h2><h3 id="加速度"><a href="#加速度" class="headerlink" title="加速度"></a>加速度</h3><ol>
+<li><p>定义式：</p>
+<p>$a=\frac{\Delta v}{\Delta t}$</p>
+<p>其中，$a$是加速度，$\Delta v$是速度变化量，$\Delta t$是发生这一速度变化所需要的时间。</p>
+<p>由此，加速度是<strong>矢量</strong>。</p>
+<p><strong><em>P.S.</em></strong> <em>加速度与$\Delta v$和$\Delta t$<strong>无关</strong>，这里它们只用来计算加速度。</em></p>
+</li>
+</ol>
+<h3 id="匀变速直线运动"><a href="#匀变速直线运动" class="headerlink" title="匀变速直线运动"></a>匀变速直线运动</h3><ol>
+<li><p>速度与时间的关系</p>
+<p>$v_t=v_0+at$</p>
+<p>特别地：</p>
+<ol>
+<li>当$v_0=0$时，$v_t=at$；</li>
+<li>当$a=0$时，$v_t=v_0$。</li>
+</ol>
+<p><strong><em>P.S.</em></strong> <em>在该公式中，$v_t$、$v_0$、$a$均为<strong>矢量</strong>，因此应用公式时<strong>应首先选取正方向</strong>。</em></p>
+</li>
+<li><p>位移与时间的关系</p>
+<p>$x=v_0t+\frac{1}{2}at^2$</p>
+<p>特别地：</p>
+<ol>
+<li>当$v_0=0$时，$x=\frac{1}{2}at^2$</li>
+<li>当$a=0$时，$x=v_0t$</li>
+</ol>
+<p><strong><em>P.S.</em></strong>  <em>在<strong>刹车问题</strong>中，使用该公式计算位移需要<strong>先判断物体是否已经停止</strong>。</em></p>
+</li>
+<li><p>平均速度</p>
+<ol>
+<li><p>$\bar v=\frac x t$</p>
+<p>该式适用于<strong>任意情况</strong>。</p>
+</li>
+<li><p>$\bar v=v_\frac t 2$</p>
+<p>该式仅适用于<strong>匀变速直线运动</strong>。</p>
+</li>
+<li><p>$\bar v= \frac{v_0+v_t}{2}$</p>
+<p>该式也仅适用于<strong>匀变速直线运动</strong>。</p>
+</li>
+</ol>
+</li>
+<li><p>位移差公式</p>
+<p>匀变速直线运动中，在任意相邻相等时间$T$内，位移差$\Delta x$是一个常量，即</p>
+<p>$\Delta x=x_2-x_1=aT^2$</p>
+<p><strong><em>P.S.</em></strong> <em>该式可以用来<strong>判断物体是否作匀变速直线运动</strong>，也可以用来<strong>计算匀变速直线运动的物体的加速度</strong>。</em></p>
+</li>
+<li><p>自由落体运动</p>
+<p>是$v_0=0$，$a=g$的匀加速直线运动。</p>
+</li>
+<li><p>匀变速直线运动的规律</p>
+<ol>
+<li><p>$2ax=v_t^2-v_0^2$</p>
+</li>
+<li><p>$v_0=0$时有：</p>
+<ol>
+<li><p>按时间等分：</p>
+<ul>
+<li>$v_1:v_2:v_3:…:v_n=1:2:3:…:n$</li>
+<li>$x_1:x_2:x_3:…:x_n=1^2:2^2:3^2:…:n^2$</li>
+<li>$\Delta x_1:\Delta x_2:\Delta x_3:…:\Delta x_n=1:3:5:…:2n-1$</li>
+</ul>
+</li>
+<li><p>按位移等分：</p>
+<ul>
+<li>$v_1:v_2:v_3:…:v_n=1:\sqrt 2:\sqrt 3:…:\sqrt n$</li>
+<li>$t_1:t_2:t_3:…:t_n=1:\sqrt{2}:\sqrt{3}:…:\sqrt{n}$</li>
+<li>$\Delta t_1:\Delta t_2:\Delta t_3:…:\Delta t_n=1:\left(\sqrt{2}-1\right):\left(\sqrt{3}-\sqrt {2}\right):\left(\sqrt{n}-\sqrt{n-1}\right)$</li>
+</ul>
+<p><strong><em>P.S. $v_0$必须要为零！</em></strong></p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">I'm so cute. Please give me money.</div><div id="qr" style="display:none;"><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/alipay-qrcode.jpg"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/alipay-qrcode.jpg" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-alipay-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/wechatpay-qrcode.jpg"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/wechatpay-qrcode.jpg" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-pay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>Lingfeng Li</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://leostudiooo.github.io/2020/02/14/%E8%BF%90%E5%8A%A8%E5%AD%A6/" title="运动学公式梳理和选用原则">https://leostudiooo.github.io/2020/02/14/%E8%BF%90%E5%8A%A8%E5%AD%A6/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> 许可协议。</li></ul><script>document.addEventListener('copy', function (event) {
+  const clipboardData = event.clipboardData || window.clipboardData;
+  if (!clipboardData) { return; }
+  const text = window.getSelection().toString();
+  if (text) {
+    event.preventDefault();
+    clipboardData.setData('text/plain', text + '\n\n本文作者：Lingfeng Li\n本文链接：https://leostudiooo.github.io/2020/02/14/%E8%BF%90%E5%8A%A8%E5%AD%A6/\n版权声明：本博客所有文章除特别声明外，均默认采用 CC BY-NC-SA 4.0 许可协议。');
+  }
+});</script></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2020/02/17/%E5%B8%B8%E8%A7%81%E7%9A%84%E8%BF%BD%E5%87%BB%E7%9B%B8%E9%81%87%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%AD%96%E7%95%A5/" rel="prev" title="常见的追及、相遇问题及解决策略"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">常见的追及、相遇问题及解决策略</span></a></div><div class="post-nav-item"></div></div></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>点击按钮跳转 GitHub Issues 评论。</span><br><span>若没有本文 Issue，您可以使用 Comment 模版新建。</span><br><span>你也可以直接在下面的评论区进行评论。</span><br><a class="hty-button hty-button--raised" id="github-issues" target="_blank" rel="noopener" href="https://github.com/leostudiooo/leostudiooo.github.io/issues?q=is:issue+运动学公式梳理和选用原则">GitHub Issues</a></div><div id="valine-container"></div><script>Yun.utils.getScript("https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js", () => {
+  const valineConfig = {"enable":true,"appId":"uArs3msOxUAWs7n5oCOm5sKU-gzGzoHsz","appKey":"Ij94t7TRAmVxTvbkRPNNyxPO","placeholder":"Just go go","avatar":{"meta":["nick","mail","link"]},"pageSize":10,"visitor":false,"highlight":true,"recordIP":true,"enableQQ":true,"lang":"zh-cn","el":"#valine-container"}
+  valineConfig.path = "/2020/02/14/%E8%BF%90%E5%8A%A8%E5%AD%A6/"
+  new Valine(valineConfig)
+}, window.Valine);</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2020 – 2021 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> Lingfeng Li</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.2.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.5.1</span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/js/search/local-search.js" defer></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div id="local-search-result"></div></div><script>const date = new Date();
+const today = (date.getMonth() + 1) + "-" + date.getDate()
+const mourn_days = ["4-4","9-18"]
+if (mourn_days.includes(today)) {
+  document.documentElement.style.filter = "grayscale(1)";
+}</script></div></body></html>
