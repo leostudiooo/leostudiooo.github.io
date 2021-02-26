@@ -4,7 +4,7 @@ language: node_js
 sudo: required
 # 指定node_js版本
 node_js: 
-  - 12
+  - 14
 cache: npm
 
 # 指定博客源码分支，因人而异。hexo博客源码托管在独立repo则不用设置此项
