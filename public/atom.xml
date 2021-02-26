@@ -6,7 +6,7 @@
   <link href="https://leostudiooo.github.io/atom.xml" rel="self"/>
   
   <link href="https://leostudiooo.github.io/"/>
-  <updated>2021-02-23T11:53:50.601Z</updated>
+  <updated>2021-02-26T03:51:40.827Z</updated>
   <id>https://leostudiooo.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新专辑：《星澜永恒》</title>
+    <link href="https://leostudiooo.github.io/2021/02/26/album-stars/"/>
+    <id>https://leostudiooo.github.io/2021/02/26/album-stars/</id>
+    <published>2021-02-26T03:45:08.000Z</published>
+    <updated>2021-02-26T03:51:40.827Z</updated>
+    
+    <content type="html"><![CDATA[<p>历经一周多的努力，新专辑《星澜永恒》终于发布在<a href="https://www.bilibili.com/video/BV1yA411M7Ac">哔哩哔哩</a>和<a href="https://music.163.com/#/song?id=1822296729">网易云</a>啦！</p><iframe src="//player.bilibili.com/player.html?aid=331836400&bvid=BV1yA411M7Ac&cid=302199953&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1822296729&auto=1&height=66"></iframe>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;历经一周多的努力，新专辑《星澜永恒》终于发布在&lt;a href=&quot;https://www.bilibili.com/video/BV1yA411M7Ac&quot;&gt;哔哩哔哩&lt;/a&gt;和&lt;a href=&quot;https://music.163.com/#/song?id=1822296729</summary>
+      
+    
+    
+    
+    
+    <category term="新砖" scheme="https://leostudiooo.github.io/tags/%E6%96%B0%E7%A0%96/"/>
+    
+    <category term="音乐" scheme="https://leostudiooo.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+  </entry>
   
   <entry>
     <title>使用Hexo在GitHub Pages部署属于你自己的博客！</title>
