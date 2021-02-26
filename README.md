@@ -1,5 +1,6 @@
 # leostudiooo.github.io
 
+[![Blog Generating CI](https://github.com/leostudiooo/leostudiooo.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/leostudiooo/leostudiooo.github.io/actions/workflows/main.yml)
 This is Leo's personal website.
 
 ~~The main part is a clock at present, but I will change it into another page in a few months.~~
