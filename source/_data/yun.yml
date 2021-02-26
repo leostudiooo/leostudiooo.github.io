@@ -262,6 +262,7 @@ pjax:
 css:
   - /css/hexo-theme-yun.css
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css
+  # - https://cdn.jsdelivr.net/gh/M4TEC/PenguinPlayer@latest/player.css
   - /css/pplayer.css
 
 # scripts loaded in the end of the body
