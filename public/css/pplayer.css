@@ -229,7 +229,7 @@ div.lyric {
     bottom: 0;
     transform: translate(-50%);
     color: #66ccff;
-    text-shadow: 0 0 1px black;
+    text-shadow: 0 0 2px black;
     pointer-events: none;
     transition: all .3s linear;
     width: 100%;
