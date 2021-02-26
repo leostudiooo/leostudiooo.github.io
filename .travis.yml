@@ -14,7 +14,6 @@ branches:
 
 # 执行清缓存，生成网页操作
 script:
-  - git clone https://github.com/yunyoujun/hexo-theme-yun themes/yun/
   - hexo generate
 
 # 设置git提交名，邮箱；替换真实token到_config.yml文件，最后deploy部署
