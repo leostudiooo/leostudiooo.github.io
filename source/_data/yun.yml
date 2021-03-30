@@ -656,8 +656,8 @@ google_adsense:
 # Analysis
 # ---------------
 google_analytics:
-  enable: false
-  id: UA-XXXXXXXXX-X
+  enable: true
+  id: G-E9Q4KDDY5F
 
 # Google Tagmanager
 google_tagmanager:
