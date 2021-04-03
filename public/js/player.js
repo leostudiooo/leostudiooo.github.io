@@ -1,4 +1,5 @@
 (() => {
+    window.penguinplayer_id = "6630417901"
     var e = {
             157: e => {
                 "use strict";

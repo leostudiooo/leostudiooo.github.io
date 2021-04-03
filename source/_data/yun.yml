@@ -26,7 +26,8 @@ favicon: /favicon.ico
 # Posts / Categories / Tags in sidebar.
 sidebar:
   src: /js/sidebar.js
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/alpha-stars-timing-1.webp
+  dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/dark-alpha-stars-timing-1.webp
   bg_position: bottom 1rem center
   tagcloud:
     enable: true
@@ -263,7 +264,7 @@ css:
   - /css/hexo-theme-yun.css
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css
   # - https://cdn.jsdelivr.net/gh/M4TEC/PenguinPlayer@latest/player.css
-   - /css/pplayer.css
+  - /css/pplayer.css
 
 # scripts loaded in the end of the body
 js:
