@@ -263,14 +263,15 @@ css:
   - /css/hexo-theme-yun.css
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css
   # - https://cdn.jsdelivr.net/gh/M4TEC/PenguinPlayer@latest/player.css
-  - /css/pplayer.css
+  # - /css/pplayer.css
 
 # scripts loaded in the end of the body
 js:
   - /js/utils.js
   - /js/hexo-theme-yun.js  
   - https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn/js/jquery-2.2.4.min.js
-  - /js/pplayer.js
+  # - /js/pplayer.js
+  - /js/player.js
   # - /js/run-tplayer.js
 
 # custom your assets in head
