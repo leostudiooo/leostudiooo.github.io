@@ -269,9 +269,9 @@ css:
 # scripts loaded in the end of the body
 js:
   - /js/utils.js
-  - /js/hexo-theme-yun.js  
-  - https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn/js/jquery-2.2.4.min.js
+  - /js/hexo-theme-yun.js
   - /js/pplayer.js
+  - https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn/js/jquery-2.2.4.min.js
   # - /js/player.js
   # - /js/run-tplayer.js
 
