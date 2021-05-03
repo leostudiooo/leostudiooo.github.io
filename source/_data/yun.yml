@@ -670,7 +670,7 @@ google_tagmanager:
 # https://katex.org/
 katex:
   copy_tex: true
-  global: false
+  global: true
 
 # plugins
 aplayer:
