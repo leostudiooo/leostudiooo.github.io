@@ -31,7 +31,7 @@ PenguinPlayer 是一个基于网易云音乐的轻量级迷你播放器。它使
 
 如果没有特别的需求，下载 `player.js` 就够了。
 
-![image-20210504205539939](/img/penguinplayer/image-20210504205539939.png)
+![image-20210504205539939](/img/image-20210504205539939.png)
 
 ## 配置 PenguinPlayer
 
