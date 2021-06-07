@@ -12,13 +12,15 @@ tags: link
 
 [Skip_M4](https://skipm4.com/)
 
-[和乐工作室](http://hlstudio.haku.ren)
+[和乐工作室](http://hlstudio.haku.ren/)
 
-[Ted Fu(@icecream1507)](https://f-y.me)
+[Ted Fu(@icecream1507)](https://f-y.me/)
 
-[云游君](https://yunyoujun.cn)
+[云游君](https://yunyoujun.cn/)
 
 [Rainy](https://luoyuer.com/)
+
+[Wyatt](https://math.cat/)
 
 ------
 后续不定期更新
