@@ -5,7 +5,7 @@ mode: auto
 # Theme color for customize
 # Notice: color value must in double quotes: "#000000"
 colors:
-  primary: "#0078E7"
+  primary: "#66ccff"
   # primary: "#6200ee"
   bg: "#f5f5f5"
   selection_bg: "#8e71c1"
@@ -324,7 +324,7 @@ font:
     family: "'PingFang SC', 'Source Han Sans SC', 'Noto Sans SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
     weight: 500
   monospace:
-    family: "'Source Code Pro', 'Monaco', 'Courier New', Courier, Consolas, monospace"
+    family: "'Cascadia Code', 'Source Code Pro', 'Monaco', 'Courier New', Courier, Consolas, monospace"
 
 # custom your color in fireworks
 fireworks:
@@ -366,11 +366,11 @@ scrollreveal:
 
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/BigSur_Day.svg
+  url: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/BSDay.jpg
   # https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/bg_light.png # recomend image related to your mode
-  dark: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/BigSur_Night.svg
+  dark: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/BSNight.jpg
   # https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/bg_dark.png
-  blur: 20px
+  # blur: 20px
   opacity: 1
 
 # Reward (Donate)
@@ -434,7 +434,7 @@ footer:
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
-    color: "#0078E7"
+    color: "#66ccff"
 
   powered:
     # Hexo link (Powered by Hexo).
