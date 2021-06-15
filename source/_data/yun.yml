@@ -366,11 +366,11 @@ scrollreveal:
 
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/Beach%20Day.svg
+  url: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/BigSur_Day.svg
   # https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/bg_light.png # recomend image related to your mode
-  dark: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/Beach%20Night.svg
+  dark: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/BigSur_Night.svg
   # https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/bg_dark.png
-  # blur: 30px
+  blur: 20px
   opacity: 1
 
 # Reward (Donate)
