@@ -1,7 +1,5 @@
 # 指定语言环境
 language: node_js
-# 指定需要sudo权限
-sudo: required
 # 指定node_js版本
 node_js: 
   - 14
