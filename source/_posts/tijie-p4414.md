@@ -8,7 +8,7 @@ tags:
   - 题解
 ---
 
-纪念史上首次[一次性AC](https://www.luogu.com.cn/record/40400035)。
+纪念史上首次 [一次性 AC](https://www.luogu.com.cn/record/40400035)。
 
 ## 思路
 

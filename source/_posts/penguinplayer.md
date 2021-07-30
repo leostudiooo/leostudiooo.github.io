@@ -8,14 +8,14 @@ tags:
 
 
 
-嗨多磨！这里是Leo。今天我将介绍如何在你的博客中全局加入一个基于网易云音乐的音乐播放器：[PenguinPlayer](https://github.com/M4TEC/PenguinPlayer)。
+嗨多磨！这里是 Leo。今天我将介绍如何在你的博客中全局加入一个基于网易云音乐的音乐播放器：[PenguinPlayer](https://github.com/M4TEC/PenguinPlayer)。
 
 # 关于 PenguinPlayer
 
 PenguinPlayer 是一个基于网易云音乐的轻量级迷你播放器。它使用 `TypeScript` 和 `Sass` 编写，可以通过引用 `player.js` 在你的任何网页上挂载。
 
 - 移动/触控设备支持
-- Internet Explorer 10+支持
+- Internet Explorer 10+ 支持
 - 简洁，好看还好用
 - 使用简单
 

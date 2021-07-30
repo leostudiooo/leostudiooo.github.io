@@ -8,7 +8,7 @@ tags:
   - 题解
 ---
 
-最近开始搞OI了，在 luogu.com.cn 刷题
+最近开始搞 OI 了，在 luogu.com.cn 刷题
 
 ```python
 a = 0

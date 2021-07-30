@@ -10,7 +10,7 @@ tags:
 
 本项目由我和[B站UP主 EddyWang](https://space.bilibili.com/8555835)共同维护。[GitHub仓库](https://github.com/Eddddddddy/Surface_Dial_Arduino)中有此项目源文件，欢迎访问下载。
 
-目前，该项目有两个版本(Pro&Lite)，后期会进行整合。
+目前，该项目有两个版本 (Pro&Lite)，后期会进行整合。
 
 ### 如何制作？
 
@@ -20,7 +20,7 @@ Lite版的视频暂时还没时间做。
 
 #### 1. 将项目clone到本地
 
-如图，点击clone下的Download zip（当然如果你有一定的GitHub基础可以直接clone到本地）
+如图，点击 clone 下的 Download zip（当然如果你有一定的 GitHub 基础可以直接 clone 到本地）
 
 <img src="leostudiooo.github.io/img/image-20200621184306016.png" alt="image-20200621184306016"  />
 
@@ -97,22 +97,22 @@ Surface_Dial_Arduino
 
 #### 3. 打板
 
-- 用`Gerber_2in1.zip`**（强烈推荐）**`Gerber_Project Dial Lite.zip`或`Project Dial attiny v2 github.zip`打板。
-- 服务商可选择[嘉立创](sz-jlc.com)（因为他家有5元样板服务，5张还包邮）
-- 尺寸：`4x4`或`3.95x4.05`cm
+- 用 `Gerber_2in1.zip`**（强烈推荐）**`Gerber_Project Dial Lite.zip` 或 `Project Dial attiny v2 github.zip` 打板。
+- 服务商可选择 [嘉立创](sz-jlc.com)（因为他家有5元样板服务，5张还包邮）
+- 尺寸：`4x4` 或 `3.95x4.05` cm
 - 过孔盖油
 - 其他都选默认
 - PS 记得备注两条内容：1. 此项目是开源项目，并非拆单；2. 请勿做半孔处理。
 
 #### 4. 3D打印
 
-- 把`surface dial t v2.3.STL`和`surface dial v2.3.STL`都打出来。
+- 把 `surface dial t v2.3.STL` 和 `surface dial v2.3.STL` 都打出来。
 - ***记得一定要把它翻平再打印！***
-- 你可以~~白嫖~~使用我们学校的3D打印机进行打印。
+- 你可以~~白嫖~~使用我们学校的 3D 打印机进行打印。
 
 #### 5. 手工制作
 
 - 请耐心等待视频教程。
-- 可以在[GitHub](github.com/leostudiooo)和[哔哩哔哩](space.bilibili.com/244815810)上关注我
+- 可以在 [GitHub](github.com/leostudiooo) 和 [哔哩哔哩](space.bilibili.com/244815810) 上关注我
 - 个人网站：[Github Pages](leostudiooo.github.io)
 

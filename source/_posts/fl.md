@@ -14,7 +14,7 @@ tags: link
 
 [和乐工作室](http://hlstudio.haku.ren/)
 
-[Ted Fu(@icecream1507)](https://f-y.me/)
+[Ted Fu (@icecream1507)](https://f-y.me/)
 
 [云游君](https://yunyoujun.cn/)
 
