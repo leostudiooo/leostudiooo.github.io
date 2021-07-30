@@ -1,12 +1,26 @@
-// global CONFIG
+/* global CONFIG */
 
-HTMLElement.prototype.wrap = function(wrapper) {
+HTMLElement.prototype.wrap = function (wrapper) {
   this.parentNode.insertBefore(wrapper, this);
   this.parentNode.removeChild(this);
   wrapper.appendChild(this);
 };
 
+/**
+ * 公共辅助函数
+ */
 Yun.utils = {
+  /**
+   * 是否为主页
+   * @returns {boolean}
+   */
+  isHome() {
+    return window.location.pathname === CONFIG.root;
+  },
+
+  /**
+   * 包裹表格，添加 class 以控制 table 样式
+   */
   wrapTable() {
     document.querySelectorAll("table").forEach((el) => {
       const container = document.createElement("div");
@@ -86,6 +100,75 @@ Yun.utils = {
           iconSvg.setAttribute("xlink:href", "#icon-file-copy-line");
           iconSvg.setAttribute("color", "gray");
         }, 200);
+      });
+    });
+  },
+
+  /**
+   * 使用 KaTeX 渲染公式
+   * 须已引入 KaTeX CDN
+   * https://github.com/KaTeX/KaTeX
+   */
+  renderKatex() {
+    if (typeof renderMathInElement !== "undefined") {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false },
+          { left: "\\[", right: "\\]", display: true },
+        ],
+      });
+    } else {
+      console.error(
+        "Please check if you have introduced KaTeX(https://github.com/KaTeX/KaTeX) CDN."
+      );
+    }
+  },
+
+  /**
+   * 注册监听滚动百分比事件
+   */
+  registerScrollPercent() {
+    const backToTop = document.querySelector("#back-to-top");
+    const progressCircle = document.querySelector("#progressCircle");
+
+    if (!backToTop) {
+      return;
+    }
+
+    /**
+     * 页面滚动百分比
+     * @param {number} curTop
+     */
+    function scrollPercent(curTop) {
+      const bodyHeight = document.body.clientHeight;
+      const windowHeight = window.innerHeight;
+      const circumference = progressCircle.r.baseVal.value * 2 * Math.PI;
+      const offset =
+        circumference - (curTop / (bodyHeight - windowHeight)) * circumference;
+      progressCircle.setAttribute(
+        "stroke-dasharray",
+        `${circumference} ${circumference}`
+      );
+      progressCircle.setAttribute("stroke-dashoffset", offset);
+    }
+
+    window.addEventListener("scroll", () => {
+      backToTop.classList.toggle("show", window.scrollY > 64);
+      scrollPercent(window.scrollY);
+    });
+  },
+
+  /**
+   * 注册切换侧边栏按钮事件
+   */
+  registerToggleSidebar() {
+    const toggleBtns = document.querySelectorAll(".sidebar-toggle");
+    toggleBtns.forEach((el) => {
+      el.addEventListener("click", () => {
+        document.querySelector(".hamburger").classList.toggle("is-active");
+        document.querySelector(".container").classList.toggle("sidebar-open");
       });
     });
   },
