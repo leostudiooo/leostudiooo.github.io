@@ -1,6 +1,7 @@
 ---
 title: 在 RoboMaster EP 上用 3 种方法画椭圆！
 date: 2021-07-28 22:34:44
+katex: true
 tags:
   - RoboMaster
   - DJI
