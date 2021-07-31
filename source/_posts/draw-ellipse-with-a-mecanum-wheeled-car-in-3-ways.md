@@ -47,14 +47,16 @@ tags:
 
 椭圆的参数方程：
 
+<div>
 $$\begin{equation}
-	\left\{
-		\begin{aligned}
-			x=a\cos\theta\\
-			y=b\sin\theta\\
-		\end{aligned}
-	\right.
+    \left\{
+        \begin{aligned}
+            x=a\cos\theta\\
+            y=b\sin\theta\\
+        \end{aligned}
+    \right.
 \end{equation}$$
+</div>
 
 ### 程序实现
 
