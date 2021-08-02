@@ -46,7 +46,7 @@ links:
     name: SkipM4
     blog: SkipM4 的日记本
     desc: (虽然可能连周记都忘了写)
-    color: "#CCCCCC"
+    color: "#FFADD6"
 
   - url: https://math.cat/
     avatar: https://math.cat/avatar.jpg
