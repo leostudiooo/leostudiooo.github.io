@@ -42,7 +42,7 @@ links:
     color: "#0078E7"
 
   - url: https://skipm4.com/
-    avatar: https://skipm4.com/usr/themes/Miracles/favicon.ico
+    avatar: https://secure.gravatar.com/avatar/14eaeed4e2084a06a741f86806234729?s=100&r=G&d=
     name: SkipM4
     blog: SkipM4 的日记本
     desc: (虽然可能连周记都忘了写)
