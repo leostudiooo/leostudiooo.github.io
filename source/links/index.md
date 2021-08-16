@@ -62,7 +62,39 @@ links:
     desc: また君を思い出すよ
     color: "#EE9CA7"
 
+  - url: https://josephcz.xyz/
+    avatar: https://josephcz.xyz/icon/icon_600.png
+    name: Joseph
+    blog: Joseph's Blog
+    desc: 生如逆旅 · 一苇以航
+    color: "#0078D4"
+
+  - url: https://ouyangqiqi.cn/
+    avatar: https://cdn.ouyangqiqi.cn/images/qiqi.jpg
+    name: 欧阳淇淇
+    blog: 欧阳淇淇の小屋
+    desc: 大切な人と再会できる日を
+    color: "#FF4081"
+  
+  - url: http://www.darkfox.top
+    avatar: https://i.loli.net/2021/05/04/Vq1DKGy9EnQiPbu.png
+    name: 冥狐DarkFox
+    blog: 冥狐的小站
+    desc: 记录生活每一次感动！
+    color: "#000000"
+
 placeholder: 还没想好说些什么 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～
 ---
 谢谢你们一路的陪伴。
+
+如果想要添加我的友链，这里是一些信息：
+```yaml
+url: https://leostudiooo.github.io/
+avatar: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn/img/avatar.jpg
+name: Leo
+blog: LeoStudio
+desc: Stay hungry, stay foolish.
+color: "#00A2FF"
+```
+如果想要将贵链添加到我的列表，请按照以上格式在评论区留言～
