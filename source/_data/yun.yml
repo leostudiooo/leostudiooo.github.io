@@ -98,6 +98,10 @@ social:
     link: https://travellings.now.sh/
     icon: icon-send-plane-2-line
     color: black
+  - name: Status
+    link: https://stats.uptimerobot.com/MKAxnT5nQy
+    icon: icon-eye-line
+    color: "#0DBC79"
 
 codeblock:
   copy_btn: true
