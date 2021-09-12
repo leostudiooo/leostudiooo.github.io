@@ -106,3 +106,9 @@ deploy:
   repo: https://gh_token@github.com/leostudiooo/leostudiooo.github.io.git
   # example, https://github.com/hexojs/hexojs.github.io
   branch: master
+
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: true  # default true
+  version: "7.1.2" # default v7.1.2
+  options:
+    startOnload: true  # default true
