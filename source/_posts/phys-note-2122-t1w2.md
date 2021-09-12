@@ -67,7 +67,7 @@ $$k = 9.0  \times 10^{9} \rm N \cdot m / C^{2}.$$
 ```mermaid
 graph LR
 A[电荷 A]-->|产生| C(场)
-C-->|影响| B[电荷B]
+C-->|影响| B[电荷 B]
 B-->|产生|C
 C-->|影响|A
 ```
