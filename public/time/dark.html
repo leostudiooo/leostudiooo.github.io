@@ -1,135 +1,129 @@
 <!doctype html>
+
 <head>
-	<meta charset="utf-8"/>
-	<title>LeoStudio-TimeNow</title>
-	<link rel="shortcut icon" href="/favicon.ico">
-	<style type="text/css">
-		@font-face { 
-			font-family: 'Monaco'; 
-			src: url('https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/fonts/Monaco.eot'); 
-			src: local('Monaco'), 
-			local('Monaco'), 
-			url('https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/fonts/Monaco.woff2') format('woff2'), 
-			url('https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/fonts/Monaco.ttf') format('truetype'), 
-			url('https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/fonts/Monaco.svg') format('svg'); 
-		} 
-
-			body {
-				color: #ffffff;
-				background-color: #252525;
-			}
-			
-			.page {
-
-				width: auto;
-				height: auto;
-				font-family: 'Monaco', 'Ubuntu Mono', 'Courier New', Courier, monospace;
-			}
-
-			.time_container,
-			.date_container {
-				width: auto;
-				margin: auto;
-				text-align: center;
-				top: 0;
-			 	height: auto;
-			}
-
-			.time {
-				width:auto;
-				height:auto;
-				margin-left: auto;
-				padding-top: auto;
-			 	font-size: 5rem;
-			}
-				
-			/*控制	 Monday, Mar 30, 2020*/
-				
-			.date {		
-				font-size: 2rem;
-			}
-
-			.leostudio{
-				color: #66ccff;
-				font-size: 2rem;
-				padding-left: 1%;
-				padding-top: auto; 
-				font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
-			}
-
-			.leostudio-a{
-			color: #66ccff;
-			font-size: 1rem;
-			padding-left: 1%;
-			padding-top: auto; 
-			font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
-		}
-		a {
-			text-decoration: none;
-		}
-
-			.hitokoto{
-				color: #ffffdd;
-				font-size: 1rem;
-				padding-top: auto;
-				text-align: center;
-				font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
-			}
-		
-	</style>
+    <meta charset="utf-8" />
+    <title>LeoStudio-TimeNow</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <style type="text/css">
+        body {
+            color: #ffffff;
+            background-color: #252525;
+        }
+        
+        .page {
+            width: auto;
+            height: auto;
+            font-family: monospace;
+        }
+        
+        .time_container,
+        .date_container {
+            width: auto;
+            margin: auto;
+            text-align: center;
+            top: 0;
+            height: auto;
+        }
+        
+        .time {
+            width: auto;
+            height: auto;
+            margin-left: auto;
+            padding-top: auto;
+            font-size: 5rem;
+        }
+        /*控制	 Monday, Mar 30, 2020*/
+        
+        .date {
+            font-size: 2rem;
+        }
+        
+        .leostudio {
+            color: #66ccff;
+            font-size: 2rem;
+            padding-left: 1%;
+            padding-top: auto;
+            font-family: sans-serif;
+        }
+        
+        .leostudio-a {
+            color: #66ccff;
+            font-size: 1rem;
+            padding-left: 1%;
+            padding-top: auto;
+            font-family: sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .hitokoto {
+            color: #ffffdd;
+            font-size: 1rem;
+            padding-top: auto;
+            text-align: center;
+            font-family: sans-serif;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script>
+    <script src="/js/pjax.js" defer></script>
 </head>
 
 
 
 <body>
-	<div class="leostudio">
-		<a class="leostudio" href="/">LeoStudio</a>
-		<a class="leostudio-a" href="/">主页</a>
-		<a class="leostudio-a" href="index.html">时钟</a>
-		<a class="leostudio-a" href="light.html">亮色时钟</a>
-		<a class="leostudio-a" href="dark.html">暗色时钟</a>
-	</div>
+    <div class="leostudio">
+        <a class="leostudio" href="/">LeoStudio</a>
+        <a class="leostudio-a" href="/">主页</a>
+        <a class="leostudio-a" href="index.html">时钟</a>
+        <a class="leostudio-a" href="light.html">亮色时钟</a>
+        <a class="leostudio-a" href="dark.html">暗色时钟</a>
+    </div>
 
 
-	<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto&c=d&c=e&c=i&c=j&c=l" defer></script>
-	<div class="hitokoto" id="hitokoto">
-		<script>hitokoto()
-		</script>
-	</div>
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto&c=d&c=e&c=i&c=j&c=l" defer></script>
+    <div class="hitokoto" id="hitokoto">
+        <script>
+            hitokoto()
+        </script>
+    </div>
 
 
-	<div class="page">	
-		<div class="time_container">
-			<div class="time" id="time">11:27:00</div>
-		</div>
+    <div class="page">
+        <div class="time_container">
+            <div class="time" id="time">11:27:00</div>
+        </div>
 
-		<div class="date_container">			<!--不能将超链接放在与此备注同一行的div以下-->
-			<p></p>
-			<div class="date" id="date">Saturday, Mar 28, 2020</div>
-		</div>
-	</div>
+        <div class="date_container">
+            <!--不能将超链接放在与此备注同一行的div以下-->
+            <p></p>
+            <div class="date" id="date">Saturday, Mar 28, 2020</div>
+        </div>
+    </div>
 
 
-	<script>
-		function update() {
-			var date = new Date()
-			var utc8DiffMinutes = date.getTimezoneOffset() + 480
-			date.setMinutes(date.getMinutes() + utc8DiffMinutes)
+    <script>
+        function update() {
+            var date = new Date()
+            var utc8DiffMinutes = date.getTimezoneOffset() + 480
+            date.setMinutes(date.getMinutes() + utc8DiffMinutes)
 
-			var timeString = date.getHours() + ':' + ('0' + date.getMinutes()).slice(-2) + ':' +date.getSeconds()
-			var dayList = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-			var monthList = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-			var dateString = dayList[date.getDay()] + ", " +monthList[(date.getMonth())] + ' ' + date.getDate() + ", " +date.getFullYear()
+            var timeString = date.getHours() + ':' + ('0' + date.getMinutes()).slice(-2) + ':' + date.getSeconds()
+            var dayList = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+            var monthList = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            var dateString = dayList[date.getDay()] + ", " + monthList[(date.getMonth())] + ' ' + date.getDate() + ", " + date.getFullYear()
 
-			document.getElementById("time").innerHTML = timeString
-			document.getElementById("date").innerHTML = dateString
-		}
+            document.getElementById("time").innerHTML = timeString
+            document.getElementById("date").innerHTML = dateString
+        }
 
-		update()
-		setInterval("update()", 100)
-	</script>
-	
-	
-	
+        update()
+        setInterval("update()", 100)
+    </script>
+
+
+
 </body>
+
 </html>
