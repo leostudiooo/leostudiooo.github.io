@@ -32,6 +32,7 @@ i18n_dir: :lang
 skip_render:
   - pomodoro/*
   - time/*
+  - _posts/archived/*
 
 
 # Writing
@@ -93,6 +94,7 @@ pagination_dir: page
 include:
 exclude:
 ignore:
+
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
