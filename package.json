@@ -28,7 +28,7 @@
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
     "pjax": "^0.2.8",
-    "valine": "^1.4.14"
+    "valine": "^1.4.15"
   },
   "devDependencies": {
     "hexo-generator-baidu-sitemap": "^0.1.9"
