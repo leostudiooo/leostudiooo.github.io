@@ -229,6 +229,10 @@ assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/assign-symbols/download/assign-symbols-1.0.0.tgz"
 
+assignment@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/assignment/-/assignment-2.0.0.tgz#ffd17b21bf5d6b22e777b989681a815456a3dd3e"
+
 async-each@^1.0.1:
   version "1.0.3"
   resolved "https://registry.npm.taobao.org/async-each/download/async-each-1.0.3.tgz"
@@ -1128,6 +1132,10 @@ has-values@^1.0.0:
     is-number "^3.0.0"
     kind-of "^4.0.0"
 
+he@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/he/-/he-0.5.0.tgz#2c05ffaef90b68e860f3fd2b54ef580989277ee2"
+
 hexo-bunyan@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/hexo-bunyan/download/hexo-bunyan-1.0.0.tgz"
@@ -1485,6 +1493,13 @@ inflight@^1.0.4:
 inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.3:
   version "2.0.4"
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz"
+
+insane@^2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/insane/-/insane-2.6.2.tgz#c2ab68bb3e006ab451560d1b446917329c0a8120"
+  dependencies:
+    assignment "2.0.0"
+    he "0.5.0"
 
 is-accessor-descriptor@^0.1.6:
   version "0.1.6"
@@ -1926,8 +1941,8 @@ moment-timezone@^0.5.21:
     moment ">= 2.9.0"
 
 "moment@>= 2.9.0", moment@^2.10.6, moment@^2.18.0, moment@^2.22.2:
-  version "2.25.1"
-  resolved "https://registry.npmjs.org/moment/-/moment-2.25.1.tgz"
+  version "2.29.2"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.2.tgz#00910c60b20843bcba52d37d58c628b47b1f20e4"
 
 morgan@^1.9.1:
   version "1.10.0"
@@ -2839,13 +2854,14 @@ uuid@^3.0.0, uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz"
 
-valine@^1.4.14:
-  version "1.4.14"
-  resolved "https://registry.npmjs.org/valine/-/valine-1.4.14.tgz"
+valine@^1.4.15:
+  version "1.4.15"
+  resolved "https://registry.yarnpkg.com/valine/-/valine-1.4.15.tgz#6ab637fca7b206885aa252ea5f408914bd1996f5"
   dependencies:
     balajs "^1.0.7"
     balalaika "^1.0.1"
     element-closest "^3.0.2"
+    insane "^2.6.2"
     leancloud-storage "^3.0.4"
     storejs "^1.0.25"
     xss "^1.0.6"
