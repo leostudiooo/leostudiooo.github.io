@@ -78,10 +78,17 @@ links:
   
   - url: http://www.darkfox.top
     avatar: https://i.loli.net/2021/05/04/Vq1DKGy9EnQiPbu.png
-    name: 冥狐DarkFox
+    name: 冥狐 DarkFox
     blog: 冥狐的小站
     desc: 记录生活每一次感动！
     color: "#000000"
+
+  - url: https://cmu.bwmc.live/
+    avatar: https://cmu.bwmc.live/wp-content/uploads/2022/03/268DC943-461C-411C-941C-F069EC6CB750-768x768.png
+    name: 筱烷
+    blog: BWMC 社区
+    desc: 一个供大家交流的社区～
+    color: "#55CFF4"
 
 placeholder: 还没想好说些什么 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～
