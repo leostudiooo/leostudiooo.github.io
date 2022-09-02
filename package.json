@@ -9,10 +9,10 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "5.2.0"
+    "version": "6.2.0"
   },
   "dependencies": {
-    "hexo": "^5.2.0",
+    "hexo": "^6.2.0",
     "hexo-deployer-git": "^3.0.0",
     "hexo-filter-mermaid-diagrams": "^1.0.5",
     "hexo-generator-archive": "^1.0.0",
@@ -27,6 +27,8 @@
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
+    "hexo-theme-yun": "^1.10.6",
+    "js-yaml": "^4.1.0",
     "pjax": "^0.2.8",
     "valine": "^1.4.15"
   },

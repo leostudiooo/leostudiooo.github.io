@@ -46,61 +46,61 @@ social:
     # set rss in your root config
     # https://github.com/hexojs/hexo-generator-feed
     link: /atom.xml # config.feed.path
-    icon: icon-rss-line
+    icon: ri:rss-line
     color: orange
   - name: QQ
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
     link: https://wpa.qq.com/msgrd?v=3&uin=1806941781&site=qq&menu=yes
-    icon: icon-qq-line
+    icon: ri:qq-line
     color: "#12B7F5"
   - name: GitHub
     link: https://github.com/leostudiooo
-    icon: icon-github-line
+    icon: ri:github-line
     color: "#6e5494"
   - name: 网易云音乐
     link: https://music.163.com/#/artist?id=34438980
-    icon: icon-netease-cloud-music-line
+    icon: ri:netease-cloud-music-line
     color: "#C20C0C"
   - name: 知乎
     link: https://www.zhihu.com/people/lingling0408/
-    icon: icon-zhihu-line
+    icon: ri:zhihu-line
     color: "#0084FF"
   - name: 哔哩哔哩
     link: https://space.bilibili.com/244815810
-    icon: icon-bilibili-line
+    icon: ri:bilibili-line
     color: "#FF8EB3"
   # - name: POPI
   #   link: https://www.popiask.cn/elpsycn
-  #   icon: icon-questionnaire-line
+  #   icon: ri:questionnaire-line
   #   color: "#525252"
   # - name: 微信公众号
   #   link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
-  #   icon: icon-wechat-2-line
+  #   icon: ri:wechat-2-line
   #   color: "#1AAD19"
   - name: Twitter
     link: https://twitter.com/Leo_050408
-    icon: icon-twitter-line
+    icon: ri:twitter-line
     color: "#1da1f2"
   # - name: Telegram
   #   link: https://t.me/YunYouJun
-  #   icon: icon-telegram-line
+  #   icon: ri:telegram-line
   #   color: "#0088CC"
   # - name: Telegram Channel
   #  link: https://t.me/elpsycn
-    # icon: icon-telegram-fill
-   # icon: icon-telegram-line
+    # icon: ri:telegram-fill
+   # icon: ri:telegram-line
   #  color: "#0088CC"
   - name: E-Mail
     link: mailto:lilingfeng0408@outlook.com
-    icon: icon-mail-line
+    icon: ri:mail-line
     color: "#8E71C1"
   - name: Travelling
     link: https://travellings.now.sh/
-    icon: icon-send-plane-2-line
+    icon: ri:send-plane-2-line
     color: black
   - name: Status
     link: https://stats.upti`obot.com/MKAxnT5nQy
-    icon: icon-eye-line
+    icon: ri:eye-line
     color: "#0DBC79"
 
 codeblock:
@@ -113,17 +113,22 @@ codeblock:
 pages:
   - name: 我的小伙伴们
     url: /links/
-    icon: icon-genderless-line
+    icon: ri:genderless-line
     color: dodgerblue
-
+  
+  - name: Box
+    link: /box/
+    icon: ri:archive-line
+    color: "#41B883"
+  
   - name: 时钟
     url: /time/
-    icon: icon-time-line
+    icon: ri:time-line
     color: "#66CCFF"
   
   - name: 番茄钟
     url: /pomodoro/
-    icon: icon-timer-line
+    icon: ri:timer-line
     color: "#00A2FF"
 # pages
 # -------
@@ -132,7 +137,7 @@ anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg
 
 albums:
   enable: false
-  icon: icon-gallery-line
+  icon: ri:gallery-line
   src: /js/gallery-decrypt.js
 
 girls:
@@ -152,21 +157,21 @@ avatar:
 menu:
   home:
     path: /
-    icon: icon-home-4-line
+    icon: ri:home-4-line
   list:
     - type: archives
       path: /archives/
-      icon: icon-archive-line
+      icon: ri:archive-line
     - type: categories
       path: /categories/
-      icon: icon-folder-2-line
+      icon: ri:folder-2-line
     - type: tags
       path: /tags/
-      icon: icon-price-tag-3-line
+      icon: ri:price-tag-3-line
   custom:
     title: 文档
     path: https://yun.yunyoujun.cn
-    icon: icon-settings-line
+    icon: ri:settings-line
 
 # archive
 archive:
@@ -198,37 +203,37 @@ categories:
 types:
   link:
     color: blue
-    icon: icon-external-link-line
+    icon: ri:external-link-line
   bilibili:
     color: "#FF8EB3"
-    icon: icon-bilibili-line
+    icon: ri:bilibili-line
   douban:
     color: "#007722"
-    icon: icon-douban-line
+    icon: ri:douban-line
   github:
     color: black
-    icon: icon-github-line
+    icon: ri:github-line
   netease-cloud-music:
     color: "#C10D0C"
-    icon: icon-netease-cloud-music-line
+    icon: ri:netease-cloud-music-line
   notion:
     color: black
-    icon: icon-notion
+    icon: ri:notion
   twitter:
     color: "#1da1f2"
-    icon: icon-twitter-line
+    icon: ri:twitter-line
   wechat:
     color: "#1AAD19"
-    icon: icon-wechat-2-line
+    icon: ri:wechat-2-line
   weibo:
     color: "#E6162D"
-    icon: icon-weibo-line
+    icon: ri:weibo-line
   yuque:
     color: "#25b864"
-    icon: icon-yuque
+    icon: ri:yuque
   zhihu:
     color: "#0084FF"
-    icon: icon-zhihu-line
+    icon: ri:zhihu-line
 
 # post_card
 post_card:
@@ -313,7 +318,7 @@ banner:
     color: "white"
   go_down:
     enable: true
-    icon: icon-arrow-down-s-line
+    icon: ri:arrow-down-s-line
 
 # You can import the font you want in the head.
 font:
@@ -382,27 +387,27 @@ bg_image:
 # You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
 reward:
   enable: true
-  icon: icon-hand-coin-line
+  icon: ri:hand-coin-line
   comment: I'm so cute. Please give me money.
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 支付宝
       path: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/alipay-qrcode.jpg
       color: "#00A3EE"
-      icon: icon-alipay-line
+      icon: ri:alipay-line
     # - name: QQ 支付
     #   path: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/qqpay-qrcode.png
     #   color: "#12B7F5"
-    #   icon: icon-qq-line
+    #   icon: ri:qq-line
     - name: 微信支付
       path: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/wechatpay-qrcode.jpg
       color: "#2DC100"
-      icon: icon-wechat-pay-line
+      icon: ri:wechat-pay-line
     # - name: paypal
     #   link: https://paypal.com
     #   path: https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg
     #   color: "#2D70B5"
-    #   icon: icon-paypal-line
+    #   icon: ri:paypal-line
 
 # Creative Commons 4.0 International License.
 # https://creativecommons.org/licenses/
@@ -434,7 +439,7 @@ footer:
   # Icon between year and copyright info.
   icon:
     # `heart` is recommended with animation in red (#ff0000).
-    name: icon-cloud-line
+    name: ri:cloud-line
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
@@ -500,7 +505,7 @@ say:
 # -------
 comment:
   enable: true
-  icon: icon-chat-3-line
+  icon: ri:chat-3-line
   tips:
     - 点击按钮跳转 GitHub Issues 评论。
     - 若没有本文 Issue，您可以使用 Comment 模版新建。
@@ -615,11 +620,11 @@ utterances:
 busuanzi:
   enable: false
   site_uv: true
-  site_uv_icon: icon-user-line
+  site_uv_icon: ri:user-line
   site_pv: true
-  site_pv_icon: icon-eye-line
+  site_pv_icon: ri:eye-line
   page_pv: true
-  page_pv_icon: icon-eye-line
+  page_pv_icon: ri:eye-line
 
 # Post wordcount
 # https://github.com/willin/hexo-wordcount

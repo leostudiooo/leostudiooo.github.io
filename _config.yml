@@ -33,6 +33,7 @@ skip_render:
   - pomodoro/*
   - time/*
   - _posts/archived/*
+  - box/*
 
 
 # Writing
