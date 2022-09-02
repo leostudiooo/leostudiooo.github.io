@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://leostudiooo.github.io/2022/09/01/blind-jb-write-sept-1/</loc>
+    
+    <lastmod>2022-09-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://leostudiooo.github.io/links/index.html</loc>
     
     <lastmod>2022-05-21</lastmod>
@@ -390,6 +399,13 @@
   
   <url>
     <loc>https://leostudiooo.github.io/tags/celebrate/</loc>
+    <lastmod>2022-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://leostudiooo.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2022-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
