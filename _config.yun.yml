@@ -116,8 +116,8 @@ pages:
     icon: ri:genderless-line
     color: dodgerblue
   
-  - name: Box
-    link: /box/
+  - name: 配布站
+    url: /box/
     icon: ri:archive-line
     color: "#41B883"
   
