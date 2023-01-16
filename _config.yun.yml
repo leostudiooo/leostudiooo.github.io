@@ -506,15 +506,15 @@ say:
 comment:
   enable: true
   icon: ri:chat-3-line
-  tips:
-    - 点击按钮跳转 GitHub Issues 评论。
-    - 若没有本文 Issue，您可以使用 Comment 模版新建。
-    - 你也可以直接在下面的评论区进行评论。
+  # tips:
+  #   - 点击按钮跳转 GitHub Issues 评论。
+  #   - 若没有本文 Issue，您可以使用 Comment 模版新建。
+  #   - 你也可以直接在下面的评论区进行评论。
 
 # GitHub Issues Link Button
 # https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests
 github_issues:
-  enable: true
+  enable: false
   username: leostudiooo
   repository: leostudiooo.github.io
   filters: is:issue
@@ -698,6 +698,7 @@ mourn:
   days:
     - "4-4"
     - "9-18"
+    - "11-30"
 
 # SEO
 # https://ziyuan.baidu.com/linksubmit/index
