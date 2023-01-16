@@ -37,7 +37,7 @@ toc:
   list_number: true
   max_depth: 6
   min_depth: 1
-  # placeholder: 很遗憾，咱没写啥目录
+  placeholder: 很遗憾，咱没写啥目录
   collapse: true
 
 # Social Links.
@@ -310,7 +310,7 @@ cdn:
 # UI
 banner:
   enable: true
-  title: LeoStudio
+  title: 烫烫烫的记事本
   src: /js/ui/banner.js
   border: true
   cloud:
@@ -523,31 +523,10 @@ github_issues:
 # You can get your appid and appkey from https://leancloud.cn
 # More info available at https://valine.js.org
 # extend: https://github.com/DesertsP/Valine-Admin
-valine:
+waline:
   enable: true
-  appId: uArs3msOxUAWs7n5oCOm5sKU-gzGzoHsz
-  appKey: Ij94t7TRAmVxTvbkRPNNyxPO
-  placeholder: Just go go # comment box placeholder
-  avatar: 
-    meta:
-     - nick
-     - mail
-     - link
-  pageSize: 10 # pagination size
-  lang: zh-CN
-  visitor: false
-  highlight: true
-  recordIP: true
-  # serverURLs:
-  # Emoji See: https://valine.js.org/emoji.html
-  # emojiCDN: //i0.hdslb.com/bfs/emote/
-  # emojiMaps:
-  #   tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
-  #   more...
-  enableQQ: true
-  # requiredFields:
-  #   - nick
-  #   - mail
+  serverURL: https://waline-ashen-sigma.vercel.app/
+  comment: true
 
 # MiniValine
 # You can get your appid and appkey from https://leancloud.cn
@@ -629,7 +608,7 @@ busuanzi:
 # Post wordcount
 # https://github.com/willin/hexo-wordcount
 wordcount:
-  enable: false
+  enable: true
   count: true
   time: true
 

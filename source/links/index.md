@@ -6,6 +6,13 @@ keywords: Link
 description: Leo 的好朋友！
 comments: true
 links:
+  - url: https://kevinz.cn/
+    avatar: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@master/img/9720008d63a42a8948e3929909759286325d85b0.jpg
+    name: Kevinz
+    blog: Kevinz Planet
+    desc: 是小k
+    color: "#5097B1"
+
   - url: https://luoyuer.com/
     avatar: https://luoyuer.com/wp-content/uploads/2020/09/psb.png
     name: Rainy
@@ -28,7 +35,7 @@ links:
     color: "#60B2EC"
 
   - url: https://f-y.me/
-    avatar: https://i1.hdslb.com/bfs/face/f306fc5d8573d3b48175e9f78a0db81e3f70a909.jpg@128w_128h_1o.webp
+    avatar: https://i1.hdslb.com/bfs/face/f306fc5d8573d3b48175e9f78a0db81e3f70a909.jpg
     name: Ted Fu (@icecream1507)
     blog: Ted Fu
     desc: 沉迷思考，享受创造，向往自由。
@@ -42,7 +49,7 @@ links:
     color: "#0078E7"
 
   - url: https://skipm4.com/
-    avatar: https://secure.gravatar.com/avatar/14eaeed4e2084a06a741f86806234729?s=100&r=G&d=
+    avatar: https://secure.gravatar.com/avatar/14eaeed4e2084a06a741f86806234729
     name: SkipM4
     blog: SkipM4 的日记本
     desc: (虽然可能连周记都忘了写)
