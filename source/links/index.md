@@ -10,7 +10,7 @@ links:
     avatar: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@master/img/9720008d63a42a8948e3929909759286325d85b0.jpg
     name: Kevinz
     blog: Kevinz Planet
-    desc: 是小k
+    desc: 是小 K！
     color: "#5097B1"
 
   - url: https://luoyuer.com/
@@ -62,8 +62,8 @@ links:
     desc: Things change.
     color: "#A2BCDD"
 
-  - url: https://asuhe.jp/
-    avatar: https://asuhe.jp/wp-content/uploads/2020/12/logo.png
+  - url: https://kiseki.blog/
+    avatar: https://s.nmxc.ltd/sakurairo_vision/asuhe/avatar.jpg
     name: 染川 瞳
     blog: 約束の明日へ
     desc: また君を思い出すよ
@@ -107,7 +107,7 @@ tip: 友链加载中～如失败请刷新重试～
 url: https://leostudiooo.github.io/
 avatar: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn/img/avatar.jpg
 name: Leo
-blog: LeoStudio
+blog: 烫烫烫的记事本
 desc: Stay hungry, stay foolish.
 color: "#00A2FF"
 ```
