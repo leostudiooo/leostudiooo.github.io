@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://66ccff.site/
+url: https://烫烫烫的锟斤拷.top/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
