@@ -2,7 +2,7 @@
 Thumbs.db
 db.json
 *.log
-node_modules/
 .deploy*/
 .vscode
 public
+node_modules
