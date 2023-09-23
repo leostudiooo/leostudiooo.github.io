@@ -65,8 +65,8 @@ links:
   - url: https://kiseki.blog/
     avatar: https://s.nmxc.ltd/sakurairo_vision/asuhe/avatar.jpg
     name: 染川 瞳
-    blog: 約束の明日へ
-    desc: また君を思い出すよ
+    blog: 明日が来ると
+    desc: 信じてること自体が希望なんだ
     color: "#EE9CA7"
 
   - url: https://josephcz.xyz/
@@ -90,11 +90,10 @@ links:
     desc: 记录生活每一次感动！
     color: "#000000"
 
-  - url: https://cmu.bwmc.live/
-    avatar: https://cmu.bwmc.live/wp-content/uploads/2022/03/268DC943-461C-411C-941C-F069EC6CB750-768x768.png
-    name: 筱烷
-    blog: BWMC 社区
-    desc: 一个供大家交流的社区～
+  - url: https://blog.kusu.moe/
+    avatar: https://blog.kusu.moe/wp-content/uploads/2022/03/268DC943-461C-411C-941C-F069EC6CB750-768x768.png
+    name: 白雨 楠
+    blog: 楠ちゃん の Blog
     color: "#55CFF4"
 
 placeholder: 还没想好说些什么 # 默认对友链的描述
