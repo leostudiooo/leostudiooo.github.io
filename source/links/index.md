@@ -96,6 +96,13 @@ links:
     blog: 楠ちゃん の Blog
     color: "#55CFF4"
 
+  - url: https://uranium92.tech
+    avatar: https://uranium92.tech/usr/uploads/2024/03/768042623.png
+    name: 92
+    blog: 92的博客
+    desc: 喵
+    color: "#858FAC"
+
 placeholder: 还没想好说些什么 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～
 ---
