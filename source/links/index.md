@@ -97,7 +97,7 @@ links:
     color: "#55CFF4"
 
   - url: https://uranium92.tech
-    avatar: https://uranium92.tech/usr/uploads/2024/03/768042623.png
+    avatar: https://avatars.githubusercontent.com/u/98642231?v=4
     name: 92
     blog: 92的博客
     desc: 喵
