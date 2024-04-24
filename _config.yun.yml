@@ -130,6 +130,12 @@ pages:
     url: /pomodoro/
     icon: ri:timer-line
     color: "#00A2FF"
+
+  - name: 随机数
+    url: /random/
+    icon: ri:shuffle-line
+    color: "#80BBFF"
+
 # pages
 # -------
 # friend
