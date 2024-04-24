@@ -338,7 +338,7 @@ font:
     weight: 900
   sans_serif:
     family: "'PingFang SC', 'Source Han Sans SC', 'Noto Sans SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
-    weight: 500
+    weight: Regular
   monospace:
     family: "'Cascadia Code', 'Source Code Pro', 'Monaco', 'Courier New', Courier, Consolas, monospace"
 
