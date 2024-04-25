@@ -6,3 +6,4 @@ db.json
 .vscode
 public
 node_modules
+*.lock
