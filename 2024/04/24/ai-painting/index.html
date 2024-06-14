@@ -1,0 +1,203 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#00a2ff"><meta name="author" content="锟斤拷"><meta name="copyright" content="锟斤拷"><meta name="generator" content="Hexo 6.3.0"><meta name="theme" content="hexo-theme-yun"><title>关于 AI 绘画的一些杂谈 | 烫烫烫的记事本</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&amp;family=Source+Code+Pro&amp;famiy=Noto+Sans+SC&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.24/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="//at.alicdn.com/t/font_1140697_ed8vp4atwoj.js" async></script><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"></script><script type="module">import { renderKatex } from '/js/utils.js'
+document.addEventListener("DOMContentLoaded", () => {
+  renderKatex({
+    ...{},
+    ...undefined?.options,
+  });
+});</script><script src="https://fastly.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer type="module"></script><script src="https://fastly.jsdelivr.net/npm/vue@2.6.14"></script><link rel="icon" type="image/png" href="/favicon.ico"><link rel="mask-icon" href="/favicon.ico" color="#00a2ff"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"xn--huu92dpwpaa217f909c.top","root":"/","title":"烫烫烫的记事本","version":"1.10.11","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn?c=d&c=e&c=i&c=j&c=l","hitokoto":true},"local_search":{"path":"/search.xml"},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false,"src":"/js/search/local-search.js"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194","3, 28, 95","0, 8, 55","102, 204, 255","200, 192, 85"]},"waline":{"config":{"enable":true,"serverURL":"https://waline-ashen-sigma.vercel.app/","comment":true,"el":"#waline","lang":"zh-CN"},"cdn":"https://fastly.jsdelivr.net/npm/@waline/client@v2/dist/waline.js","dark":"html.dark"},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css"><script src="/js/hexo-theme-yun.js" type="module"></script><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><script src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn/js/jquery-2.2.4.min.js"></script><script src="/js/msclarity.js"></script><link rel="alternate" href="/atom.xml" title="烫烫烫的记事本" type="application/atom+xml"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><script async src="https://www.googletagmanager.com/gtag/js?id=G-E9Q4KDDY5F"></script><script>if (CONFIG.hostname === location.hostname) {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E9Q4KDDY5F');
+}</script><script>//- only for pjax
+function sendPageView() {
+  if (CONFIG.hostname !== location.hostname) return;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('event', 'page_view', {
+    page_path: encodeURIComponent(location.pathname),
+  })
+}
+document.addEventListener("pjax:success", sendPageView);</script><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><meta name="description" content="📢 声明本文使用包括 Mistral 和 GPT 在内的 LLM 辅助撰写，但作者为所有内容负责。    为什么要写这篇博客？自从生成式人工智能 (Generative Artificial Intelligence, Gen-AI) 的诞生之初，人们对它们的讨论就没有停止过。有赞许的声音，也有批评的声音；有的人对 AI 的前景表示乐观，也有的人对人类的前景表示悲观。还有人，因为缺乏对相关">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于 AI 绘画的一些杂谈">
+<meta property="og:url" content="https://烫烫烫的锟斤拷.top/2024/04/24/ai-painting/index.html">
+<meta property="og:site_name" content="烫烫烫的记事本">
+<meta property="og:description" content="📢 声明本文使用包括 Mistral 和 GPT 在内的 LLM 辅助撰写，但作者为所有内容负责。    为什么要写这篇博客？自从生成式人工智能 (Generative Artificial Intelligence, Gen-AI) 的诞生之初，人们对它们的讨论就没有停止过。有赞许的声音，也有批评的声音；有的人对 AI 的前景表示乐观，也有的人对人类的前景表示悲观。还有人，因为缺乏对相关">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic2.zhimg.com/80/v2-1b030c7965fb49c08658016398a36d65_720w.webp">
+<meta property="article:published_time" content="2024-04-24T06:28:28.000Z">
+<meta property="article:modified_time" content="2024-06-14T08:40:20.277Z">
+<meta property="article:author" content="锟斤拷">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="绘画">
+<meta property="article:tag" content="杂谈">
+<meta property="article:tag" content="科普">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic2.zhimg.com/80/v2-1b030c7965fb49c08658016398a36d65_720w.webp"><script>(function() {
+  if (CONFIG.mode !== 'auto') return
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info mickey-mouse"><a class="site-author-avatar" href="/about/" title="锟斤拷"><img width="96" loading="lazy" src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/avatar.jpg" alt="锟斤拷"></a><div class="site-author-name"><a href="/about/">锟斤拷</a></div><span class="site-name">烫烫烫的记事本</span><sub class="site-subtitle"></sub><div class="site-description"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">22</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">0</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">35</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:settings-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><span class="icon iconify" data-icon="ri:rss-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://wpa.qq.com/msgrd?v=3&amp;uin=1806941781&amp;site=qq&amp;menu=yes" title="QQ" target="_blank" style="color:#12B7F5"><span class="icon iconify" data-icon="ri:qq-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/leostudiooo" title="GitHub" target="_blank" style="color:#6e5494"><span class="icon iconify" data-icon="ri:github-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/artist?id=34438980" title="网易云音乐" target="_blank" style="color:#C20C0C"><span class="icon iconify" data-icon="ri:netease-cloud-music-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/lingling0408/" title="知乎" target="_blank" style="color:#0084FF"><span class="icon iconify" data-icon="ri:zhihu-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/244815810" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><span class="icon iconify" data-icon="ri:bilibili-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://twitter.com/Leo_050408" title="Twitter" target="_blank" style="color:#1da1f2"><span class="icon iconify" data-icon="ri:twitter-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:leo.li@kevinz.cn" title="E-Mail" target="_blank" style="color:#8E71C1"><span class="icon iconify" data-icon="ri:mail-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://travellings.now.sh/" title="Travelling" target="_blank" style="color:var(--hty-text-color)"><span class="icon iconify" data-icon="ri:send-plane-2-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://stats.uptimerobot.com/MKAxnT5nQy" title="Status" target="_blank" style="color:#0DBC79"><span class="icon iconify" data-icon="ri:eye-line"></span></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a><a class="links-item hty-icon-button" href="/box/" title="配布站" style="color:#41B883"><span class="icon iconify" data-icon="ri:archive-line"></span></a><a class="links-item hty-icon-button" href="/time/" title="时钟" style="color:#66CCFF"><span class="icon iconify" data-icon="ri:time-line"></span></a><a class="links-item hty-icon-button" href="/pomodoro/" title="番茄钟" style="color:#00A2FF"><span class="icon iconify" data-icon="ri:timer-line"></span></a><a class="links-item hty-icon-button" href="/random/" title="随机数" style="color:#80BBFF"><span class="icon iconify" data-icon="ri:shuffle-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E8%BF%99%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">为什么要写这篇博客？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AI-%E7%BB%98%E7%94%BB%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">AI 绘画到底是什么？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E5%88%87%E7%9A%84%E8%B5%B7%E6%BA%90%EF%BC%9A1973-%E5%B9%B4"><span class="toc-number">2.1.</span> <span class="toc-text">一切的起源：1973 年</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%97%B6%E4%BB%A3%EF%BC%9A2014-%E5%B9%B4"><span class="toc-number">2.2.</span> <span class="toc-text">深度学习时代：2014 年</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%A9%E6%95%A3%E5%BC%8F%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B%EF%BC%9A2021-%E5%B9%B4"><span class="toc-number">2.3.</span> <span class="toc-text">扩散式生成模型：2021 年</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A9%E6%95%A3%E5%BC%8F%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8E%9F%E7%90%86"><span class="toc-number">2.3.1.</span> <span class="toc-text">扩散式生成模型的原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9"><span class="toc-number">2.3.2.</span> <span class="toc-text">缺点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA"><span class="toc-number">2.3.3.</span> <span class="toc-text">常见误区</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%B8%E5%9D%97%EF%BC%9F"><span class="toc-number">2.3.3.1.</span> <span class="toc-text">尸块？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8D%E5%8F%AF%E6%8E%A7%EF%BC%9F"><span class="toc-number">2.3.3.2.</span> <span class="toc-text">不可控？</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8A%B5%E5%88%B6-AI-%E7%BB%98%E7%94%BB%EF%BC%9F"><span class="toc-number">3.</span> <span class="toc-text">我们为什么抵制 AI 绘画？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">4.</span> <span class="toc-text">结语</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95"><span class="toc-number">5.</span> <span class="toc-text">更新记录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-number">6.</span> <span class="toc-text">参考文献</span></a></li></ol></div></div></div><div class="tag-cloud"><div class="tag-cloud-tags"><a href="/tags/AI/" style="font-size: 12px; color: #999">AI</a> <a href="/tags/C/" style="font-size: 16.5px; color: #7391ad">C++</a> <a href="/tags/DJI/" style="font-size: 12px; color: #999">DJI</a> <a href="/tags/PenguinPlayer/" style="font-size: 12px; color: #999">PenguinPlayer</a> <a href="/tags/Python/" style="font-size: 16.5px; color: #7391ad">Python</a> <a href="/tags/RoboMaster/" style="font-size: 12px; color: #999">RoboMaster</a> <a href="/tags/celebrate/" style="font-size: 12px; color: #999">celebrate</a> <a href="/tags/cups/" style="font-size: 12px; color: #999">cups</a> <a href="/tags/how/" style="font-size: 16.5px; color: #7391ad">how</a> <a href="/tags/none/" style="font-size: 12px; color: #999">none</a> <a href="/tags/oi/" style="font-size: 25.5px; color: #2680d4">oi</a> <a href="/tags/openjudge/" style="font-size: 12px; color: #999">openjudge</a> <a href="/tags/printer/" style="font-size: 12px; color: #999">printer</a> <a href="/tags/raspberrypi/" style="font-size: 12px; color: #999">raspberrypi</a> <a href="/tags/surface-dial/" style="font-size: 12px; color: #999">surface dial</a> <a href="/tags/%E5%A4%A7%E7%89%A9%E5%AE%9E%E9%AA%8C/" style="font-size: 12px; color: #999">大物实验</a> <a href="/tags/%E5%B0%8F%E8%AE%BA%E6%96%87/" style="font-size: 21px; color: #4d89c0">小论文</a> <a href="/tags/%E6%8F%90%E9%97%AE/" style="font-size: 12px; color: #999">提问</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 30px; color: #0078e7">教程</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" style="font-size: 12px; color: #999">数据处理</a></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#00a2ff;"><link itemprop="mainEntityOfPage" href="https://烫烫烫的锟斤拷.top/2024/04/24/ai-painting/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="锟斤拷"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="烫烫烫的记事本"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">关于 AI 绘画的一些杂谈</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="创建时间：2024-04-24 14:28:28" itemprop="dateCreated datePublished" datetime="2024-04-24T14:28:28+08:00">2024-04-24</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-2-line"></span></span> <time title="修改时间：2024-06-14 16:40:20" itemprop="dateModified" datetime="2024-06-14T16:40:20+08:00">2024-06-14</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><span class="icon iconify" data-icon="ri:file-word-line"></span></span> <span title="本文字数">4.2k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><span class="icon iconify" data-icon="ri:timer-line"></span></span> <span title="阅读时长">14m</span></span></span><span class="post-meta-divider">-</span><a href="#comment"><span class="post-meta-item-icon" title="评论数"><span class="icon iconify" data-icon="ri:chat-3-line"></span> <span class="waline-comment-count" id="/2024/04/24/ai-painting/"></span></span></a><div class="post-classify"><span class="post-tag"><a class="tag-item" href="/tags/%E6%95%99%E7%A8%8B/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">教程</span></a><a class="tag-item" href="/tags/AI/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">AI</span></a><a class="tag-item" href="/tags/%E7%BB%98%E7%94%BB/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">绘画</span></a><a class="tag-item" href="/tags/%E6%9D%82%E8%B0%88/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">杂谈</span></a><a class="tag-item" href="/tags/%E7%A7%91%E6%99%AE/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">科普</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><div class="info">
+
+<blockquote>
+<p><strong>📢 声明</strong><br>本文使用包括 Mistral 和 GPT 在内的 LLM 辅助撰写，但作者为所有内容负责。</p>
+</blockquote>
+</div>
+
+<h1 id="为什么要写这篇博客？"><a href="#为什么要写这篇博客？" class="headerlink" title="为什么要写这篇博客？"></a>为什么要写这篇博客？</h1><p>自从生成式人工智能 (Generative Artificial Intelligence, Gen-AI) 的诞生之初，人们对它们的讨论就没有停止过。有赞许的声音，也有批评的声音；有的人对 AI 的前景表示乐观，也有的人对人类的前景表示悲观。还有人，因为缺乏对相关技术原理的理解，对它们带有很大的偏见，而这种偏见在信息茧房和互联网的透镜作用下进一步放大，从而导致了普遍的错误认知。</p>
+<p>尤其是在 AI 绘画领域，很多画师和观众因为缺乏对技术原理的基本认知而盲目跟风抵制或者空口鉴图（我不是说抵制是错误的，在<a href="#我们为什么抵制-AI-绘画？">后文</a>我会谈到我们为什么要抵制 AI 绘画），我认为这种现象对绘画界、乃至艺术界并不是有益的。即使我们要把 AI 绘画当作敌人，我们也应该首先了解它；更何况 AI 绘画并不是十恶不赦的魔鬼造物，只要使用得当它也可以作为趁手的辅助工具来推动绘画技术的发展。</p>
+<blockquote>
+<p>知己知彼，方能百战不殆。</p>
+<div style="text-align: right">——《孙子·谋攻》</div>
+</blockquote>
+<p>如果您正在看这篇文章并已经怒不可遏，我请求您耐着性子看完。这或许会让您对 AI 绘画有一个更全面的认识；在那之后，您可以继续抵制，也可以转变立场，还可以在评论区或者发邮件（见侧栏）骂我。</p>
+<h1 id="AI-绘画到底是什么？"><a href="#AI-绘画到底是什么？" class="headerlink" title="AI 绘画到底是什么？"></a>AI 绘画到底是什么？</h1><p>首先，我们来捋一捋 AI 绘画的发展历程。如果想直接了解当下的 AI 绘画技术，可以直接跳到<a href="#扩散式生成模型：2021-年">扩散式生成模型：2021 年</a>。</p>
+<h2 id="一切的起源：1973-年"><a href="#一切的起源：1973-年" class="headerlink" title="一切的起源：1973 年"></a>一切的起源：1973 年</h2><p>在 1973 年，Harold Cohen 教授开始了他的 AARON 项目，这是一个旨在研究计算机绘画的项目。AARON 是一个能够自主创作绘画作品的程序，它能够根据自己的程序逻辑和一些随机因素来创作绘画作品。AARON 的绘画风格主要是抽象的，但是它的作品在当时已经引起了很大的轰动。AARON 的绘画作品被展示在了世界各地的画廊和博物馆，甚至有一些作品被收藏在了博物馆的永久藏品中。</p>
+<p>AARON 无法自行学习新的风格或图像；每种新功能都必须由科恩手工编码。AARON 能够以自己的风格制作出几乎无穷无尽的独特图像。这些图像已在世界各地的画廊展出。AARON 的作品被用作图灵测试的艺术等价物。不过，AARON 的输出似乎遵循一个明显的公式（站在盆栽旁的人物、彩色方框是一个共同的主题）。科恩非常谨慎，没有声称 AARON 具有创造性。但他确实在问：“如果 AARON 制作的不是艺术，那它到底是什么，除了它的起源，它在哪些方面与‘真实的东西’不同？如果它不是在思考，那它到底在做什么？” [^1]</p>
+<h2 id="深度学习时代：2014-年"><a href="#深度学习时代：2014-年" class="headerlink" title="深度学习时代：2014 年"></a>深度学习时代：2014 年</h2><p>2014 年，Ian Goodfellow 等人提出了生成式对抗网络（Generative Adversarial Network, GAN）的概念。GAN 是一种深度学习模型，它由两个神经网络组成：生成器（Generator）和判别器（Discriminator）。生成器的任务是生成尽可能逼真的图像，而判别器的任务是判断图像是真实的还是生成的。生成器和判别器通过对抗训练的方式来提高自己的性能，最终生成器可以生成逼真的图像。[^2]</p>
+<p>GAN 的出现使得 AI 绘画的发展进入了一个新的阶段。在 GAN 的基础上，研究人员提出了很多变种模型，如 StyleGAN、BigGAN、CycleGAN 等。这些模型在生成逼真图像的同时，也为 AI 绘画的发展提供了更多的可能性。</p>
+<h2 id="扩散式生成模型：2021-年"><a href="#扩散式生成模型：2021-年" class="headerlink" title="扩散式生成模型：2021 年"></a>扩散式生成模型：2021 年</h2><p>扩散模型的概念最早在 2015 年就已经被 Sohl-Dickstein 等人提出。它是一种无监督学习模型，通过模拟非平衡热力学过程来学习数据的分布。[^3]但是直到 2021 年，扩散式生成模型才开始大规模地应用于图像生成领域。</p>
+<h3 id="扩散式生成模型的原理"><a href="#扩散式生成模型的原理" class="headerlink" title="扩散式生成模型的原理"></a>扩散式生成模型的原理</h3><p>我们来了解一下扩散模型是如何运作的——我尽量不使用任何专业性特别强的术语，以便大家能够更好地理解。</p>
+<p><img src="https://pic2.zhimg.com/80/v2-1b030c7965fb49c08658016398a36d65_720w.webp" alt="扩散模型示意图（图源见水印）"></p>
+<p>在上面的示意图中，我们可以看到从右边到左边的过程。在最右边 $\mathrm x_0$ 的地方我们有一张清晰的图像，然后我们通过一系列的扩散操作（就像水波扩散一样）来逐渐向图像中添加噪声，最终得到一张几乎完全是噪声的图像 $\mathrm x_T$。</p>
+<p>如果我们把这个过程反过来，让机器学习到如何从一张几乎完全是噪声的图像 $\mathrm x_T$ 逐渐还原到一张清晰的图像 $\mathrm x_0$，那么我们就可以得到一个扩散式的生成模型。稍微做一个不严谨的比喻，这个过程就像是我们从一张马赛克图像中逐渐脑补出更高清的马赛克，直到最终得到一张清晰的图像。</p>
+<p>再向前述两个过程中加入文字描述的部分，作为过程的参考。只要有足够的训练数据，我们就可以让机器学会如何根据所给的文字描述，从几乎完全是噪声的图像还原到一张清晰的图像。</p>
+<p>这就是扩散式图片生成模型的基本原理。</p>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>扩散式生成模型的缺点在于生成的图像往往会有一些细节上的问题，比如人物的手、头发、阴影关系可能会画得不太好。说到底，扩散式生成模型是基于文本和图像<strong>整体</strong>间的统计规律来学习如何生成图像的，基础的扩散模型并不能对图像的细节进行精确的控制，它们只能从一团噪音里试图根据文本提示还原出整块的完整图像。虽然研究者们引入了 ControlNet 等技术来缓解这样的问题，但从模型的基本原理上来说，这个问题是无法完全解决的，即使样本量再庞大、文本提示再详细也不行。扩散式生成模型的原理就决定了它们无法理解图像整体和局部细节之间的关系，更不要说用简单的（或是复杂的）文本提示来控制图像的细节了。</p>
+<p>此外，扩散式生成模型的训练和推理都需要大量的计算资源（同时消耗大量的电能和水资源用于计算和散热）。尤其是在推理应用中——如果我们想要在可以接受的时间内生成一张图像，只有两种办法：要么使用强大而且昂贵的硬件，要么降低图像的质量——而后者正是大多数情况下的选择。</p>
+<h3 id="常见误区"><a href="#常见误区" class="headerlink" title="常见误区"></a>常见误区</h3><h4 id="尸块？"><a href="#尸块？" class="headerlink" title="尸块？"></a>尸块？</h4><p>我们经常可以看到<em>AI 绘画就是拼尸块</em>这样的说法。在阅读上面的原理之后，我们能够很容易地理解到这种说法的错误之处：扩散式生成模型并不是简单地将一张图像分割成若干块，然后随机地拼接在一起；它们是通过将噪声图像逐渐还原的方式来生成清晰图像的。实际上，如果我们用拼接的方式来生成图像，局部细节的处理效果说不定还更好。</p>
+<p>还有一个很简单的逻辑：我们知道 AI 绘画常常画不好人物的手，会出现手指粘连在一起或者一只手有六七八根手指的情况。假设 AI 绘画真的是通过拼接图像的部分来生成图像，那么它就应该能够画出完美的手，因为它可以直接从训练数据中找到完美的手的部分来拼接。但实际上，AI 绘画并不能画出完美的手。这就说明 AI 绘画并不是通过拼接图像的部分来生成图像的。</p>
+<div class="info">
+
+<blockquote>
+<p><strong>💭 个人观点</strong><br>从个人的角度，我能够理解这种愤怒。但是，我认为我们应该首先了解 AI 绘画的原理，然后再对它进行批评。否则，我们的批评就会变得毫无意义。</p>
+</blockquote>
+</div>
+
+<h4 id="不可控？"><a href="#不可控？" class="headerlink" title="不可控？"></a>不可控？</h4><p>有人说 AI 绘画是不可控的，因为我们无法控制它生成的图像。这种说法也不完全正确。实际上，在现阶段，任何一个 AI 模型都是一套固定的算法参数，但是人为引入了随机性。只要我们控制所有的输入参数不变，我们就可以得到相同的输出。这是算法的基本特性，也是我们能够对 AI 模型进行训练和调参的基础。</p>
+<p>但在一定程度上，这种说法也有它的道理。相同的文本提示词可能会生成出不同的图像，这是因为我们引入了随机算法来增加生成图像的多样性。而且，由于前文所述的训练和生成原理，我们无法通过文本提示词来精确地控制图像的细节。</p>
+<p>然而，通过撰写提示词来控制 AI 绘画算不算一种创作这个问题本身也存在相当大的争议。有人认为提示词不能完全控制 AI 绘画生成的图像；也有人认为提示词本身就是一种创作，有的提示词甚至能达到成千上万字的规模。</p>
+<h1 id="我们为什么抵制-AI-绘画？"><a href="#我们为什么抵制-AI-绘画？" class="headerlink" title="我们为什么抵制 AI 绘画？"></a>我们为什么抵制 AI 绘画？</h1><div class="info">
+
+<blockquote>
+<p>这一段其实写得不太好，我会在后续的版本中进行修改。</p>
+</blockquote>
+</div>
+
+<div class="warning">
+
+<blockquote>
+<p><strong>⚠️ 警告</strong><br>本节内容仅代表个人观点。</p>
+</blockquote>
+</div>
+
+<p>在上文中，我们已经了解了 AI 绘画的基本原理。其实，从技术角度来看，AI 绘画并没有什么不妥，反而还是一个有趣的工具。试想一下，如果作为普通人能够让 AI 学会如何画出我们的想象中的图像，那么我们就可以通过 AI 绘画来实现我们的创作想法，而不用担心自己的绘画技术不够好；创意工作者们也能利用这样的工具来进行初步的构思，然后再进行细节的润色，从而提高创作的效率。这是非常令人兴奋的一件事情，对于绘画界来说也是一个很好的发展机会。</p>
+<p>因此，<strong>我们抵制 AI 绘画并不是抵制这项技术本身</strong>。那我们到底在抵制什么呢？我认为最主要的矛盾在于 AI 绘画的<strong>商业化</strong>。</p>
+<p>我们来分析一下 AI 绘画的商业化导致的问题。</p>
+<!-- TODO 完善 -->
+
+<p>首先，AI 绘画的训练数据集大多由互联网上的公开资源组成，这些资源通常没有得到画师的许可就以“学术研究”的名义被获取；然而待训练完成后，这些模型的相当一部分就会被用于商业目的。这实质上是一种<strong>侵权行为</strong>，因为画师的作品被用于商业目的而没有得到相应的报酬。</p>
+<p>其次，AI 绘画的商业化导致了<strong>原创作品的价值下降</strong>。画师的作品是独一无二的，因为每个画师都有自己独特的风格和创作理念。AI 绘画可以生成大量的图像，对于未经训练的大部分观众，他们几乎无法从视觉上区分出哪些是 AI 生成的，哪些是画师创作的（而且随着技术的进步会更难以区分）。这就导致了画师的作品价值下降，从而进一步影响了画师的创作积极性。</p>
+<p>最后，AI 绘画的商业化导致了<strong>画师的就业机会减少、市面上插画质量变低</strong>。画师们曾经可以通过创作作品来获得收入，但是现在很多公司、机构更愿意使用 AI 生成的图像而不是画师创作的图像：因为 AI 的出图效率更高，而质量成为了在高效率出图之下可以舍弃的东西。这就导致了画师的就业机会减少，同时市面上充斥着大量的低质量 AI 插画。而且，由于上述的侵权行为，画师的作品还被用于商业目的而没有得到相应的报酬，让本就不富裕的画师们更加难以维持生计。</p>
+<p>因此，<strong>我们抵制的是 AI 绘画的商业化</strong>，而不是技术本身。我们希望 AI 绘画能够成为一个有益于绘画界的工具，而不是一个剥夺画师权益的工具。</p>
+<div class="info">
+
+<blockquote>
+<p><strong>2024-06-14 更新</strong></p>
+</blockquote>
+<blockquote>
+<p>近段时间有很多厂商在 all-in AI，比如微软、英特尔、苹果、谷歌等等；最近提出的 AI PC 概念也是非常火热。全新 Surface Pro/Laptop 甚至有一个专门的 Copilot 按键，华为和联想等厂家的一些电脑还内置基于 LLM 的助手，支持绘图功能，有的厂商还以此作为卖点。前两天看了 WWDC 2024，苹果在最新的 iOS 18、iPadOS 18 以及 macOS 15 中推出了 Apple Intelligence，其中包含一个简单的 AI 绘画工具，应用场景似乎是 iMessage、笔记以及创意领域的初步生成。创意界巨头 Adobe 也是在生成式 AI 领域投入了大量的研发资源，推出了一系列 AI 插件。（最近好像翻车了？）</p>
+</blockquote>
+<blockquote>
+<p>看起来，包括 LLM 和 AI 绘画在内的人工智能技术的商业化是不可避免的。那么我们或许应该在 AI 绘图领域关注“<strong>‘负责任的’商业化</strong>”，就像我们在环保领域所做的一样：人类的创造力也是应当被保护的珍贵的资源。</p>
+</blockquote>
+<blockquote>
+<p>如果解决了“负责任的”商业化的问题，那么 AI 绘画的问题就来到版权归属、画师权益保护、画师创作积极性等等方面，这些问题可以再写很多篇文章来探讨了：比如生成图像到底算不算原创、AI 生成的图像是否可以商用、画师如何保护自己的作品等等。</p>
+</blockquote>
+</div>
+
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>AI 绘画是一项有趣的技术，它为绘画界带来了新的发展机会。然而，AI 绘画的商业化却给画师们带来了很大的困扰，甚至是让他们失去了生计。我们现在抵制 AI 绘画，并不是抵制这项技术本身，而是抵制它的商业化。我们希望 AI 绘画能够成为一个有益于绘画界的工具，而不是一个剥夺画师权益的工具。</p>
+<p>技术开发者们上应当与画师们团结一致，共同抵制 AI 绘画的商业化。在这场与商业和资本的博弈中，我们都是被剥削的一方，我们应当团结起来，共同抵制商业化的侵权行为。</p>
+<p>希望这篇文章可以消除一些误解、带来一些认识、引发一些思考。如果你还有什么建议或者想骂我的话请在评论区留言或者在侧栏链接里发邮件给我。</p>
+<h1 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h1><ul>
+<li>2024-06-14：修复链接；修复 GAN 部分的拼写错误；重写缺点部分；扩充误区部分的内容；基于时事更新了为什么抵制 AI 绘画的部分，以及插入了关于 AI 绘画商业化的一些观点。</li>
+</ul>
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p>参考文献不是特别全，只找到维基百科和两篇 arXiv 的文章。</p>
+<p>[^1]: <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/AARON">AARON - Wikipedia</a><br>[^2]: <a target="_blank" rel="noopener" href="https://doi.org/10.48550/arXiv.1406.2661">Goodfellow, I. J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., &amp; Bengio, Y. (2014). Generative Adversarial Networks. arXiv preprint arXiv:1406.2661.</a><br>[^3]: <a target="_blank" rel="noopener" href="https://doi.org/10.48550/arXiv.1503.03585">Sohl-Dickstein, J., Weiss, E. A., Maheswaranathan, N., &amp; Ganguli, S. (2015). Deep Unsupervised Learning using Nonequilibrium Thermodynamics. arXiv preprint arXiv:1503.03585.</a></p>
+</div></section><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><span class="icon iconify" data-icon="ri:hand-coin-line"></span></span><div id="reward-comment">I'm so cute. Please give me money.</div><div id="qr" style="display:none;"><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/alipay-qrcode.jpg"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/alipay-qrcode.jpg" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><span class="icon iconify" data-icon="ri:alipay-line"></span></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/wechatpay-qrcode.jpg"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/wechatpay-qrcode.jpg" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><span class="icon iconify" data-icon="ri:wechat-pay-line"></span></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>锟斤拷</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://烫烫烫的锟斤拷.top/2024/04/24/ai-painting/" title="关于 AI 绘画的一些杂谈">https://烫烫烫的锟斤拷.top/2024/04/24/ai-painting/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul><script>document.addEventListener('copy', function (event) {
+  const clipboardData = event.clipboardData || window.clipboardData;
+  if (!clipboardData) { return; }
+  const text = window.getSelection().toString();
+  if (text) {
+    event.preventDefault();
+    clipboardData.setData('text/plain', text + '\n\n本文作者：锟斤拷\n本文链接：https://烫烫烫的锟斤拷.top/2024/04/24/ai-painting/\n版权声明：本博客所有文章除特别声明外，均默认采用 CC BY-NC-SA 4.0 许可协议。');
+  }
+});</script></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2024/05/21/991cn-01/" rel="prev" title="使用卡西欧 fx-999CN CW 加速处理大物实验数据！"><span class="icon iconify" data-icon="ri:arrow-left-s-line"></span><span class="post-nav-text">使用卡西欧 fx-999CN CW 加速处理大物实验数据！</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2022/08/31/blind-jb-write-sept-1/" rel="next" title="瞎写点东西"><span class="post-nav-text">瞎写点东西</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"><div id="waline"></div><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@waline/client@v2/dist/waline.css"><script>window.CONFIG.waline.config.path = "/2024/04/24/ai-painting/"</script><div class="js-Pjax"><script src="/js/comments/waline.js" type="module" defer></script></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2020 – 2024 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> 锟斤拷</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v6.3.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.11</span></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#00a2ff" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:search-line"></span></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="https://fastly.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script><script src="/js/search/local-search.js" defer type="module"></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><span class="icon iconify" data-icon="ri:close-line"></span></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div class="search-result-container"></div></div><script>function initMourn() {
+  const date = new Date();
+  const today = (date.getMonth() + 1) + "-" + date.getDate()
+  const mourn_days = ["4-4","9-18","11-30"]
+  if (mourn_days.includes(today)) {
+    document.documentElement.style.filter = "grayscale(1)";
+  }
+}
+initMourn();</script></body></html>
