@@ -469,7 +469,7 @@ footer:
     start_time: "2020-01-12T00:00:00"
 
   # Any custom text can be defined here.
-  # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
+  custom_text: <a href="https://icp.gov.moe/?keyword=20247120" target="_blank">萌ICP备20247120号</a>
 
 # Post meta display settings
 post_meta:
