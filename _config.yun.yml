@@ -136,6 +136,11 @@ pages:
     icon: ri:shuffle-line
     color: "#80BBFF"
 
+  - name: B707o
+    url: /b707o/
+    icon: ri:plane-line
+    color: "#FFBF00"
+
 # pages
 # -------
 # friend

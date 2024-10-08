@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<title>厚嘴唇航空公司 B-707CC 波音 707o 型飞机模型</title>
+	<body>
+		<h1>厚嘴唇航空公司 B-707CC 波音 707o 型飞机模型</h1>
+		<div id="hint"><p>请使用 iPhone 或 iPad 的 Safari 浏览器打开该页面以体验增强现实（AR）卡片。不过，你仍然可以</p></div>
+		<button id="ar_entry">打开 AR 体验</button>
+		<button id="usdz_model">查看 3D 模型</button>
+	</body>
+	<footer>友情链接 <a href="https://chilichill-music.com/">ChiliChill 官方网站</a></footer>
+</html>
+<script type="text/javascript">
+	// Check UA: if iOS Safari, show AR button
+	var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+	var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+	if (iOS && isSafari) {
+		document.getElementById("hint").innerHTML = "<p>请点击下方按钮打开 AR 体验。</p>";
+		document.getElementById("ar_entry").style.display = "true";
+		document.getElementById("usdz_model").style.display = "true";
+	} else {
+		document.getElementById("hint").innerHTML = "<p>请使用 iPhone 或 iPad 的 Safari 浏览器打开该页面以体验增强现实（AR）卡片。。不过，你仍然可以</p>";
+		document.getElementById("ar_entry").style.display = "none";
+		document.getElementById("usdz_model").style.display = "true";
+	}
+	// AR button
+	document.getElementById("ar_entry").addEventListener("click", function() {
+		window.location.href = "B707o.reality";
+	});
+	// USDZ model button
+	document.getElementById("usdz_model").addEventListener("click", function() {
+		window.location.href = "B707o.usdz";
+	});
+</script>
