@@ -16,10 +16,10 @@
 </html>
 <script type="text/javascript">
 	// Check if ARKit is supported
-	var arKitSupported = window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.arkit;
-	// var touchScreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
-	// var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-	if (arKitSupported) {
+	// var arKitSupported = window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.arkit;
+	var touchScreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+	var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+	if (touchScreen && isSafari) {
 		document.getElementById("hint").innerHTML = "<p>请点击下方按钮打开 AR 体验。你也可以查看 1:1 比例的 3D 模型（当然，你会需要一片非常宽阔的场地）。</p>";
 		document.getElementById("ar_entry").style.display = "true";
 		document.getElementById("usdz_model").style.display = "true";
