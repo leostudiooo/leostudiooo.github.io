@@ -3,6 +3,7 @@
 	<title>厚嘴唇航空公司 B-707CC 波音 707o 型飞机模型</title>
 	<body>
 		<h1>厚嘴唇航空公司 B-707CC 波音 707o 型飞机模型</h1>
+		<p>厚嘴唇航空公司波音 707o 型飞机是在厚嘴唇星制造的飞机，是波音 707 型飞机的一个变种。厚嘴唇航空公司运营该型飞机在地球各地的观光游览航线。</p>
 		<div id="hint"><p>请使用 iPhone 或 iPad 的 Safari 浏览器打开该页面以体验增强现实（AR）卡片。不过，你仍然可以</p></div>
 		<button id="ar_entry">打开 AR 体验</button>
 		<button id="usdz_model">查看 3D 模型</button>
@@ -10,15 +11,16 @@
 	<footer>友情链接 <a href="https://chilichill-music.com/">ChiliChill 官方网站</a></footer>
 </html>
 <script type="text/javascript">
-	// Check UA: if iOS Safari, show AR button
-	var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-	var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-	if (iOS && isSafari) {
-		document.getElementById("hint").innerHTML = "<p>请点击下方按钮打开 AR 体验。</p>";
+	// Check if ARKit is supported
+	var arKitSupported = window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.arkit;
+	// var touchScreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+	// var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+	if (arKitSupported) {
+		document.getElementById("hint").innerHTML = "<p>请点击下方按钮打开 AR 体验。你也可以查看 1:1 比例的 3D 模型（当然，你会需要一片非常宽阔的场地）。</p>";
 		document.getElementById("ar_entry").style.display = "true";
 		document.getElementById("usdz_model").style.display = "true";
 	} else {
-		document.getElementById("hint").innerHTML = "<p>请使用 iPhone 或 iPad 的 Safari 浏览器打开该页面以体验增强现实（AR）卡片。。不过，你仍然可以</p>";
+		document.getElementById("hint").innerHTML = "<p>请使用 iPhone 或 iPad 的 Safari 浏览器打开该页面以体验增强现实（AR）卡片。不过，你仍然可以</p>";
 		document.getElementById("ar_entry").style.display = "none";
 		document.getElementById("usdz_model").style.display = "true";
 	}
