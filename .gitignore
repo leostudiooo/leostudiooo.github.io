@@ -7,3 +7,4 @@ db.json
 public
 node_modules
 *.lock
+package-lock.json
