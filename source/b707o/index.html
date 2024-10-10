@@ -39,7 +39,7 @@
 		<button id="ar_entry">打开 AR 体验</button>
 		<button id="usdz_model">查看 3D 模型 (USDZ 格式, 1:1)</button>
 		<button id="usdz_001_model">查看 3D 模型 (USDZ 格式, 1:100)</button>
-		<button id="webxr_entry">打开 WebXR AR 体验</button>
+		<button id="webxr_entry">打开  体验</button>
 		<button id="glb_model">查看 3D 模型 (GLB 格式, 1:1)</button>
 		<button id="glb_001_model">查看 3D 模型 (GLB 格式, 1:100)</button>
 		<p>3D 模型需要一定时间加载，具体时间取决于您的网络状况。</p>
@@ -74,6 +74,7 @@
 		document.getElementById("ar_entry").style.display = "true";
 		document.getElementById("usdz_model").style.display = "true";
 		document.getElementById("usdz_001_model").style.display = "true";
+		document.getElementById("webxr_entry").style.display = "none";
 		document.getElementById("glb_model").style.display = "none";
 		document.getElementById("glb_001_model").style.display = "none";
 	} else if (isSafari) {
@@ -81,13 +82,15 @@
 		document.getElementById("ar_entry").style.display = "none";
 		document.getElementById("usdz_model").style.display = "true";
 		document.getElementById("usdz_001_model").style.display = "true";
+		document.getElementById("glb_model").style.display = "true";
 		document.getElementById("glb_model").style.display = "none";
 		document.getElementById("glb_001_model").style.display = "none";
 	} else if (navigator.xr) {
-		document.getElementById("hint").innerHTML = "<p>你的设备仅支持 WebXR，无法提供完整的 AR 体验。建议使用 iPhone 或 iPad 的 Safari 浏览器打开。不过，你仍然可以：</p>";
+		document.getElementById("hint").innerHTML = "<p>当前设备设备仅支持 WebXR，无法识别 AR 卡片，但仍可以在 AR 模式下查看模型。若要获得完整体验，建议使用 iPhone 或 iPad 的 Safari 浏览器打开。不过，你仍然可以：</p>";
 		document.getElementById("ar_entry").style.display = "none";
 		document.getElementById("usdz_model").style.display = "none";
 		document.getElementById("usdz_001_model").style.display = "none";
+		document.getElementById("webxr_entry").style.display = "true";
 		document.getElementById("glb_model").style.display = "true";
 		document.getElementById("glb_001_model").style.display = "true";
 	} else {
@@ -95,6 +98,7 @@
 		document.getElementById("ar_entry").style.display = "none";
 		document.getElementById("usdz_model").style.display = "none";
 		document.getElementById("usdz_001_model").style.display = "none";
+		document.getElementById("webxr_entry").style.display = "true";
 		document.getElementById("glb_model").style.display = "true";
 		document.getElementById("glb_001_model").style.display = "true";
 	}
@@ -124,8 +128,8 @@
 	});
 	// WebXR button
 	document.getElementById("webxr_entry").addEventListener("click", function () {
-		document.getElementById("hint").innerHTML = "<p>正在跳转到 WebXR 体验……</p>";
-		window.location.href = "webxr.html";
+		document.getElementById("hint").innerHTML = "<p>正在跳转到 WebXR 体验……由 8th Wall 提供托管，可能在普通网络环境下无法加载。</p>";
+		window.location.href = "https://8th.io/fazgz";
 	})
 	// GLB model button
 	document.getElementById("glb_model").addEventListener("click", function () {
