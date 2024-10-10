@@ -39,6 +39,8 @@
 		<button id="ar_entry">打开 AR 体验</button>
 		<button id="usdz_model">查看 3D 模型 (USDZ 格式, 1:1)</button>
 		<button id="usdz_001_model">查看 3D 模型 (USDZ 格式, 1:100)</button>
+		<button id="webxr_entry">打开 WebXR AR 体验</button>
+		<button id="glb_model">查看 3D 模型 (GLB 格式, 1:1)</button>
 		<button id="glb_001_model">查看 3D 模型 (GLB 格式, 1:100)</button>
 		<p>3D 模型需要一定时间加载，具体时间取决于您的网络状况。</p>
 	</div>
@@ -70,16 +72,31 @@
 	if (touchScreen && isSafari) {
 		document.getElementById("hint").innerHTML = "<p>请点击下方按钮打开 AR 体验，然后将相机对准上面的卡片。你也可以查看 1:1 比例的 3D 模型（当然，你会需要一片非常宽阔的场地）和 1:100 模型。</p>";
 		document.getElementById("ar_entry").style.display = "true";
+		document.getElementById("usdz_model").style.display = "true";
+		document.getElementById("usdz_001_model").style.display = "true";
+		document.getElementById("glb_model").style.display = "none";
 		document.getElementById("glb_001_model").style.display = "none";
 	} else if (isSafari) {
 		document.getElementById("hint").innerHTML = "<p>请使用 iPhone 或 iPad 的 Safari 浏览器打开该页面以体验增强现实（AR）卡片。不过，你仍然可以：</p>";
 		document.getElementById("ar_entry").style.display = "none";
+		document.getElementById("usdz_model").style.display = "true";
+		document.getElementById("usdz_001_model").style.display = "true";
+		document.getElementById("glb_model").style.display = "none";
 		document.getElementById("glb_001_model").style.display = "none";
-	} else {
-		document.getElementById("hint").innerHTML = "<p>请使用 iPhone 或 iPad 的 Safari 浏览器打开该页面以体验增强现实（AR）卡片。不过，你仍然可以：</p>";
+	} else if (navigator.xr) {
+		document.getElementById("hint").innerHTML = "<p>你的设备仅支持 WebXR，无法提供完整的 AR 体验。建议使用 iPhone 或 iPad 的 Safari 浏览器打开。不过，你仍然可以：</p>";
 		document.getElementById("ar_entry").style.display = "none";
 		document.getElementById("usdz_model").style.display = "none";
 		document.getElementById("usdz_001_model").style.display = "none";
+		document.getElementById("glb_model").style.display = "true";
+		document.getElementById("glb_001_model").style.display = "true";
+	} else {
+		document.getElementById("hint").innerHTML = "<p>请使用 iPhone、iPad 的 Safari 浏览器或支持 WebXR 的设备打开该页面以体验增强现实（AR）卡片。不过，你仍然可以：</p>";
+		document.getElementById("ar_entry").style.display = "none";
+		document.getElementById("usdz_model").style.display = "none";
+		document.getElementById("usdz_001_model").style.display = "none";
+		document.getElementById("glb_model").style.display = "true";
+		document.getElementById("glb_001_model").style.display = "true";
 	}
 	// AR button
 	document.getElementById("ar_entry").addEventListener("click", function () {
@@ -91,8 +108,38 @@
 	});
 	// USDZ model button
 	document.getElementById("usdz_model").addEventListener("click", function () {
+		document.getElementById("hint").innerHTML = "<p>正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o.usdz 文件进行体验。</p>";
 		var a = document.createElement("a");
 		a.href = "B707o.usdz";
+		a.rel = "ar";
+		a.click();
+	});
+	// USDZ 1:100 model button
+	document.getElementById("usdz_001_model").addEventListener("click", function () {
+		document.getElementById("hint").innerHTML = "<p>正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o_001.usdz 文件进行体验。</p>";
+		var a = document.createElement("a");
+		a.href = "B707o_001.usdz";
+		a.rel = "ar";
+		a.click();
+	});
+	// WebXR button
+	document.getElementById("webxr_entry").addEventListener("click", function () {
+		document.getElementById("hint").innerHTML = "<p>正在跳转到 WebXR 体验……</p>";
+		window.location.href = "webxr.html";
+	})
+	// GLB model button
+	document.getElementById("glb_model").addEventListener("click", function () {
+		document.getElementById("hint").innerHTML = "<p>正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o.glb 文件进行体验。</p>";
+		var a = document.createElement("a");
+		a.href = "B707o.glb";
+		a.rel = "ar";
+		a.click();
+	});
+	// GLB 1:100 model button
+	document.getElementById("glb_001_model").addEventListener("click", function () {
+		document.getElementById("hint").innerHTML = "<p>正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o_001.glb 文件进行体验。</p>";
+		var a = document.createElement("a");
+		a.href = "B707o_001.glb";
 		a.rel = "ar";
 		a.click();
 	});
