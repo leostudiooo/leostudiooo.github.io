@@ -20,13 +20,6 @@ links:
     desc: 山内有樱名为良，树本无名只待春。
     color: "#66CCFF"
 
-  - url: http://hlstudio.haku.ren/
-    avatar: http://hlstudio.haku.ren/images/ico.ico
-    name: 和乐工作室
-    blog: HL Studio
-    desc: 一群有梦想的青年而已。
-    color: "#2BB7F5"
-
   - url: https://www.drblack-system.com/
     avatar: https://www.drblack-system.com/wp-content/uploads/2020/03/sJBNyu3T_e9yqdfVESkWAg_109951164668058406.jpg
     name: Dr Black
@@ -83,7 +76,7 @@ links:
     desc: 大切な人と再会できる日を
     color: "#FF4081"
   
-  - url: http://www.darkfox.top
+  - url: https://www.darkfox.top
     avatar: https://i.loli.net/2021/05/04/Vq1DKGy9EnQiPbu.png
     name: 冥狐 DarkFox
     blog: 冥狐的小站
@@ -103,6 +96,13 @@ links:
     desc: 喵
     color: "#858FAC"
 
+  - url: https://idealclover.top
+    avatar: https://image.idealclover.cn/blog/assets/icon.png
+    name: idealclover
+    blog: idealclover
+    desc: Stay simple, stay naive.
+    color: "#b5c3ac"
+
 placeholder: 还没想好说些什么 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～
 ---
@@ -117,4 +117,10 @@ blog: 烫烫烫的记事本
 desc: Stay hungry, stay foolish.
 color: "#00A2FF"
 ```
-如果想要将贵链添加到我的列表，请按照以上格式在评论区留言～
+
+如果想要将贵链添加到我的列表，请按照以上格式在评论区留言～您的网站需要满足以下条件：
+- 可正常访问（将不定期检查）
+- 有一定的内容
+- 强制启用 HTTPS
+
+注：评论区好像可用性不是很好，可以点点左边给我发邮件。
