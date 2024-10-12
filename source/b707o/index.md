@@ -7,9 +7,7 @@ tags:
   - ChiliChill
   - 飞机
   - 整活
-head:
-  js:
-	async: b707o.js
+reward: true
 ---
 
 <style>
@@ -61,7 +59,7 @@ button:active {
 
 </div>
 
-# 关于厚嘴唇航空公司 THICCLIP AIRWAYS
+## 关于厚嘴唇航空公司 THICCLIP AIRWAYS
 
 厚嘴唇航空公司（英文：THICCLIP Airways，航司二字代码：CC）是一家由旅居地球的厚嘴唇星人Cu夏和YuH创立的航空公司，总部位于中国上海市。厚嘴唇星位于银河系边缘，其居民因特征性的厚嘴唇而得名。航司英文名称“THICCLIP AIRWAYS”和二字代码中的“CC”灵感就源于这一特征，象征从上方俯视时的嘴唇形状。
 
@@ -69,7 +67,7 @@ button:active {
 <!--disclaimer: AI generated image-->
 <div class="desc"><p>厚嘴唇航空公司位于上海的总部；图像由 DALL-E 3 生成。</p></div>
 
-# B-707CC：厚嘴唇航空公司的传奇客机
+## B-707CC：厚嘴唇航空公司的传奇客机
 
 厚嘴唇航空公司拥有数百架喷气式与螺旋桨飞机，运营全球的观光游览航线；其中，与波音公司定制的 B707o 型飞机最为出名。该型飞机以大胆、活泼、且充满个性的桃红、柠黄、天蓝三色涂装而闻名，这不仅是一种视觉表达，更是厚嘴唇星人性格的象征。厚嘴唇星人作为宇宙中的一支独特群体，他们以乐观、外向且热情的性格著称。正如他们勇于跨越星际来到地球一样，他们喜欢挑战未知，敢于打破常规。
 
@@ -100,9 +98,13 @@ B-707CC 号飞机是厚嘴唇航空公司 B707o 型飞机中最具有纪念意�
 	<button id="glb_001_model">查看 3D 模型 (GLB 格式, 1:100)</button>
 </div>
 
+### 网页内预览 3D 模型 (Beta)
+
 3D 模型需要一定时间加载，具体时间取决于您的网络状况。如果加载不出，请考虑使用代理。推荐使用 Safari、Chrome 或 Edge 等浏览器。
 
-# 另附：《飞鸟说》合唱谱
+<iframe src="3d_view.html" width="100%" height="400px" frameborder="0"></iframe>
+
+## 另附：《飞鸟说》合唱谱
 点击[查看/下载](https://cdn.idealclover.cn/Projects/chilichill/feiniaoshuo.pdf)《飞鸟说》合唱谱（南京版，由 GaP *et al.* 制作）。
 <object id="sheet_preview" data="https://cdn.idealclover.cn/Projects/chilichill/feiniaoshuo.pdf"
 	type="application/pdf" width="100%">
@@ -111,7 +113,7 @@ B-707CC 号飞机是厚嘴唇航空公司 B707o 型飞机中最具有纪念意�
 	</p>
 </object>
 
-# 尾注
+## 尾注
 [ChiliChill 官方网站](https://chilichill-music.com/)<br>
 B707 aircraft model by manilov.ap on [SketchFab](https://sketchfab.com/3d-models/boeing707-83f77b7fe94f49e39b984c7390e9ecec), shared under CC 4.0 license.<br>
 感谢 <a href="https://idealclover.cn/" target="_blank">idealclover</a> 大佬提供 CDN 托管以加速模型和曲谱文件的加载。

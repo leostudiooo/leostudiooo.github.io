@@ -34,7 +34,7 @@ skip_render:
   - time/*
   - _posts/archived/*
   - box/*
-  - b707o/webxr.html
+  - b707o/3d_view.html
 
 
 # Writing

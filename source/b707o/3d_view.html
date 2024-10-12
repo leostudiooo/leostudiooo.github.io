@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3D Model Viewer</title>
+	<script src="js/three.min.js"></script>
+	<script src="js/OrbitControls.js"></script>
+	<script src="js/GLTFLoader.js"></script>
+	<style>
+		body {
+			margin: 0;
+			overflow: hidden;
+		}
+
+		canvas {
+			display: block;
+		}
+
+		#info {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			color: white;
+			background: rgba(0, 0, 0, 0.5);
+			padding: 10px;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			max-width: 200px;
+			/* 设置最大宽度 */
+			word-wrap: break-word;
+			/* 处理长单词换行 */
+			z-index: 10;
+			/* 确保信息框在最上层 */
+		}
+	</style>
+</head>
+
+<body>
+	<div id="info">Loading...</div>
+	<script>
+		let scene, camera, renderer, controls;
+
+		function init() {
+			// 创建场景
+			scene = new THREE.Scene();
+			scene.background = new THREE.Color(0x666666);
+
+			// 创建透视相机
+			camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+			// 设置相机初始位置
+			camera.position.set(-23.84, 7.88, -26.86);
+
+			// 设置相机初始旋转角度（使用弧度）
+			camera.rotation.set(-2.86, -0.71, -2.95);
+
+			// 渲染器
+			renderer = new THREE.WebGLRenderer({ antialias: true });
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+
+			// 轨道控制器，用于缩放和旋转
+			controls = new THREE.OrbitControls(camera, renderer.domElement);
+			controls.enableDamping = true;
+			controls.dampingFactor = 0.25;
+			controls.enableZoom = true;
+
+			// 添加环境光和方向光
+			const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+			scene.add(ambientLight);
+
+			const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+			directionalLight.position.set(10, 10, 10).normalize();
+			scene.add(directionalLight);
+
+			// 加载3D模型
+			const loader = new THREE.GLTFLoader();
+			// Production
+			// loader.load('https://cdn.idealclover.cn/Projects/chilichill/B707o.glb', function (gltf) {
+			// Development
+			loader.load('B707o.glb', function (gltf) {
+				const model = gltf.scene;
+				scene.add(model);
+				animate();
+			}, undefined, function (error) {
+				console.error('An error happened', error);
+			});
+
+			// 调整窗口大小时更新渲染器和相机
+			window.addEventListener('resize', onWindowResize, false);
+		}
+
+		function onWindowResize() {
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+		}
+
+		function updateInfo() {
+			// 获取相机位置和旋转
+			const position = camera.position;
+			const rotation = camera.rotation;
+
+			// 获取信息显示元素
+			const infoDiv = document.getElementById('info');
+
+			// 更新显示信息
+			infoDiv.innerHTML = `
+                Camera Position: <br>
+                X: ${position.x.toFixed(2)}<br>
+                Y: ${position.y.toFixed(2)}<br>
+                Z: ${position.z.toFixed(2)}<br>
+				<br>
+				Camera Rotation: <br>
+				X: ${rotation.x.toFixed(2)}<br>
+				Y: ${rotation.y.toFixed(2)}<br>
+				Z: ${rotation.z.toFixed(2)}<br>
+            `;
+		}
+
+		function animate() {
+			requestAnimationFrame(animate);
+			controls.update();  // 更新控制器状态
+			updateInfo();       // 更新信息显示
+			renderer.render(scene, camera);
+		}
+
+		init();
+	</script>
+</body>
+
+</html>
