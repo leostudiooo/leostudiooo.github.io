@@ -77,9 +77,9 @@
 			// 加载3D模型
 			const loader = new THREE.GLTFLoader();
 			// Production
-			// loader.load('https://cdn.idealclover.cn/Projects/chilichill/B707o.glb', function (gltf) {
+			loader.load('https://cdn.idealclover.cn/Projects/chilichill/B707o.glb', function (gltf) {
 			// Development
-			loader.load('B707o.glb', function (gltf) {
+			// loader.load('B707o.glb', function (gltf) {
 				const model = gltf.scene;
 				scene.add(model);
 				animate();
