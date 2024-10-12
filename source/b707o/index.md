@@ -86,7 +86,7 @@ B-707CC 号飞机是厚嘴唇航空公司 B707o 型飞机中最具有纪念意�
 
 <image id="ar_img" src="ar_card.jpg" alt="AR 卡片"/>
 
-<div class="desc"><p>您手里应该有一张具有如图所示图案的 AR 卡片。</p></div>
+<div class="desc"><p>您手里应该有一张具有如图所示图案的 AR 卡片。（翻个面看看？）</p></div>
 <div id="hint">
 	<p>请使用 iPhone 或 iPad 的 Safari 浏览器打开该页面以体验增强现实（AR）卡片。不过，你仍然可以</p>
 </div>
@@ -176,7 +176,7 @@ function addModelClickListener(id, href, hintMessage) {
 	});
 }
 
-addModelClickListener("ar_entry", "https://cdn.idealclover.cn/Projects/chilichill/B707o.reality", "正在加载 AR 体验……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o.reality 文件进行体验。");
+addModelClickListener("ar_entry", "https://cdn.idealclover.cn/Projects/chilichill/B707o.reality", "正在加载 AR 体验……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以选择显示或者下载 B707o.reality 文件进行体验。");
 addModelClickListener("usdz_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o.usdz", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o.usdz 文件进行体验。");
 addModelClickListener("usdz_001_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o_001.usdz", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o_001.usdz 文件进行体验。");
 addModelClickListener("webxr_entry", "https://8th.io/fazgz", "正在跳转到 WebXR 体验……由 8th Wall 提供托管，加载需要时间，请耐心等待。");
