@@ -147,7 +147,7 @@ if (isSafari) {
 		toggleDisplay(["glb_model", "glb_001_model"], false);
 		console.log("macOS Safari detected, enabling USDZ and WebXR entry, disabling AR entry.");
 	} else {
-		showHint("请点击下方按钮打开 AR 体验，然后将相机对准上面的卡片。你也可以查看 1:1 比例的 3D 模型（当然，你会需要一片非常宽阔的场地）和 1:100 模型（其实这个也不小）。如果网络不佳，可以尝试 WebXR 体验。");
+		showHint("请点击下方按钮打开 AR 体验（如果弹出下载窗口，请选择“显示”，也可以下载到本地后体验），然后将相机对准上面的卡片。你也可以查看 1:1 比例的 3D 模型（当然，你会需要一片非常宽阔的场地）和 1:100 模型（其实这个也不小）。如果网络不佳，可以尝试 WebXR 体验。");
 		toggleDisplay(["ar_entry", "usdz_model", "usdz_001_model", "webxr_entry"], true);
 		toggleDisplay(["glb_model", "glb_001_model"], false);
 		document.getElementById("sheet_preview").style.display = "none";
@@ -176,7 +176,7 @@ function addModelClickListener(id, href, hintMessage) {
 	});
 }
 
-addModelClickListener("ar_entry", "https://cdn.idealclover.cn/Projects/chilichill/B707o.reality", "正在加载 AR 体验……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以选择显示或者下载 B707o.reality 文件进行体验。");
+addModelClickListener("ar_entry", "https://cdn.idealclover.cn/Projects/chilichill/B707o.reality", "正在加载 AR 体验……模型约 8 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o.reality 文件进行体验。");
 addModelClickListener("usdz_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o.usdz", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o.usdz 文件进行体验。");
 addModelClickListener("usdz_001_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o_001.usdz", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o_001.usdz 文件进行体验。");
 addModelClickListener("webxr_entry", "https://8th.io/fazgz", "正在跳转到 WebXR 体验……由 8th Wall 提供托管，加载需要时间，请耐心等待。");
