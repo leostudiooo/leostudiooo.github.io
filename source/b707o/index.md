@@ -94,15 +94,14 @@ B-707CC 号飞机是厚嘴唇航空公司 B707o 型飞机中最具有纪念意�
 	<button id="usdz_model">查看 3D 模型 (USDZ 格式, 1:1)</button>
 	<button id="usdz_001_model">查看 3D 模型 (USDZ 格式, 1:100)</button>
 	<button id="webxr_entry">打开 WebXR 体验</button>
+	<button id="in_browser_model">在浏览器中查看 3D 模型 (Beta)</button>
 	<button id="glb_model">查看 3D 模型 (GLB 格式, 1:1)</button>
 	<button id="glb_001_model">查看 3D 模型 (GLB 格式, 1:100)</button>
 </div>
 
-### 网页内预览 3D 模型 (Beta)
-
 3D 模型需要一定时间加载，具体时间取决于您的网络状况。如果加载不出，请考虑使用代理。推荐使用 Safari、Chrome 或 Edge 等浏览器。
 
-<iframe src="3d_view.html" width="100%" height="400px" frameborder="0"></iframe>
+<!--<iframe src="3d_view.html" width="100%" height="400px" frameborder="0"></iframe>-->
 
 ## 另附：《飞鸟说》合唱谱
 点击[查看/下载](https://cdn.idealclover.cn/Projects/chilichill/feiniaoshuo.pdf)《飞鸟说》合唱谱（南京版，由 GaP *et al.* 制作）。
@@ -182,6 +181,7 @@ addModelClickListener("ar_entry", "https://cdn.idealclover.cn/Projects/chilichil
 addModelClickListener("usdz_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o.usdz", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o.usdz 文件进行体验。");
 addModelClickListener("usdz_001_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o_001.usdz", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o_001.usdz 文件进行体验。");
 addModelClickListener("webxr_entry", "https://8th.io/fazgz", "正在跳转到 WebXR 体验……由 8th Wall 提供托管，加载需要时间，请耐心等待。");
+addModelClickListener("in_browser_model", "3d_view.html", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果加载不出，请考虑使用代理。");
 addModelClickListener("glb_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o.glb", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 https://cdn.idealclover.cn/Projects/chilichill/B707o.glb 文件进行体验。");
 addModelClickListener("glb_001_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o_001.glb", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o_001.glb 文件进行体验。");
 </script>
