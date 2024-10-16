@@ -52,6 +52,10 @@ button:active {
 }
 </style>
 
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/%E6%B7%B7%E5%85%A5%E4%BA%BA%E9%A1%9E%E8%A8%88%E5%8A%83/1765302287"></iframe>
+
+<div class="desc">背景音乐播放器<br/>请登陆 Apple Music 以聆听完整专辑</div>
+
 <div class="info">
 
 > **📢 声明**
@@ -111,6 +115,8 @@ B-707CC 号飞机是厚嘴唇航空公司 B707o 型飞机中最具有纪念意�
 		当前设备不支持在页面内预览 PDF 文件，请点击上方链接预览/下载。
 	</p>
 </object>
+
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/%E9%A3%9E%E9%B8%9F%E8%AF%B4/1765302287?i=1765302449"></iframe>
 
 ## 尾注
 [ChiliChill 官方网站](https://chilichill-music.com/)<br>
