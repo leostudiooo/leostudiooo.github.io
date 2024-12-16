@@ -70,7 +70,7 @@ links:
     color: "#0078D4"
 
   - url: https://ouyangqiqi.cn/
-    avatar: https://cdn.ouyangqiqi.cn/images/qiqi.jpg
+    avatar: https://ouyangqiqi.cn/qiqi.jpg
     name: 欧阳淇淇
     blog: 欧阳淇淇の小屋
     desc: 大切な人と再会できる日を
