@@ -36,5 +36,6 @@
   },
   "devDependencies": {
     "hexo-generator-baidu-sitemap": "^0.1.9"
-  }
+  },
+  "packageManager": "yarn@4.7.0"
 }

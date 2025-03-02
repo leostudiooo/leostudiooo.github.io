@@ -1,9 +1,0 @@
-[submodule "themes/landscape"]
-	path = themes/landscape
-	url = https://github.com/hexojs/hexo-theme-landscape.git
-[submodule "themes/yun"]
-	path = themes/yun
-	url = https://github.com/yunyoujun/hexo-theme-yun.git
-[submodule "source/box"]
-	path = source/box
-	url = https://github.com/leostudiooo/kjkp-distro.git
