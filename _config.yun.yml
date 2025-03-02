@@ -277,7 +277,7 @@ lazyload:
 # pjax
 pjax:
   enable: true
-  src: /js/pjax.js
+  src: /js/pjax.min.js
 
 # stylesheets loaded in the <head>
 css:
@@ -291,7 +291,7 @@ js:
   - /js/utils.js
   - /js/hexo-theme-yun.js
   # - /js/pplayer.js
-  - https://resources.xn--huu92dpwpaa217f909c.top/jquery-2.2.4.min.js
+  - /js/jquery.js
   - /js/msclarity.js
   # - /js/pplayer-new.js
   # - /js/player.js
