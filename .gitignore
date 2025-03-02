@@ -17,6 +17,8 @@ node_modules
 .idea/
 *.log
 .vscode/
+.yarn/
+yarn-error.log
 
 components.d.ts
 
