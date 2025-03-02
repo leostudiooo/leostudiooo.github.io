@@ -7,7 +7,7 @@ description: Leo 的好朋友！
 comments: true
 links:
   - url: https://kevinz.cn/
-    avatar: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@master/img/9720008d63a42a8948e3929909759286325d85b0.jpg
+    avatar: https://resources.xn--huu92dpwpaa217f909c.top/9720008d63a42a8948e3929909759286325d85b0.jpg
     name: Kevinz
     blog: Kevinz Planet
     desc: 是小 K！

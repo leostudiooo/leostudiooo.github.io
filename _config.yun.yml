@@ -157,7 +157,7 @@ girls:
 # Sidebar Avatar
 avatar:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/avatar.jpg
+  url: https://resources.xn--huu92dpwpaa217f909c.top/avatar.jpg
   # If true, the avatar would be dispalyed in circle.
   rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -291,7 +291,7 @@ js:
   - /js/utils.js
   - /js/hexo-theme-yun.js
   # - /js/pplayer.js
-  - https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn/js/jquery-2.2.4.min.js
+  - https://resources.xn--huu92dpwpaa217f909c.top/jquery-2.2.4.min.js
   - /js/msclarity.js
   # - /js/pplayer-new.js
   # - /js/player.js
@@ -387,10 +387,8 @@ scrollreveal:
 
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/BSDay.jpg
-  # https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/bg_light.png # recomend image related to your mode
-  dark: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/BSNight.jpg
-  # https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/bg/bg_dark.png
+  url: https://resources.xn--huu92dpwpaa217f909c.top/BSDay.jpg
+  dark: https://resources.xn--huu92dpwpaa217f909c.top/BSNight.jpg
   # blur: 20px
   opacity: 1
 
@@ -404,15 +402,15 @@ reward:
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 支付宝
-      path: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/alipay-qrcode.jpg
+      path: https://resources.xn--huu92dpwpaa217f909c.top/alipay-qrcode.jpg
       color: "#00A3EE"
       icon: ri:alipay-line
     # - name: QQ 支付
-    #   path: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/qqpay-qrcode.png
+    #   path: https://resources.xn--huu92dpwpaa217f909c.top/qqpay-qrcode.png
     #   color: "#12B7F5"
     #   icon: ri:qq-line
     - name: 微信支付
-      path: https://cdn.jsdelivr.net/gh/leostudiooo/leostudiooo.cdn@latest/img/donate/wechatpay-qrcode.jpg
+      path: https://resources.xn--huu92dpwpaa217f909c.top/wechatpay-qrcode.jpg
       color: "#2DC100"
       icon: ri:wechat-pay-line
     # - name: paypal
@@ -675,11 +673,11 @@ katex:
 
 # plugins
 aplayer:
-  global: false
+  global: true
   meting: true
   # https://github.com/metowolf/MetingJS/tree/v1.2#option
   widget:
-    enable: false
+    enable: true
     autoplay: false
     # theme: "#2980b9"
     loop: all
@@ -697,7 +695,7 @@ aplayer:
         cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
     meting:
       enable: true
-      id: 308168565
+      id: 586118236
       server: netease
       type: playlist
 
