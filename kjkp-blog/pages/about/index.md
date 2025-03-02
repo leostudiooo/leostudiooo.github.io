@@ -2,14 +2,14 @@
 title: 关于我
 ---
 
-I am developing [Valaxy](https://github.com/YunYouJun/valaxy) - Next Generation Static Blog Framework.
+👋 你好！我是锟斤拷/Leo，一名目前就读于[东南大学](https://www.seu.edu.cn/)的学生。
 
-If you like it, you can sponsor me in [GitHub](https://github.com/sponsors/YunYouJun) or [sponsors.yunyoujun.cn](https://sponsors.yunyoujun.cn).
+⬅️ 这边有一些我在各种地方的账号，欢迎关(shì)注(jiān)。
 
----
+📧 如果你有什么问题或者想要交流，欢迎给我发[邮件](mailto:lilingfeng0408@outlook.com)。
 
-我正在开发 [Valaxy](https://github.com/YunYouJun/valaxy) - 下一代静态博客框架。
+📚 我的主要技术栈是 `C/C++` `Python` `HTML/CSS/JavaScript`，希望可以为开源做出一份自己的贡献。
 
-如果你喜欢它，你可以在 [GitHub](https://github.com/sponsors/YunYouJun) 或 [sponsors.yunyoujun.cn](https://sponsors.yunyoujun.cn) 赞助我。
+📝 我的博客主要记录了一些技术、生活、思考等内容，欢迎你的访问！
 
-Check out the [Valaxy | GitHub](https://github.com/YunYouJun/valaxy) for more details.
+🎵 另外，我目前还活跃在中文（泛）VOCALOID 圈，在尝试写一些自己的作品。我对各种音乐都很感兴趣！

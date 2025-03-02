@@ -1,13 +1,11 @@
 ---
 title: Hello, Valaxy!
-date: 2022-04-01
-updated: 2022-04-01
-categories: Valaxy 笔记
+date: 2025-03-02
 tags:
   - valaxy
-  - 笔记
-top: 1
 ---
+
+终于迁移到 Valaxy 了！这是一个全新的开始。
 
 ## Valaxy
 
