@@ -43,7 +43,7 @@ export default defineValaxyConfig<UserThemeConfig>({
       },
       // {
       //   name: '时钟',
-      //   url: '/time/',
+      //   url: '/time/index.html',
       //   icon: 'i-ri-time-line',
       //   color: '#66CCFF',
       // },
