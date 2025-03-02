@@ -10,55 +10,13 @@ tags:
 reward: true
 ---
 
-<style>
-button {
-	background-color: #4CAF50;
-	border: none;
-	border-radius: 999px;
-	color: white;
-	padding: 12px 16px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-	cursor: pointer;
-	transition: ease-in-out 150ms;
-}
-
-button:hover {
-	background-color: #50bb54;
-	padding: 14px 18px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-button:active {
-	background-color: #3e8e41;
-	padding: 10px 14px;
-	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-#button-container {
-	display: flex !important;
-	flex-wrap: wrap;
-	justify-content: center !important;
-}
-
-.desc {
-	text-align: center;
-	font-size: small;
-	color: #888;
-}
-</style>
-
 <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/%E6%B7%B7%E5%85%A5%E4%BA%BA%E9%A1%9E%E8%A8%88%E5%8A%83/1765302287"></iframe>
 
-<div class="desc">背景音乐播放器<br/>请登陆 Apple Music 以聆听完整专辑</div>
+<Desc>背景音乐播放器<br/>请登陆 Apple Music 以聆听完整专辑</Desc>
 
 <div class="info">
 
-> **📢 声明**
+> **📢 声明**  
 > 本文为虚构内容，如有雷同，纯属巧合。
 
 </div>
@@ -69,7 +27,7 @@ button:active {
 
 ![厚嘴唇航空公司总部](thicclip_airways.jpg)
 <!--disclaimer: AI generated image-->
-<div class="desc"><p>厚嘴唇航空公司位于上海的总部；图像由 DALL-E 3 生成。</p></div>
+<Desc><p>厚嘴唇航空公司位于上海的总部；图像由 DALL-E 3 生成。</p></Desc>
 
 ## B-707CC：厚嘴唇航空公司的传奇客机
 
@@ -82,26 +40,15 @@ button:active {
 B-707CC 号飞机是厚嘴唇航空公司 B707o 型飞机中最具有纪念意义、最为传奇的一架。其注册号恰好包含了 707 飞机家族和厚嘴唇航空公司 CC。该架飞机正以 CC 7070 的航班号运营上海市到全国各地的旅游航线。很难说这到底是某种巧合或者缘分；总之，基于以上的原因，厚嘴唇航空公司 B-707CC 号飞机总是受到世界各地飞友的欢迎和追捧。
 
 ![厚嘴唇航空公司 B-707CC 波音 707o 型飞机](B707o.jpg)
-<div class="desc"><p>B-707CC 号传奇客机</p></div>
+<Desc><p>B-707CC 号传奇客机</p></Desc>
 
 幸运的是：现在，无需花费千元购买一张 CC 7070 航班的机票，您就可以在自己的设备上亲眼看到这架传奇飞机。
 
-<image id="ar_img" src="ar_card.jpg" alt="AR 卡片"/>
+<img id="ar_img" src="ar_card.jpg" alt="AR 卡片">
 
-<div class="desc"><p>您手里应该有一张具有如图所示图案的 AR 卡片。（翻个面看看？）</p></div>
-<div id="hint">
-	<p>请使用 iPhone 或 iPad 的 Safari 浏览器打开该页面以体验增强现实（AR）卡片。不过，你仍然可以</p>
-</div>
+<Desc><p>您手里应该有一张具有如图所示图案的 AR 卡片。（翻个面看看？）</p></Desc>
 
-<div id="button_container">
-	<button id="ar_entry">打开 AR 体验</button>
-	<button id="usdz_model">查看 3D 模型 (USDZ 格式, 1:1)</button>
-	<button id="usdz_001_model">查看 3D 模型 (USDZ 格式, 1:100)</button>
-	<button id="webxr_entry">打开 WebXR 体验</button>
-	<button id="in_browser_model">在浏览器中查看 3D 模型 (Beta)</button>
-	<button id="glb_model">查看 3D 模型 (GLB 格式, 1:1)</button>
-	<button id="glb_001_model">查看 3D 模型 (GLB 格式, 1:100)</button>
-</div>
+<B707o />
 
 3D 模型需要一定时间加载，具体时间取决于您的网络状况。如果加载不出，请考虑使用代理。推荐使用 Safari、Chrome 或 Edge 等浏览器。
 
@@ -122,72 +69,3 @@ B-707CC 号飞机是厚嘴唇航空公司 B707o 型飞机中最具有纪念意�
 [ChiliChill 官方网站](https://chilichill-music.com/)<br>
 B707 aircraft model by manilov.ap on [SketchFab](https://sketchfab.com/3d-models/boeing707-83f77b7fe94f49e39b984c7390e9ecec), shared under CC 4.0 license.<br>
 感谢 <a href="https://idealclover.cn/" target="_blank">idealclover</a> 大佬提供 CDN 托管以加速模型和曲谱文件的加载。
-
-<script type="text/javascript">
-function setElementSizeInMM(element, sizeInMM) {
-	const dpi = window.devicePixelRatio * 96; // 获取设备的 DPI
-	const mmInPx = sizeInMM * (dpi / 25.4);  // 1 inch = 25.4 mm
-	element.style.width = `${mmInPx}px`;
-}
-
-setElementSizeInMM(document.getElementById("ar_img"), 50);
-
-function toggleDisplay(elements, isVisible) {
-	elements.forEach(el => {
-		document.getElementById(el).style.display = isVisible ? "inline-block" : "none";
-	});
-}
-
-function showHint(message) {
-	document.getElementById("hint").innerHTML = `<p>${message}</p>`;
-}
-
-const touchScreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
-const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-const supportsXR = !!navigator.xr;
-
-if (isSafari) {
-	if (!touchScreen) {
-		showHint("当前设备不支持 AR 卡片，请使用 iPhone 或 iPad 打开该页面以体验。不过，你仍然可以：");
-		toggleDisplay(["ar_entry"], false);
-		toggleDisplay(["usdz_model", "usdz_001_model", "webxr_entry"], true);
-		toggleDisplay(["glb_model", "glb_001_model"], false);
-		console.log("macOS Safari detected, enabling USDZ and WebXR entry, disabling AR entry.");
-	} else {
-		showHint("请点击下方按钮打开 AR 体验（如果弹出下载窗口，请选择“显示”，也可以下载到本地后体验），然后将相机对准上面的卡片。你也可以查看 1:1 比例的 3D 模型（当然，你会需要一片非常宽阔的场地）和 1:100 模型（其实这个也不小）。如果网络不佳，可以尝试 WebXR 体验。");
-		toggleDisplay(["ar_entry", "usdz_model", "usdz_001_model", "webxr_entry"], true);
-		toggleDisplay(["glb_model", "glb_001_model"], false);
-		document.getElementById("sheet_preview").style.display = "none";
-		document.getElementById("sheet_preview").insertAdjacentHTML("afterend", "<p>当前设备不支持在页面内预览 PDF 文件，请点击上方链接预览/下载。</p>");
-		console.log("iOS Safari detected, enabling AR image display, enabling AR entry, disabling GLB model entry.");
-	}
-} else if (supportsXR) {
-	showHint("当前设备设备仅支持 WebXR，无法识别 AR 卡片，但仍可以在 AR 模式下查看飞机模型。若要获得完整体验，建议使用 iPhone 或 iPad 的 Safari 浏览器打开。你现在可以：");
-	toggleDisplay(["ar_entry", "usdz_model", "usdz_001_model"], false);
-	toggleDisplay(["webxr_entry", "glb_model", "glb_001_model"], true);
-	console.log("WebXR supported, enabling WebXR entry, disabling AR entry.");
-} else {
-	showHint("请使用 iPhone、iPad 的 Safari 浏览器或支持 WebXR 的设备打开该页面以体验增强现实（AR）卡片。不过，你仍然可以：");
-	toggleDisplay(["ar_entry", "usdz_model", "usdz_001_model"], false);
-	toggleDisplay(["webxr_entry", "glb_model", "glb_001_model"], true);
-	console.log("No ARKit or WebXR support detected, enabling WebXR 3D entry, disabling AR entry.");
-}
-
-function addModelClickListener(id, href, hintMessage) {
-	document.getElementById(id).addEventListener("click", function () {
-		showHint(hintMessage);
-		let a = document.createElement("a");
-		a.href = href;
-		a.rel = "ar";
-		a.click();
-	});
-}
-
-addModelClickListener("ar_entry", "https://cdn.idealclover.cn/Projects/chilichill/B707o.reality", "正在加载 AR 体验……模型约 8 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o.reality 文件进行体验。");
-addModelClickListener("usdz_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o.usdz", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o.usdz 文件进行体验。");
-addModelClickListener("usdz_001_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o_001.usdz", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o_001.usdz 文件进行体验。");
-addModelClickListener("webxr_entry", "https://8th.io/fazgz", "正在跳转到 WebXR 体验……由 8th Wall 提供托管，加载需要时间，请耐心等待。");
-addModelClickListener("in_browser_model", "3d_view.html", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果加载不出，请考虑使用代理。");
-addModelClickListener("glb_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o.glb", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 https://cdn.idealclover.cn/Projects/chilichill/B707o.glb 文件进行体验。");
-addModelClickListener("glb_001_model", "https://cdn.idealclover.cn/Projects/chilichill/B707o_001.glb", "正在加载 3D 模型……模型约 3 MB，请耐心等待。如果弹出下载窗口，则可以打开下载的 B707o_001.glb 文件进行体验。");
-</script>
