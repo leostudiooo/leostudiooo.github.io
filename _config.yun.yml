@@ -681,7 +681,7 @@ aplayer:
     autoplay: false
     # theme: "#2980b9"
     loop: all
-    order: list
+    order: random
     preload: auto
     volume: 0.7
     mutex: true
