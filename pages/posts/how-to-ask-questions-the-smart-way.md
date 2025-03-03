@@ -2,7 +2,6 @@
 title: 提问的智慧
 date: 2021-02-27 14:07:10
 categories: 转载
-tags: 提问
 ---
 
 > 转载自https://github.com/tvvocold/How-To-Ask-Questions-The-Smart-Way

@@ -3,10 +3,10 @@ title: 使用树莓派搭建无线打印机
 date: 2020-08-17 10:17:42
 categories: 教程
 tags:
-- how
-- raspberrypi
-- printer
-- cups
+  - how
+  - raspberrypi
+  - printer
+  - cups
 ---
 
 # 使用树莓派搭建无线打印机

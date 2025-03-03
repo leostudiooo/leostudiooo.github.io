@@ -2,7 +2,8 @@
 title: 使用Hexo在GitHub Pages部署属于你自己的博客！
 date: 2021-02-23 17:52:20
 categories: 教程
-tags: 教程
+tags: 
+  - 教程
 ---
 
 ## 前期准备工作
