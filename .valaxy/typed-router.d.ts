@@ -48,7 +48,6 @@ declare module 'vue-router/auto-routes' {
     '/posts/draw-ellipse-with-a-mecanum-wheeled-car-in-3-ways': RouteRecordInfo<'/posts/draw-ellipse-with-a-mecanum-wheeled-car-in-3-ways', '/posts/draw-ellipse-with-a-mecanum-wheeled-car-in-3-ways', Record<never, never>, Record<never, never>>,
     '/posts/hello-valaxy': RouteRecordInfo<'/posts/hello-valaxy', '/posts/hello-valaxy', Record<never, never>, Record<never, never>>,
     '/posts/hexo': RouteRecordInfo<'/posts/hexo', '/posts/hexo', Record<never, never>, Record<never, never>>,
-    '/posts/how-to-ask-questions-the-smart-way': RouteRecordInfo<'/posts/how-to-ask-questions-the-smart-way', '/posts/how-to-ask-questions-the-smart-way', Record<never, never>, Record<never, never>>,
     '/posts/how-to-make-an-open-source-dial': RouteRecordInfo<'/posts/how-to-make-an-open-source-dial', '/posts/how-to-make-an-open-source-dial', Record<never, never>, Record<never, never>>,
     '/posts/openjudge-7940': RouteRecordInfo<'/posts/openjudge-7940', '/posts/openjudge-7940', Record<never, never>, Record<never, never>>,
     '/posts/penguinplayer': RouteRecordInfo<'/posts/penguinplayer', '/posts/penguinplayer', Record<never, never>, Record<never, never>>,

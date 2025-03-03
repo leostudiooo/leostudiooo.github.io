@@ -154,7 +154,7 @@ $\varphi$ 为 $\ce{C_\alpha-N}$ 单键的旋转角度，$\psi$ 为 $\ce{C_\alpha
 
 ##### 二级结构 secondary structure
 
-<img src="image-20250112171206034-6673137.png" alt="不同二级结构在 Ramachandran 图中的位置" style="zoom:20%;" />
+<img src="/img/image-20250112171206034-6673137.png" alt="不同二级结构在 Ramachandran 图中的位置" style="zoom:20%;" />
 
 多肽链的==**主链**骨架 (backbone) 本身==（不包括R基团）在**局部**有规律的**折叠和盘绕**，它是由氨基酸残基非侧链基团之间的氢键决定的。包含：
 
@@ -1011,7 +1011,7 @@ $$
 
 **过渡态 (transition state)**：在任何一个化学反应体系中，反应物需要到达一个特定的高能状态以后才能发生反应。这种**不稳定的高能状态**就是**过渡态**。
 
-<img src="image-20250114142931123.png" alt="过渡态互补示意图" style="zoom:25%;" />
+<img src="/img/image-20250114142931123.png" alt="过渡态互补示意图" style="zoom:25%;" />
 
 #### ==过渡态稳定的化学机制==
 
