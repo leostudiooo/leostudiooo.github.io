@@ -116,9 +116,9 @@ desc: Stay hungry, stay foolish.
 color: "#00A2FF"
 ```
 
-如果想要将贵链添加到我的列表，请按照以上格式在评论区留言～您的网站需要满足以下条件：
+如果想要将贵链添加到我的列表，请按照以上格式在 [GitHub Issues](https://github.com/leostudiooo/leostudiooo.github.io/issues/) 留言～您的网站需要满足以下条件：
 - 可正常访问（将不定期检查）
 - 有一定的内容
 - 强制启用 HTTPS
 
-注：评论区好像可用性不是很好，可以点点 Sidebar 给我发邮件。
+⬅️ 也可以点点 Sidebar 给我发邮件。
