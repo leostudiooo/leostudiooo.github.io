@@ -23,7 +23,7 @@ export default defineSiteConfig({
   },
 
   frontmatter: {
-    time_warning: true,
+    time_warning: false,
   },
   
   social: [
