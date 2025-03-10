@@ -71,7 +71,7 @@ export default defineSiteConfig({
     },
     {
       name: 'E-Mail',
-      link: 'mailto:leo.li@kevinz.cn',
+      link: 'mailto:me@烫烫烫的锟斤拷.top',
       icon: 'i-ri-mail-line',
       color: '#8E71C1',
     },
