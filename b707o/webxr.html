@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebAR GLB 模型展示</title>
+  
+  <!-- 引入 A-Frame 和 AR.js -->
+  <script src="js/aframe.min.js"></script>
+  <script src="js/aframe-ar.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+
+  <!-- A-Frame 场景 -->
+  <a-scene embedded>
+    <!-- AR 模式中的内容：图像识别 + GLB 模型 -->
+    <a-marker id="ar-marker" type="pattern" url="ar_card.patt" visible="false">
+      <a-gltf-model src="B707o.glb" scale="0.01 0.01 0.01" position="0 0 0" rotation="0 0 0"></a-gltf-model>
+    </a-marker>
+
+    <!-- 非 AR 模式：直接展示 GLB 模型 -->
+    <a-entity id="fallback-model" visible="false">
+      <a-gltf-model src="B707o.glb" scale="0.01 0.01 0.01" position="0 0 -5" rotation="0 180 0"></a-gltf-model>
+    </a-entity>
+
+    <!-- 摄像头实体 -->
+    <a-entity camera></a-entity>
+  </a-scene>
+
+  <!-- 检测 WebXR 和 AR.js 支持 -->
+  <script>
+    // 检测设备是否支持 WebXR 的 AR 模式
+    if (navigator.xr) {
+      navigator.xr.isSessionSupported('immersive-ar').then((supported) => {
+        if (supported) {
+          // 如果支持 WebXR 的 AR 模式，则启用 AR.js 功能
+          document.getElementById("ar-marker").setAttribute("visible", "true");
+          console.log('该设备支持 WebXR AR 体验');
+        } else {
+          // 如果不支持 AR，展示回退的 3D 模型
+          showFallbackModel();
+        }
+      }).catch(() => {
+        showFallbackModel();
+      });
+    } else {
+      // 如果不支持 WebXR，展示回退的 3D 模型
+      showFallbackModel();
+    }
+
+    // 显示回退的 3D 模型
+    function showFallbackModel() {
+      document.getElementById("fallback-model").setAttribute("visible", "true");
+      console.log('该设备不支持 AR，显示回退的 3D 模型');
+    }
+  </script>
+</body>
+</html>
