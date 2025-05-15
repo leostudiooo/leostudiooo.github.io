@@ -57,6 +57,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/tijie-p4414': RouteRecordInfo<'/posts/tijie-p4414', '/posts/tijie-p4414', Record<never, never>, Record<never, never>>,
     '/posts/tijie-p5716': RouteRecordInfo<'/posts/tijie-p5716', '/posts/tijie-p5716', Record<never, never>, Record<never, never>>,
     '/posts/vscode-cpp': RouteRecordInfo<'/posts/vscode-cpp', '/posts/vscode-cpp', Record<never, never>, Record<never, never>>,
+    '/posts/wechat-miniapp-token': RouteRecordInfo<'/posts/wechat-miniapp-token', '/posts/wechat-miniapp-token', Record<never, never>, Record<never, never>>,
     '/posts/wintervacation-plan': RouteRecordInfo<'/posts/wintervacation-plan', '/posts/wintervacation-plan', Record<never, never>, Record<never, never>>,
     '/posts/yun': RouteRecordInfo<'/posts/yun', '/posts/yun', Record<never, never>, Record<never, never>>,
     '/random/': RouteRecordInfo<'/random/', '/random', Record<never, never>, Record<never, never>>,
