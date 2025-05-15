@@ -100,6 +100,14 @@ links:
     blog: idealclover
     desc: Stay simple, stay naive.
     color: "#b5c3ac"
+  
+  - url: https://blog.weichky.com/
+    avatar: https://assets.weichky.com/imgs/favicon.png
+    name: Weichky
+    blog: Weichky's Blog
+    desc: 物不可穷也，故受之以未济。
+    color: "#008B8B"
+  
 ---
 
 <YunLinks :links="frontmatter.links" :random="frontmatter.random" />
