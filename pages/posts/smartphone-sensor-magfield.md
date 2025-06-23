@@ -14,7 +14,7 @@ type: github
 url: github.com/leostudiooo/visual-field
 ---
 
-> 成果已经转化为 iOS/iPadOS App 原型 [Visual Field](https://github.com/leostudiooo/visual-field)，但暂无上架 App Store 的计划。文末也有仓库链接。
+> 成果在近期转化为 iOS/iPadOS App 原型 [Visual Field](https://github.com/leostudiooo/visual-field)，但暂无上架 App Store 的计划。文末也有仓库链接。
 
 ---
 
