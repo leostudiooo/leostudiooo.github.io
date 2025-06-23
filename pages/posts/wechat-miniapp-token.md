@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 记抓取跑操小程序用户 Token
+title: 记抓取小程序用户 Token
 tags: [微信小程序, token, 技术]
 categories: [教程, 技术]
 date: 2025-05-15 10:02:11
@@ -40,9 +40,9 @@ Token 的结构大致如下：
 ```
 eyJ0eXAiOiJKc29uV2ViVG9rZW4iLCJhbGciOiJIUzI1NiJ9.一串base64.签名
 ```
-一共三段，第一段是头部，第二段是载荷，第三段是签名。
+这是标准 JSON Web Token (JWT) 格式，一共三段。第一段是头部，第二段是载荷，第三段是签名。
 
-头部解码之后是一个 JSON 对象，包含了 token 的类型和加密算法：
+头部解码之后是一个 JSON 对象，包含了 token 的类型和签名加密算法：
 
 ```json
 {
@@ -72,15 +72,15 @@ eyJ0eXAiOiJKc29uV2ViVG9rZW4iLCJhbGciOiJIUzI1NiJ9.一串base64.签名
 2. 打开 Cheat Engine，选择小程序的进程。
 3. 在 Cheat Engine 中搜索 `Bearer `，选择 `String` 类型，点击 `First Scan`。
 
-这个时候应该就会有大概几个到十几个结果，其中会有一个是上面提到的 token 的值。别的搜索结果通常并不包含 token，可能是引用了 token 的变量名或者其他的字符串。总之，找到一个包含 `Bearer ` 的字符串，右键点击，选择 `Browse this memory region`，就可以看到 token 的值了。没有找到就多看几个，或者直接尝试使用 `eyJ0eXAiOiJKc29uV2ViVG9rZW4iLCJhbGciOiJIUzI1NiJ9` 作为搜索值，应该也能找到。
+这个时候应该就会有大概几个到十几个结果，其中会有一个是上面提到的 token 的值。别的搜索结果通常并不包含 token，可能是引用了 token 的变量名或者其他的字符串。总之，找到一个包含 `Bearer ` 的字符串，右键点击，选择 `Browse this memory region`，就可以看到 token 的值了。没有找到就多看几个，或者直接尝试使用 `eyJ0eXAiOiJKc29uV2ViVG9rZW4iLCJhbGciOiJIUzI1NiJ9` 作为搜索值（即 Token 的第一段），应该也能找到。
 
-4. 然后就可以复制 token 的值了。注意要去掉前面的 `Bearer `，只保留后面的部分。
+4. 然后就可以复制 token 的值了。
 
 ### 抓包获取
 
 1. 打开 Fiddler 或者 Charles 等抓包工具，设置好代理。
 2. 打开小程序，登录账号，进入跑操页面。
-3. 在抓包工具中找到请求的 URL，通常是 `https://tyxsjpt.seu.edu.cn` 开头的。
+3. 在抓包工具中找到请求的 URL。
 4. 找到请求的 Header 中的 `Authorization` 字段，值就是 token 的值。
 5. 复制 token 的值，去掉前面的 `Bearer `，只保留后面的部分。
 

@@ -53,6 +53,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/penguinplayer': RouteRecordInfo<'/posts/penguinplayer', '/posts/penguinplayer', Record<never, never>, Record<never, never>>,
     '/posts/phys-note-2122-t1w2': RouteRecordInfo<'/posts/phys-note-2122-t1w2', '/posts/phys-note-2122-t1w2', Record<never, never>, Record<never, never>>,
     '/posts/raspberry-pi-cups-wireless-printer': RouteRecordInfo<'/posts/raspberry-pi-cups-wireless-printer', '/posts/raspberry-pi-cups-wireless-printer', Record<never, never>, Record<never, never>>,
+    '/posts/smartphone-sensor-magfield': RouteRecordInfo<'/posts/smartphone-sensor-magfield', '/posts/smartphone-sensor-magfield', Record<never, never>, Record<never, never>>,
     '/posts/tijie-p1085': RouteRecordInfo<'/posts/tijie-p1085', '/posts/tijie-p1085', Record<never, never>, Record<never, never>>,
     '/posts/tijie-p4414': RouteRecordInfo<'/posts/tijie-p4414', '/posts/tijie-p4414', Record<never, never>, Record<never, never>>,
     '/posts/tijie-p5716': RouteRecordInfo<'/posts/tijie-p5716', '/posts/tijie-p5716', Record<never, never>, Record<never, never>>,
