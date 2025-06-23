@@ -16,6 +16,8 @@ url: github.com/leostudiooo/visual-field
 
 > 成果在近期转化为 iOS/iPadOS App 原型 [Visual Field](https://github.com/leostudiooo/visual-field)，但暂无上架 App Store 的计划。文末也有仓库链接。
 
+> 其实是很简单的一个想法，利用每个人手上都有的通用设备——智能手机，来测量 Helmholtz 线圈产生的磁场。相比传统实验方法，本实验简化了仪器需求，降低了实验门槛。
+
 ---
 
 ## 摘要
