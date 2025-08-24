@@ -10,6 +10,8 @@ url: https://www.bilibili.com/video/BV1EeuSz1EcK/
 
 这是一首关于旅行、成长与陪伴的歌。
 
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114875644775715&bvid=BV1EeuSz1EcK&cid=31135764328&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
 ## Staff
 
 演唱｜洛天依 V5·婉
