@@ -1,0 +1,43 @@
+import{_ as f}from"./ValaxyMain.vue_vue_type_style_index_0_lang.qoa6XU3R.js";import"./chunks/@vueuse/motion.DBdTyeDO.js";import{d as h,a as b}from"./chunks/vue-router.DvqJDoIY.js";import{a0 as m,a4 as g,a6 as l,a7 as e,a8 as n,a9 as a,w as v,a5 as k}from"./framework.DJFiUfUu.js";import"./app.COkff4zV.js";import"./chunks/dayjs.BX5x0S-s.js";import"./chunks/nprogress.DgHbq1gC.js";import"./chunks/vue-i18n.DbbYQ02x.js";import"./chunks/pinia.DWtjS6du.js";import"./YunComment.vue_vue_type_style_index_0_lang.DSzCmlky.js";import"./YunPageHeader.vue_vue_type_script_setup_true_lang.BqZ9mhwh.js";import"./post.BrRNgt9e.js";const P=h("/posts/travel-lights",async i=>JSON.parse('{"title":"《旅光》创作手记","description":"","frontmatter":{"layout":"post","title":"《旅光》创作手记","date":"2025-07-19 00:37:33","tags":["创作","音乐"],"categories":["音乐"],"type":"bilibili","url":"https://www.bilibili.com/video/BV1EeuSz1EcK/"},"headers":[{"level":2,"title":"Staff","slug":"staff","link":"#staff","children":[]},{"level":2,"title":"歌词","slug":"歌词","link":"#歌词","children":[]},{"level":2,"title":"流水账","slug":"流水账","link":"#流水账","children":[]},{"level":2,"title":"更多废话","slug":"更多废话","link":"#更多废话","children":[]},{"level":2,"title":"还有高手？","slug":"还有高手","link":"#还有高手","children":[]},{"level":2,"title":"Reference","slug":"reference","link":"#reference","children":[]}],"relativePath":"pages/posts/travel-lights.md","lastUpdated":1756981433000}'),{lazy:(i,r)=>i.name===r.name}),N={__name:"travel-lights",setup(i,{expose:r}){var c;const{data:p}=P(),o=b(),t=Object.assign(o.meta.frontmatter||{},((c=p.value)==null?void 0:c.frontmatter)||{});return o.meta.frontmatter=t,m("pageData",p.value),m("valaxy:frontmatter",t),globalThis.$frontmatter=t,r({frontmatter:{layout:"post",title:"《旅光》创作手记",date:"2025-07-19 00:37:33",tags:["创作","音乐"],categories:["音乐"],type:"bilibili",url:"https://www.bilibili.com/video/BV1EeuSz1EcK/"}}),(s,u)=>{const d=f;return k(),g(d,{frontmatter:v(t)},{"main-content-md":l(()=>u[0]||(u[0]=[n("p",null,"这是一首关于旅行、成长与陪伴的歌。",-1),n("iframe",{src:"//player.bilibili.com/player.html?isOutside=true&aid=114875644775715&bvid=BV1EeuSz1EcK&cid=31135764328&p=1",scrolling:"no",border:"0",frameborder:"no",framespacing:"0",allowfullscreen:"true"},null,-1),n("h2",{id:"staff",tabindex:"-1"},[a("Staff "),n("a",{class:"header-anchor",href:"#staff","aria-label":'Permalink to "Staff"'},"​")],-1),n("p",null,"演唱｜洛天依 V5·婉 和声｜洛天依 V5·萌",-1),n("p",null,"作词｜思未楷",-1),n("p",null,"曲绘｜零和",-1),n("p",null,"作曲｜ 编曲｜ 调声｜锟斤拷 P 混音｜ 影像｜",-1),n("p",null,"特别鸣谢｜孟竹竿",-1),n("h2",{id:"歌词",tabindex:"-1"},[a("歌词 "),n("a",{class:"header-anchor",href:"#歌词","aria-label":'Permalink to "歌词"'},"​")],-1),n("div",{style:{"max-height":"300px"},class:"language- vp-adaptive-theme"},[n("button",{title:"Copy Code",class:"copy"}),n("span",{class:"lang"}),n("pre",{class:"shiki shiki-themes github-light github-dark vp-code"},[n("code",{"v-pre":""},[n("span",{class:"line"},[n("span",null,"你说 时间最好的行囊 是阳光")]),a(`
+`),n("span",{class:"line"},[n("span",null,"阳光 流逝于手掌")]),a(`
+`),n("span",{class:"line"},[n("span",null,"曾经 多少习以为常的明亮")]),a(`
+`),n("span",{class:"line"},[n("span",null,"到最后 只存于 影像")]),a(`
+`),n("span",{class:"line"},[n("span")]),a(`
+`),n("span",{class:"line"},[n("span",null,"幼时所见雏鸟 是否此刻正翱翔？")]),a(`
+`),n("span",{class:"line"},[n("span",null,"请代我 触摸星光")]),a(`
+`),n("span",{class:"line"},[n("span")]),a(`
+`),n("span",{class:"line"},[n("span",null,"朝来暮往 分不清明媚与风霜")]),a(`
+`),n("span",{class:"line"},[n("span",null,"我听不见 是否有人回应失望 或希望")]),a(`
+`),n("span",{class:"line"},[n("span",null,"光阴轮转 一点一滴汇在 时钟上")]),a(`
+`),n("span",{class:"line"},[n("span",null,"过往 何处 安放")]),a(`
+`),n("span",{class:"line"},[n("span")]),a(`
+`),n("span",{class:"line"},[n("span",null,"--- Break ---")]),a(`
+`),n("span",{class:"line"},[n("span")]),a(`
+`),n("span",{class:"line"},[n("span",null,"你说 旅途最远的跋涉 是成长")]),a(`
+`),n("span",{class:"line"},[n("span",null,"成长 伴随着遗忘")]),a(`
+`),n("span",{class:"line"},[n("span",null,"幻想 总在世界的背面流浪")]),a(`
+`),n("span",{class:"line"},[n("span",null,"但我却 摸不到 幕墙")]),a(`
+`),n("span",{class:"line"},[n("span")]),a(`
+`),n("span",{class:"line"},[n("span",null,"漫天花瓣挥洒 能否落在我心房？")]),a(`
+`),n("span",{class:"line"},[n("span",null,"就好像 从前那样")]),a(`
+`),n("span",{class:"line"},[n("span")]),a(`
+`),n("span",{class:"line"},[n("span",null,"人生路上 有多少孤独与彷徨")]),a(`
+`),n("span",{class:"line"},[n("span",null,"荏苒冬霜 又或许夏雨 共惊涛 与骇浪")]),a(`
+`),n("span",{class:"line"},[n("span",null,"世间韶光 一并都归于 念与想")]),a(`
+`),n("span",{class:"line"},[n("span",null,"散落 孤独 梦乡")]),a(`
+`),n("span",{class:"line"},[n("span")]),a(`
+`),n("span",{class:"line"},[n("span",null,"儿时吟唱 归于星芒 此间盛况 化作暮光")]),a(`
+`),n("span",{class:"line"},[n("span",null,"去路茫茫 又在何方 所幸有你 伴我远航")]),a(`
+`),n("span",{class:"line"},[n("span")]),a(`
+`),n("span",{class:"line"},[n("span",null,"共赏星光 共沐夕阳 共寻去路何方")]),a(`
+`),n("span",{class:"line"},[n("span",null,"你同我唱 不再流浪")]),a(`
+`),n("span",{class:"line"},[n("span")]),a(`
+`),n("span",{class:"line"},[n("span",null,"旅途漫长 多谢有你在我身旁")]),a(`
+`),n("span",{class:"line"},[n("span",null,"握紧手掌 带我越过万千晨昏露霜")]),a(`
+`),n("span",{class:"line"},[n("span",null,"纵然过往 苦涩也在心中贮藏")]),a(`
+`),n("span",{class:"line"},[n("span",null,"幻化 流光 佳酿")]),a(`
+`),n("span",{class:"line"},[n("span")]),a(`
+`),n("span",{class:"line"},[n("span",null,"这一路上 多谢有你在我身旁")]),a(`
+`),n("span",{class:"line"},[n("span",null,"握紧手掌 陪我走过万千人海茫茫")]),a(`
+`),n("span",{class:"line"},[n("span",null,"这篇乐章 将在你我歌声中绽放")]),a(`
+`),n("span",{class:"line"},[n("span",null,"伴我 直到 远方")])])]),n("button",{class:"collapse"})],-1),n("h2",{id:"流水账",tabindex:"-1"},[a("流水账 "),n("a",{class:"header-anchor",href:"#流水账","aria-label":'Permalink to "流水账"'},"​")],-1),n("p",null,"其实整首曲子是去年十月的「无限共鸣」演唱会结束后有感而发。",-1),n("p",null,"最初只是隐隐约约地有几个画面在脑海中一闪而过，然后是更多的碎片，慢慢地开始拼凑成某个形状；于是在 10 月 9 日写下了主歌的旋律片段。11 日，脑海中突然闪过了《票根》的画面和声音 [^1]，对我启发非常大，于是写出了前奏。然后在大概十一月或是十二月终于勾勒出了整个编曲的轮廓，可是对于这首歌到底要表达的东西仍然只是某种幻影。",-1),n("p",null,"一月，去了北海道。旅途中的所见所闻让主题逐渐明晰起来，也为 PV 提供了海量素材，于是邀请思未楷老师作了词。作词的过程也非常艰难，因为我一开始也不知道自己到底想要什么，于是在第一版给出走向之后，我们一起改了接近四十版；初版与三月的最终定稿相比，几乎每一句都有修改的地方。在此也非常感谢孟竹竿老师提出的宝贵意见。",-1),n("p",null,"然后来到了三月的调声和混音阶段。最开始用了尘 Inf 做 demo，后来越听越顺耳，切换到洛佬之后还挺不习惯的。想了想，不太喜欢 ace 的使用体验，而且声音的质感好像也不太合适（最主要的还是实在没有多余的钱来订阅了），于是转向了 V5。同时也在构思 PV，于是又联系了零和老师画曲绘。可是这个时候我仍然不知道想要呈现什么样的画面，做什么样的叙事，于是粗剪了一条，发现效果并不好，于是曲绘也就此搁置。",-1),n("p",null,[a("本来打算发在四月当自生贺的，结果因为期中周忙疯了一直拖到五月。五一虽然没抢到音律的票但去了上海，最后被气焰嚣张的黄牛弄破防了，没有心情继续做下去。然后就到了六月考试周。复习的时候脑袋里蹦出了校音段手绘小动画的点子，于是找 "),n("code",null,"@Edaking"),a(" 老师借了 Procreate Dreams（感谢 🥺），两天画出了小动画。其实一开始就构思好了蓝色荧光棒随双簧管点亮、挥舞、熄灭，然后舞台上各色荧光棒也随各声部点亮、挥舞、熄灭的，甚至用 Blender 已经做了一个荧光棒模型和点亮的动画了；但觉得要做那么多荧光棒 k 帧和渲染会很麻烦于是放弃了。")],-1),n("p",null,[a("六月中旬放假之后开始重新构思 PV，终于还是觉得这种实景+手书+曲绘的方式能讲好这个故事，于是先把字写了。然后忙七忙八忙到七月中旬；在生日会上才突然得知 20 号闪耀的 Producer 就截稿了。于是 13 号晚上开始重构 PV，剪完之后发给零和老师，她突然也有想法了。于是两天之内伟大的零和大人（orz）在 19 号凌晨 03:54 交出了伟大的成图，我也狂啃 AE 教程并寻求了 "),n("code",null,"@結月林"),a(" 佬（orz）的海量帮助把合成在白天做了出来。经过艰苦卓绝的渲染和修补工作，PV 终于在 21 时许竣工了。")],-1),n("p",null,"写到这里，突然好像就松了一口气。拖了大半年的稿如今真的要发了。",-1),n("h2",{id:"更多废话",tabindex:"-1"},[a("更多废话 "),n("a",{class:"header-anchor",href:"#更多废话","aria-label":'Permalink to "更多废话"'},"​")],-1),n("p",null,"现在刚好是 7 月 19 日的 01:10:00。刚才关掉房间大灯打开台灯的时候，突然有一种到站该下车的感觉。回头想想，从十月到七月，日历翻过去快三百页，可大脑里的胶片（神经胶质细胞怎么不是胶呢）却只剩几个定格：北海道青年旅社窗外飘雪的淡蓝色清晨、五一上海差点赶掉的列车、六月在宿舍熬夜画上的分镜。它们都不重要，却又偏偏被留下来，就像是我本来不大的硬盘里舍不得删的冷数据。",-1),n("p",null,"总之再次感谢思未楷老师以及零和老师对我这个需求根本不清楚的甲方的包容，感谢孟竹竿老师和結月林老师提出的宝贵意见和指导；感谢小洛一直陪伴在我身旁，感谢自己这么久的坚持（纯 fw，拖了大半年还好意思这么厚脸皮啊 😅）。",-1),n("p",null,"当然，还要感谢屏幕前的你 🫵：感谢你看到这里，感谢你愿意听我说这么多，感谢你听到这首歌。",-1),n("p",null,"我们会一直唱下去。",-1),n("h2",{id:"还有高手",tabindex:"-1"},[a("还有高手？ "),n("a",{class:"header-anchor",href:"#还有高手","aria-label":'Permalink to "还有高手？"'},"​")],-1),n("p",null,"小作文写昏了，没定时就发出来了。更要命的是没参加上活动，也没拉上联投，于是赶紧删稿重投。熬夜害人啊。",-1),n("h2",{id:"reference",tabindex:"-1"},[a("Reference "),n("a",{class:"header-anchor",href:"#reference","aria-label":'Permalink to "Reference"'},"​")],-1),n("p",null,[a("[^1] Kevinz et al. 票根 [Z/OL]. 上海: 哔哩哔哩弹幕视频网, 2017. "),n("a",{href:"https://www.bilibili.com/video/BV1tW411Y7Cz",target:"_blank",rel:"noreferrer"},"BV1tW411Y7Cz"),a(".")],-1)])),"main-header":l(()=>[e(s.$slots,"main-header")]),"main-header-after":l(()=>[e(s.$slots,"main-header-after")]),"main-nav":l(()=>[e(s.$slots,"main-nav")]),"main-content-before":l(()=>[e(s.$slots,"main-content-before")]),"main-content":l(()=>[e(s.$slots,"main-content")]),"main-content-after":l(()=>[e(s.$slots,"main-content-after")]),"main-nav-before":l(()=>[e(s.$slots,"main-nav-before")]),"main-nav-after":l(()=>[e(s.$slots,"main-nav-after")]),comment:l(()=>[e(s.$slots,"comment")]),footer:l(()=>[e(s.$slots,"footer")]),aside:l(()=>[e(s.$slots,"aside")]),"aside-custom":l(()=>[e(s.$slots,"aside-custom")]),default:l(()=>[e(s.$slots,"default")]),_:3},8,["frontmatter"])}}};export{N as default,P as usePageData};
