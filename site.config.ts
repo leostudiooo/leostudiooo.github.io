@@ -1,19 +1,19 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  
+
   timezone: 'Asia/Shanghai',
   lang: 'zh-CN',
-  url: 'https://leostudiooo.github.io/',
-  
+  url: 'https://烫烫烫的锟斤拷.top/',
+
   title: '烫烫烫的记事本',
   subtitle: '手持两把锟斤拷，口中疾呼烫烫烫。',
   description: 'A place where technology meets imagination.',
-  
+
   author: {
     name: '锟斤拷',
     email: 'lilingfeng0408@outlook.com',
-    link: 'https://leostudiooo.github.io/',
+    link: 'https://xn--huu92dpwpaa217f909c.top/',
     avatar: 'https://resources.xn--huu92dpwpaa217f909c.top/avatar.jpg',
     status: {
       emoji: '🎆',
@@ -25,7 +25,7 @@ export default defineSiteConfig({
   frontmatter: {
     time_warning: false,
   },
-  
+
   social: [
     {
       name: 'RSS',
@@ -102,7 +102,7 @@ export default defineSiteConfig({
       },
     },
   },
-  
+
   codeHeightLimit: 300,
 
   encrypt: {

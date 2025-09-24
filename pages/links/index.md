@@ -73,7 +73,7 @@ links:
     blog: 欧阳淇淇の小屋
     desc: 大切な人と再会できる日を
     color: "#FF4081"
-  
+
   - url: https://www.darkfox.top
     avatar: https://i.loli.net/2021/05/04/Vq1DKGy9EnQiPbu.png
     name: 冥狐 DarkFox
@@ -100,14 +100,14 @@ links:
     blog: idealclover
     desc: Stay simple, stay naive.
     color: "#b5c3ac"
-  
+
   - url: https://blog.weichky.com/
     avatar: https://assets.weichky.com/imgs/favicon.png
     name: Weichky
     blog: Weichky's Blog
     desc: 物不可穷也，故受之以未济。
     color: "#008B8B"
-  
+
 ---
 
 <YunLinks :links="frontmatter.links" :random="frontmatter.random" />
@@ -116,7 +116,7 @@ links:
 
 如果想要添加我的友链，这里是一些信息：
 ```yaml
-url: https://leostudiooo.github.io/
+url: https://烫烫烫的锟斤拷.top/
 avatar: https://resources.xn--huu92dpwpaa217f909c.top/avatar.jpg
 name: Leo
 blog: 烫烫烫的记事本
