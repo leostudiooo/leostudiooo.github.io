@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://烫烫烫的锟斤拷.top/</id>
+    <title>烫烫烫的记事本</title>
+    <updated>2025-09-24T15:42:05.765Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>锟斤拷</name>
+        <email>lilingfeng0408@outlook.com</email>
+        <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+    </author>
+    <link rel="alternate" href="https://烫烫烫的锟斤拷.top/"/>
+    <link rel="self" href="https://烫烫烫的锟斤拷.top/atom.xml"/>
+    <subtitle>A place where technology meets imagination.</subtitle>
+    <logo>https://resources.xn--huu92dpwpaa217f909c.top/avatar.jpg</logo>
+    <icon>https://烫烫烫的锟斤拷.top/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2025 © 锟斤拷</rights>
+    <entry>
+        <title type="html"><![CDATA[2021寒假计划]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/wintervacation-plan</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/wintervacation-plan"/>
+        <updated>2021-01-30T07:28:05.000Z</updated>
+        <content type="html"><![CDATA[<h2>作业</h2>
+<h3>内容</h3>
+<h4>语文</h4>
+<h5>阅读</h5>
+<ul>
+<li>
+<p>巴黎圣母院</p>
+</li>
+<li>
+<p>家</p>
+</li>
+</ul>
+<h5>书面</h5>
+<ul>
+<li>语文报三个专题</li>
+<li>推荐两本书</li>
+</ul>
+<h4>数学</h4>
+<h5>复习</h5>
+<ul>
+<li>必修</li>
+</ul>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/wintervacation-plan" target="_blank">https://烫烫烫的锟斤拷.top/posts/wintervacation-plan</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.900Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[主题【云】部署成功！]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/yun</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/yun"/>
+        <updated>2020-06-26T06:24:48.000Z</updated>
+        <content type="html"><![CDATA[<p>好像还有点好看。</p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/yun" target="_blank">https://烫烫烫的锟斤拷.top/posts/yun</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.900Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[传送带问题及解决策略]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/传送带问题及解决策略</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/传送带问题及解决策略"/>
+        <updated>2021-02-23T13:30:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>基本类型</h2>
+<h3>按类</h3>
+<ul>
+<li>水平</li>
+<li>倾斜</li>
+</ul>
+<h3>按转向</h3>
+<ul>
+<li>顺时针</li>
+<li>逆时针</li>
+</ul>
+<h2>解题策略</h2>
+<h3>受力分析和运动分析</h3>
+<h4>一般情况</h4>
+<p>首先根据初始条件比较物体对地</p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/传送带问题及解决策略" target="_blank">https://烫烫烫的锟斤拷.top/posts/传送带问题及解决策略</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.900Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[常见的追及、相遇问题及解决策略]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/常见的追击相遇问题及解决策略</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/常见的追击相遇问题及解决策略"/>
+        <updated>2021-02-17T06:19:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>基本类型</h2>
+<h3>追及</h3>
+<ol>
+<li>
+<p>$B$在前，$A$在后，初始速度${V_A}_0&gt;{V_B}_0$</p>
+<ol>
+<li>若共速时（即$V_A=V_B$）有$x_B+x_0&gt;x_A$，则永远无法追上</li>
+</ol>
+</li>
+</ol>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/常见的追击相遇问题及解决策略" target="_blank">https://烫烫烫的锟斤拷.top/posts/常见的追击相遇问题及解决策略</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.900Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[运动学公式梳理和选用原则]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/运动学</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/运动学"/>
+        <updated>2021-02-14T06:56:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>位移</h2>
+<ol>
+<li>
+<p>位移在<strong>一维</strong>直线坐标系中的表示</p>
+<p>$\Delta x=x_2-x_1$</p>
+<p>其中，$\Delta x$为位移，起始位置为$x_1$，停止位置为$x_2$。</p>
+</li>
+</ol>
+<h2></h2>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/运动学" target="_blank">https://烫烫烫的锟斤拷.top/posts/运动学</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.900Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[生物化学（上）笔记总结]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/biochemistry-i</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/biochemistry-i"/>
+        <updated>2025-01-14T17:35:02.000Z</updated>
+        <content type="html"><![CDATA[<h2>第 1 章 氨基酸</h2>
+<h3>知识概要</h3>
+<h4>==<strong>氨基酸的分类</strong>==</h4>
+<h5>疏水 (hydrophobic) 氨基酸</h5>
+<p>Phe, Ala, Leu, Met, Ile, T</p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/biochemistry-i" target="_blank">https://烫烫烫的锟斤拷.top/posts/biochemistry-i</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[瞎写点东西]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/blind-jb-write-sept-1</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/blind-jb-write-sept-1"/>
+        <updated>2022-08-31T16:38:40.000Z</updated>
+        <content type="html"><![CDATA[<p>在略带凉意穿堂而过的秋风中传来了嘒嘒的，远远近近、此起彼伏的蝉鸣声。</p>
+<p>蝉鸣音调很高，差不多 5 kHz；也很响，能到 80 dB。但似乎我从来没有过关于蝉鸣的记忆；有的只是在很小的时候读带插图的法布</p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/blind-jb-write-sept-1" target="_blank">https://烫烫烫的锟斤拷.top/posts/blind-jb-write-sept-1</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用 fx-999 加速处理大物实验数据]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/casio-999-01</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/casio-999-01"/>
+        <updated>2024-05-21T15:10:52.000Z</updated>
+        <content type="html"><![CDATA[<p>上学期<s>斥巨资</s>购入了一台卡西欧 fx-999CN CW，这个小家伙在实验课上和考试的时候帮了我不少忙。今天我来分享一下如何使用它的数据表格功能和统计功能来加速处理大物实验数据。</p>
+<h1>要处理的</h1>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/casio-999-01" target="_blank">https://烫烫烫的锟斤拷.top/posts/casio-999-01</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用 fx-999 求解非线性方程]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/casio-999-02</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/casio-999-02"/>
+        <updated>2024-07-06T13:29:42.000Z</updated>
+        <content type="html"><![CDATA[<p>在工程领域，我们经常会遇到一些非线性方程，比如简谐振动的位移方程、阻尼振动的速度方程等。这些方程通常难以直接求解，但是我们可以借助计算器来进行数值计算。今天我继续来分享如何使用卡西欧 fx-999C</p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/casio-999-02" target="_blank">https://烫烫烫的锟斤拷.top/posts/casio-999-02</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[利用 fx-999 的科学常数和变量功能解决电化学问题]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/casio-999-03</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/casio-999-03"/>
+        <updated>2024-08-28T13:42:08.000Z</updated>
+        <content type="html"><![CDATA[<h1>问题背景</h1>
+<p>在《普通化学原理》课程的电化学一章中，我们经常会遇到一些需要频繁使用的常数和变量，例如法拉第常数 $F$、热化学常数 $R$、电子电荷 $e$ 等。这些常数和变量的数值通常是固定的，</p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/casio-999-03" target="_blank">https://烫烫烫的锟斤拷.top/posts/casio-999-03</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[热烈庆祝Hexo部署成功！]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/celebrate</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/celebrate"/>
+        <updated>2020-05-03T12:49:43.000Z</updated>
+        <content type="html"><![CDATA[<p>这是我的第一个POST。</p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/celebrate" target="_blank">https://烫烫烫的锟斤拷.top/posts/celebrate</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在 RoboMaster EP 上用 3 种方法画椭圆！]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/draw-ellipse-with-a-mecanum-wheeled-car-in-3-ways</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/draw-ellipse-with-a-mecanum-wheeled-car-in-3-ways"/>
+        <updated>2021-07-28T14:34:44.000Z</updated>
+        <content type="html"><![CDATA[<h1>背景</h1>
+<p>话说我们的国产之光 <a href="https://dji.com">大疆创新（DJI）</a> 公司不仅很会造无人机，而且还很注重人才的培养。于是，他们就弄出了 [RoboMaster 机甲大师](htt</p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/draw-ellipse-with-a-mecanum-wheeled-car-in-3-ways" target="_blank">https://烫烫烫的锟斤拷.top/posts/draw-ellipse-with-a-mecanum-wheeled-car-in-3-ways</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/hello-valaxy</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/hello-valaxy"/>
+        <updated>2025-03-02T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>终于迁移到 Valaxy 了！这是一个全新的开始。</p>
+<h2>Valaxy</h2>
+<p>Next Generation Static Blog Framework.</p>
+<p>Write your first post</p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/hello-valaxy" target="_blank">https://烫烫烫的锟斤拷.top/posts/hello-valaxy</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用Hexo在GitHub Pages部署属于你自己的博客！]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/hexo</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/hexo"/>
+        <updated>2021-02-23T09:52:20.000Z</updated>
+        <content type="html"><![CDATA[<h2>前期准备工作</h2>
+<h3>创建一个 GitHub 账号（如有可跳过此步骤）</h3>
+<p>点击<a href="http://www.github.com/">此链接</a>跳转到 GitHub，全球最大的代码托管网站。</p>
+<p>![</p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/hexo" target="_blank">https://烫烫烫的锟斤拷.top/posts/hexo</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何制作开源Surface Dial]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/how-to-make-an-open-source-dial</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/how-to-make-an-open-source-dial"/>
+        <updated>2020-07-04T04:11:42.000Z</updated>
+        <content type="html"><![CDATA[<h2>介绍</h2>
+<p>本项目由我和<a href="https://space.bilibili.com/8555835">B站UP主 EddyWang</a>共同维护。[GitHub仓库](<a href="https://github.com">https://github.com</a></p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/how-to-make-an-open-source-dial" target="_blank">https://烫烫烫的锟斤拷.top/posts/how-to-make-an-open-source-dial</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[题解-7940(OpenJudge)]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/openjudge-7940</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/openjudge-7940"/>
+        <updated>2020-12-26T08:31:32.000Z</updated>
+        <content type="html"><![CDATA[<p>也是一次AC！（虽然有一次格式错误但我相信你们不会在意的对吧）</p>
+<h2>题目传送门</h2>
+<p><a href="http://noi.openjudge.cn/ch0111/01">http://noi.openjudge.cn/ch0111/01</a></p>
+<h2>思路</h2>
+<ul>
+<li>特判 如大于所有数据或小</li>
+</ul>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/openjudge-7940" target="_blank">https://烫烫烫的锟斤拷.top/posts/openjudge-7940</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在你的博客里添加一个音乐播放器！]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/penguinplayer</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/penguinplayer"/>
+        <updated>2021-05-04T12:40:00.000Z</updated>
+        <content type="html"><![CDATA[<p>嗨多磨！这里是 Leo。今天我将介绍如何在你的博客中全局加入一个基于网易云音乐的音乐播放器：[PenguinPlayer](<a href="https://github.com/M4TEC/PenguinPla">https://github.com/M4TEC/PenguinPla</a></p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/penguinplayer" target="_blank">https://烫烫烫的锟斤拷.top/posts/penguinplayer</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[物理笔记 - 21~22 学年度上 - 第二周]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/phys-note-2122-t1w2</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/phys-note-2122-t1w2"/>
+        <updated>2021-09-12T03:11:26.000Z</updated>
+        <content type="html"><![CDATA[<style type="text/css">
+.cmt{
+  font-size: small;
+  color: #888888;
+}
+</style>
+<h1>电荷与电荷守恒定律</h1>
+<h2>电荷</h2>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/phys-note-2122-t1w2" target="_blank">https://烫烫烫的锟斤拷.top/posts/phys-note-2122-t1w2</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用树莓派搭建无线打印机]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/raspberry-pi-cups-wireless-printer</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/raspberry-pi-cups-wireless-printer"/>
+        <updated>2020-08-17T02:17:42.000Z</updated>
+        <content type="html"><![CDATA[<h1>使用树莓派搭建无线打印机</h1>
+<h2>所需器材</h2>
+<ul>
+<li>[x] 树莓派</li>
+<li>[x] 打印机</li>
+<li>[x] 数据线</li>
+<li>[ ] 网线（可选）</li>
+<li>[x] 网络连接 (LAN/WLAN)</li>
+</ul>
+<h2>CUP</h2>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/raspberry-pi-cups-wireless-printer" target="_blank">https://烫烫烫的锟斤拷.top/posts/raspberry-pi-cups-wireless-printer</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[利用智能手机内建传感器测量 Helmholtz 线圈产生的磁场]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/smartphone-sensor-magfield</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/smartphone-sensor-magfield"/>
+        <updated>2024-12-25T13:32:08.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>成果在近期转化为 iOS/iPadOS App 原型 <a href="https://github.com/leostudiooo/visual-field">Visual Field</a>，但暂无上架 App</p>
+</blockquote>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/smartphone-sensor-magfield" target="_blank">https://烫烫烫的锟斤拷.top/posts/smartphone-sensor-magfield</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[题解 - P1085]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/tijie-p1085</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/tijie-p1085"/>
+        <updated>2020-10-03T02:25:02.000Z</updated>
+        <content type="html"><![CDATA[<p>最近开始搞 OI 了，在 <a href="http://luogu.com.cn">luogu.com.cn</a> 刷题</p>
+<pre><code class="language-python">a = 0
+b = 0
+maxtime = 0
+answer = 0  #初始化输出answer为0
+
+for i i</code></pre>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/tijie-p1085" target="_blank">https://烫烫烫的锟斤拷.top/posts/tijie-p1085</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[题解-P4414]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/tijie-p4414</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/tijie-p4414"/>
+        <updated>2020-10-24T04:07:00.000Z</updated>
+        <content type="html"><![CDATA[<p>纪念史上首次 <a href="https://www.luogu.com.cn/record/40400035">一次性 AC</a>。</p>
+<h2>思路</h2>
+<p>输入三个数到数组中并排序；<br>
+输入三个字母 <code>A</code> <code>B</code> <code>C</code></p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/tijie-p4414" target="_blank">https://烫烫烫的锟斤拷.top/posts/tijie-p4414</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[题解 - P5716]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/tijie-p5716</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/tijie-p5716"/>
+        <updated>2020-10-02T13:59:59.000Z</updated>
+        <content type="html"><![CDATA[<p>原题链接：<a href="https://www.luogu.com.cn/problem/P5716">https://www.luogu.com.cn/problem/P5716</a></p>
+<pre><code class="language-python">yr, mon = input().split()	#输入年份和月份
+yr = int(</code></pre>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/tijie-p5716" target="_blank">https://烫烫烫的锟斤拷.top/posts/tijie-p5716</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《旅光》创作手记]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/travel-lights</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/travel-lights"/>
+        <updated>2025-07-18T16:37:33.000Z</updated>
+        <content type="html"><![CDATA[<p>这是一首关于旅行、成长与陪伴的歌。</p>
+<iframe src="https://烫烫烫的锟斤拷.top//player.bilibili.com/player.html?isOutside=true&aid=11487564477571<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/travel-lights" target="_blank">https://烫烫烫的锟斤拷.top/posts/travel-lights</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[记抓取小程序用户 Token]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/wechat-miniapp-token</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/wechat-miniapp-token"/>
+        <updated>2025-05-15T02:02:11.000Z</updated>
+        <content type="html"><![CDATA[<h2>前言</h2>
+<p>之前看到一个项目 SEU_exercise，通过使用 Cheat Engine 搜索内存来获取跑操小程序的 token 来完成自动化跑操。但那是个闭源项目，最开始上传的是使用 Pyar</p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/wechat-miniapp-token" target="_blank">https://烫烫烫的锟斤拷.top/posts/wechat-miniapp-token</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.899Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[9,000-Man-made-Things-Flying-in-Space]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/9-000-Man-made-Things-Flying-in-Space</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/9-000-Man-made-Things-Flying-in-Space"/>
+        <updated>2020-05-04T03:45:20.000Z</updated>
+        <content type="html"><![CDATA[<p>Including:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">30% of them</th>
+<th style="text-align:center">Satellites</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/9-000-Man-made-Things-Flying-in-Space" target="_blank">https://烫烫烫的锟斤拷.top/posts/9-000-Man-made-Things-Flying-in-Space</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.898Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于 AI 绘画的一些杂谈]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/ai-painting</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/ai-painting"/>
+        <updated>2024-04-24T06:28:28.000Z</updated>
+        <content type="html"><![CDATA[<div class="info">
+<blockquote>
+<p><strong>📢 声明</strong><br>
+本文使用包括 Mistral 和 GPT 在内的 LLM 辅助撰写，但作者为所有内容负责。</p>
+</blockquote>
+</div>
+<h1>为什么要写这篇博</h1>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/ai-painting" target="_blank">https://烫烫烫的锟斤拷.top/posts/ai-painting</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.898Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[新专辑：《星澜永恒》]]></title>
+        <id>https://烫烫烫的锟斤拷.top/posts/album-stars</id>
+        <link href="https://烫烫烫的锟斤拷.top/posts/album-stars"/>
+        <updated>2021-02-26T03:45:08.000Z</updated>
+        <content type="html"><![CDATA[<p>历经一周多的努力，新专辑《星澜永恒》终于发布在<a href="https://www.bilibili.com/video/BV1yA411M7Ac">哔哩哔哩</a>和[网易云](<a href="https://music.163.c">https://music.163.c</a></p>
+<br/><p>访问 <a href="https://烫烫烫的锟斤拷.top/posts/album-stars" target="_blank">https://烫烫烫的锟斤拷.top/posts/album-stars</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>锟斤拷</name>
+            <email>lilingfeng0408@outlook.com</email>
+            <uri>https://xn--huu92dpwpaa217f909c.top/</uri>
+        </author>
+        <published>2025-09-24T15:41:06.898Z</published>
+    </entry>
+</feed>
