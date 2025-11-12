@@ -1,0 +1,350 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "烫烫烫的记事本",
+    "home_page_url": "https://烫烫烫的锟斤拷.top/",
+    "feed_url": "https://烫烫烫的锟斤拷.top/feed.json",
+    "description": "A place where technology meets imagination.",
+    "icon": "https://resources.xn--huu92dpwpaa217f909c.top/avatar.jpg",
+    "author": {
+        "name": "锟斤拷",
+        "url": "https://xn--huu92dpwpaa217f909c.top/"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<h2>位移</h2>\n<ol>\n<li>\n<p>位移在<strong>一维</strong>直线坐标系中的表示</p>\n<p>$\\Delta x=x_2-x_1$</p>\n<p>其中，$\\Delta x$为位移，起始位置为$x_1$，停止位置为$x_2$。</p>\n</li>\n</ol>\n<h2></h2>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/运动学\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/运动学</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/运动学",
+            "title": "运动学公式梳理和选用原则",
+            "date_modified": "2021-02-14T06:56:00.000Z",
+            "date_published": "2025-11-12T03:14:12.386Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>在工程领域，我们经常会遇到一些非线性方程，比如简谐振动的位移方程、阻尼振动的速度方程等。这些方程通常难以直接求解，但是我们可以借助计算器来进行数值计算。今天我继续来分享如何使用卡西欧 fx-999C</p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/casio-999-02\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/casio-999-02</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/casio-999-02",
+            "title": "使用 fx-999 求解非线性方程",
+            "date_modified": "2024-07-06T13:29:42.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>问题背景</h1>\n<p>在《普通化学原理》课程的电化学一章中，我们经常会遇到一些需要频繁使用的常数和变量，例如法拉第常数 $F$、热化学常数 $R$、电子电荷 $e$ 等。这些常数和变量的数值通常是固定的，</p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/casio-999-03\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/casio-999-03</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/casio-999-03",
+            "title": "利用 fx-999 的科学常数和变量功能解决电化学问题",
+            "date_modified": "2024-08-28T13:42:08.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>这是我的第一个POST。</p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/celebrate\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/celebrate</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/celebrate",
+            "title": "热烈庆祝Hexo部署成功！",
+            "date_modified": "2020-05-03T12:49:43.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>背景</h1>\n<p>话说我们的国产之光 <a href=\"https://dji.com\">大疆创新（DJI）</a> 公司不仅很会造无人机，而且还很注重人才的培养。于是，他们就弄出了 [RoboMaster 机甲大师](htt</p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/draw-ellipse-with-a-mecanum-wheeled-car-in-3-ways\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/draw-ellipse-with-a-mecanum-wheeled-car-in-3-ways</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/draw-ellipse-with-a-mecanum-wheeled-car-in-3-ways",
+            "title": "在 RoboMaster EP 上用 3 种方法画椭圆！",
+            "date_modified": "2021-07-28T14:34:44.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>终于迁移到 Valaxy 了！这是一个全新的开始。</p>\n<h2>Valaxy</h2>\n<p>Next Generation Static Blog Framework.</p>\n<p>Write your first post</p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/hello-valaxy\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/hello-valaxy</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2025-03-02T00:00:00.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>前期准备工作</h2>\n<h3>创建一个 GitHub 账号（如有可跳过此步骤）</h3>\n<p>点击<a href=\"http://www.github.com/\">此链接</a>跳转到 GitHub，全球最大的代码托管网站。</p>\n<p>![</p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/hexo\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/hexo</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/hexo",
+            "title": "使用Hexo在GitHub Pages部署属于你自己的博客！",
+            "date_modified": "2021-02-23T09:52:20.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>介绍</h2>\n<p>本项目由我和<a href=\"https://space.bilibili.com/8555835\">B站UP主 EddyWang</a>共同维护。[GitHub仓库](<a href=\"https://github.com\">https://github.com</a></p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/how-to-make-an-open-source-dial\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/how-to-make-an-open-source-dial</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/how-to-make-an-open-source-dial",
+            "title": "如何制作开源Surface Dial",
+            "date_modified": "2020-07-04T04:11:42.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>也是一次AC！（虽然有一次格式错误但我相信你们不会在意的对吧）</p>\n<h2>题目传送门</h2>\n<p><a href=\"http://noi.openjudge.cn/ch0111/01\">http://noi.openjudge.cn/ch0111/01</a></p>\n<h2>思路</h2>\n<ul>\n<li>特判 如大于所有数据或小</li>\n</ul>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/openjudge-7940\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/openjudge-7940</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/openjudge-7940",
+            "title": "题解-7940(OpenJudge)",
+            "date_modified": "2020-12-26T08:31:32.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>嗨多磨！这里是 Leo。今天我将介绍如何在你的博客中全局加入一个基于网易云音乐的音乐播放器：[PenguinPlayer](<a href=\"https://github.com/M4TEC/PenguinPla\">https://github.com/M4TEC/PenguinPla</a></p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/penguinplayer\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/penguinplayer</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/penguinplayer",
+            "title": "在你的博客里添加一个音乐播放器！",
+            "date_modified": "2021-05-04T12:40:00.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<style type=\"text/css\">\n.cmt{\n  font-size: small;\n  color: #888888;\n}\n</style>\n<h1>电荷与电荷守恒定律</h1>\n<h2>电荷</h2>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/phys-note-2122-t1w2\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/phys-note-2122-t1w2</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/phys-note-2122-t1w2",
+            "title": "物理笔记 - 21~22 学年度上 - 第二周",
+            "date_modified": "2021-09-12T03:11:26.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>使用树莓派搭建无线打印机</h1>\n<h2>所需器材</h2>\n<ul>\n<li>[x] 树莓派</li>\n<li>[x] 打印机</li>\n<li>[x] 数据线</li>\n<li>[ ] 网线（可选）</li>\n<li>[x] 网络连接 (LAN/WLAN)</li>\n</ul>\n<h2>CUP</h2>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/raspberry-pi-cups-wireless-printer\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/raspberry-pi-cups-wireless-printer</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/raspberry-pi-cups-wireless-printer",
+            "title": "使用树莓派搭建无线打印机",
+            "date_modified": "2020-08-17T02:17:42.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<blockquote>\n<p>成果在近期转化为 iOS/iPadOS App 原型 <a href=\"https://github.com/leostudiooo/visual-field\">Visual Field</a>，但暂无上架 App</p>\n</blockquote>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/smartphone-sensor-magfield\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/smartphone-sensor-magfield</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/smartphone-sensor-magfield",
+            "title": "利用智能手机内建传感器测量 Helmholtz 线圈产生的磁场",
+            "date_modified": "2024-12-25T13:32:08.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>最近开始搞 OI 了，在 <a href=\"http://luogu.com.cn\">luogu.com.cn</a> 刷题</p>\n<pre><code class=\"language-python\">a = 0\nb = 0\nmaxtime = 0\nanswer = 0  #初始化输出answer为0\n\nfor i i</code></pre>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/tijie-p1085\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/tijie-p1085</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/tijie-p1085",
+            "title": "题解 - P1085",
+            "date_modified": "2020-10-03T02:25:02.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>纪念史上首次 <a href=\"https://www.luogu.com.cn/record/40400035\">一次性 AC</a>。</p>\n<h2>思路</h2>\n<p>输入三个数到数组中并排序；<br>\n输入三个字母 <code>A</code> <code>B</code> <code>C</code></p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/tijie-p4414\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/tijie-p4414</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/tijie-p4414",
+            "title": "题解-P4414",
+            "date_modified": "2020-10-24T04:07:00.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>原题链接：<a href=\"https://www.luogu.com.cn/problem/P5716\">https://www.luogu.com.cn/problem/P5716</a></p>\n<pre><code class=\"language-python\">yr, mon = input().split()\t#输入年份和月份\nyr = int(</code></pre>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/tijie-p5716\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/tijie-p5716</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/tijie-p5716",
+            "title": "题解 - P5716",
+            "date_modified": "2020-10-02T13:59:59.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>这是一首关于旅行、成长与陪伴的歌。</p>\n<iframe src=\"https://烫烫烫的锟斤拷.top//player.bilibili.com/player.html?isOutside=true&aid=11487564477571<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/travel-lights\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/travel-lights</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/travel-lights",
+            "title": "《旅光》创作手记",
+            "date_modified": "2025-07-18T16:37:33.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>前言</h2>\n<p>之前看到一个项目 SEU_exercise，通过使用 Cheat Engine 搜索内存来获取跑操小程序的 token 来完成自动化跑操。但那是个闭源项目，最开始上传的是使用 Pyar</p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/wechat-miniapp-token\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/wechat-miniapp-token</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/wechat-miniapp-token",
+            "title": "记抓取小程序用户 Token",
+            "date_modified": "2025-05-15T02:02:11.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>作业</h2>\n<h3>内容</h3>\n<h4>语文</h4>\n<h5>阅读</h5>\n<ul>\n<li>\n<p>巴黎圣母院</p>\n</li>\n<li>\n<p>家</p>\n</li>\n</ul>\n<h5>书面</h5>\n<ul>\n<li>语文报三个专题</li>\n<li>推荐两本书</li>\n</ul>\n<h4>数学</h4>\n<h5>复习</h5>\n<ul>\n<li>必修</li>\n</ul>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/wintervacation-plan\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/wintervacation-plan</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/wintervacation-plan",
+            "title": "2021寒假计划",
+            "date_modified": "2021-01-30T07:28:05.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>好像还有点好看。</p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/yun\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/yun</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/yun",
+            "title": "主题【云】部署成功！",
+            "date_modified": "2020-06-26T06:24:48.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>基本类型</h2>\n<h3>按类</h3>\n<ul>\n<li>水平</li>\n<li>倾斜</li>\n</ul>\n<h3>按转向</h3>\n<ul>\n<li>顺时针</li>\n<li>逆时针</li>\n</ul>\n<h2>解题策略</h2>\n<h3>受力分析和运动分析</h3>\n<h4>一般情况</h4>\n<p>首先根据初始条件比较物体对地</p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/传送带问题及解决策略\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/传送带问题及解决策略</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/传送带问题及解决策略",
+            "title": "传送带问题及解决策略",
+            "date_modified": "2021-02-23T13:30:00.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>基本类型</h2>\n<h3>追及</h3>\n<ol>\n<li>\n<p>$B$在前，$A$在后，初始速度${V_A}_0&gt;{V_B}_0$</p>\n<ol>\n<li>若共速时（即$V_A=V_B$）有$x_B+x_0&gt;x_A$，则永远无法追上</li>\n</ol>\n</li>\n</ol>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/常见的追击相遇问题及解决策略\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/常见的追击相遇问题及解决策略</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/常见的追击相遇问题及解决策略",
+            "title": "常见的追及、相遇问题及解决策略",
+            "date_modified": "2021-02-17T06:19:00.000Z",
+            "date_published": "2025-11-12T03:14:12.385Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>Including:</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">30% of them</th>\n<th style=\"text-align:center\">Satellites</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\"></td>\n<td style=\"text-align:center\"></td>\n</tr>\n</tbody>\n</table>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/9-000-Man-made-Things-Flying-in-Space\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/9-000-Man-made-Things-Flying-in-Space</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/9-000-Man-made-Things-Flying-in-Space",
+            "title": "9,000-Man-made-Things-Flying-in-Space",
+            "date_modified": "2020-05-04T03:45:20.000Z",
+            "date_published": "2025-11-12T03:14:12.384Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<div class=\"info\">\n<blockquote>\n<p><strong>📢 声明</strong><br>\n本文使用包括 Mistral 和 GPT 在内的 LLM 辅助撰写，但作者为所有内容负责。</p>\n</blockquote>\n</div>\n<h1>为什么要写这篇博</h1>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/ai-painting\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/ai-painting</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/ai-painting",
+            "title": "关于 AI 绘画的一些杂谈",
+            "date_modified": "2024-04-24T06:28:28.000Z",
+            "date_published": "2025-11-12T03:14:12.384Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>历经一周多的努力，新专辑《星澜永恒》终于发布在<a href=\"https://www.bilibili.com/video/BV1yA411M7Ac\">哔哩哔哩</a>和[网易云](<a href=\"https://music.163.c\">https://music.163.c</a></p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/album-stars\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/album-stars</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/album-stars",
+            "title": "新专辑：《星澜永恒》",
+            "date_modified": "2021-02-26T03:45:08.000Z",
+            "date_published": "2025-11-12T03:14:12.384Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>第 1 章 氨基酸</h2>\n<h3>知识概要</h3>\n<h4>==<strong>氨基酸的分类</strong>==</h4>\n<h5>疏水 (hydrophobic) 氨基酸</h5>\n<p>Phe, Ala, Leu, Met, Ile, T</p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/biochemistry-i\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/biochemistry-i</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/biochemistry-i",
+            "title": "生物化学（上）笔记总结",
+            "date_modified": "2025-01-14T17:35:02.000Z",
+            "date_published": "2025-11-12T03:14:12.384Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>在略带凉意穿堂而过的秋风中传来了嘒嘒的，远远近近、此起彼伏的蝉鸣声。</p>\n<p>蝉鸣音调很高，差不多 5 kHz；也很响，能到 80 dB。但似乎我从来没有过关于蝉鸣的记忆；有的只是在很小的时候读带插图的法布</p>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/blind-jb-write-sept-1\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/blind-jb-write-sept-1</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/blind-jb-write-sept-1",
+            "title": "瞎写点东西",
+            "date_modified": "2022-08-31T16:38:40.000Z",
+            "date_published": "2025-11-12T03:14:12.384Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>上学期<s>斥巨资</s>购入了一台卡西欧 fx-999CN CW，这个小家伙在实验课上和考试的时候帮了我不少忙。今天我来分享一下如何使用它的数据表格功能和统计功能来加速处理大物实验数据。</p>\n<h1>要处理的</h1>\n<br/><p>访问 <a href=\"https://烫烫烫的锟斤拷.top/posts/casio-999-01\" target=\"_blank\">https://烫烫烫的锟斤拷.top/posts/casio-999-01</a> 阅读全文。</p>",
+            "url": "https://烫烫烫的锟斤拷.top/posts/casio-999-01",
+            "title": "使用 fx-999 加速处理大物实验数据",
+            "date_modified": "2024-05-21T15:10:52.000Z",
+            "date_published": "2025-11-12T03:14:12.384Z",
+            "author": {
+                "name": "锟斤拷",
+                "url": "https://xn--huu92dpwpaa217f909c.top/"
+            }
+        }
+    ]
+}
