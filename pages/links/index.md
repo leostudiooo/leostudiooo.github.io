@@ -114,7 +114,12 @@ links:
     blog: 正切的记事本
     desc: 「無法做夢的我綻放出了花朵」
     color: "#66CCFF"
-
+    
+  - url: https://featherp.com
+    avatar: https://www.tangent0712.top/pics/featherp.jpg
+    name: 羽毛P
+    blog: 羽毛P的星空海
+    desc: 这里随便写点什么
 ---
 
 <YunLinks :links="frontmatter.links" :random="frontmatter.random" />
