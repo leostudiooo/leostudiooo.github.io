@@ -108,6 +108,13 @@ links:
     desc: 物不可穷也，故受之以未济。
     color: "#008B8B"
 
+  - url: https://www.tangent0712.top/
+    avatar: https://www.tangent0712.top/pics/tan.jpg
+    name: Tangent
+    blog: 正切的记事本
+    desc: 「無法做夢的我綻放出了花朵」
+    color: "#66CCFF"
+
 ---
 
 <YunLinks :links="frontmatter.links" :random="frontmatter.random" />
