@@ -37,7 +37,7 @@ export default defineValaxyConfig<UserThemeConfig>({
       },
       {
         name: '配布站',
-        url: 'https://paradox.xn--huu92dpwpaa217f909c.top/',
+        url: 'https://box.xn--huu92dpwpaa217f909c.top/',
         icon: 'i-ri-archive-line',
         color: '#41B883',
       },

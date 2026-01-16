@@ -8,7 +8,7 @@ tags:
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1343642429&auto=1&height=66"></iframe>
 
-> 大学之道，在明明德，在亲民，在止于至善。
+> 大学之道，在明明德，在亲民，在止于至善。\
 > ——《礼记》
 
 我校的校训就镶嵌在这句话的尾巴上，校园中随处可见“止于至善”四个绿色大字。可每每看见，我常感困惑——这种困惑，或许也源于我对这所学校向来复杂的情感：一边感叹四牌楼大礼堂前的梧桐大道在秋日落叶时美不胜收，一边痛骂九龙湖每到夏天排水跟不上降水、只得旱地行舟；一边感激能在这样的平台上能以更高的角度看待事物与观点，一边却困惑于这仿佛腐朽溃烂的体系为何仍未崩塌。
@@ -43,7 +43,7 @@ tags:
 
 想起《星际穿越》里那句近乎粗鲁却尖锐的台词：
 
-> It takes two numbers to measure your ass, but one to measure my son’s future?
+> It takes two numbers to measure your ass, but one to measure my son’s future?\
 > 测量你的屁股还要两组数字呢，而一次成绩就决定了我儿子的未来吗？
 
 它刺痛了一种现实：用单一数据衡量复杂个体，本身就是系统的懒惰与傲慢。大学的全部复杂、它带给我们的全部爱恨，正源于此——它用这样的系统管理和推搡我们，却又（如果运气够好）让我们偶然窥见后一种境界。至于官僚主义与“高中化”，也不过是系统运行的必然副产品。
