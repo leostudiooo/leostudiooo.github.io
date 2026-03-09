@@ -62,6 +62,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/travel-lights': RouteRecordInfo<'/posts/travel-lights', '/posts/travel-lights', Record<never, never>, Record<never, never>>,
     '/posts/vscode-cpp': RouteRecordInfo<'/posts/vscode-cpp', '/posts/vscode-cpp', Record<never, never>, Record<never, never>>,
     '/posts/wechat-miniapp-token': RouteRecordInfo<'/posts/wechat-miniapp-token', '/posts/wechat-miniapp-token', Record<never, never>, Record<never, never>>,
+    '/posts/when-a-shoeshine-boy-starts-to-cultivate-lobsters': RouteRecordInfo<'/posts/when-a-shoeshine-boy-starts-to-cultivate-lobsters', '/posts/when-a-shoeshine-boy-starts-to-cultivate-lobsters', Record<never, never>, Record<never, never>>,
     '/posts/wintervacation-plan': RouteRecordInfo<'/posts/wintervacation-plan', '/posts/wintervacation-plan', Record<never, never>, Record<never, never>>,
     '/posts/yun': RouteRecordInfo<'/posts/yun', '/posts/yun', Record<never, never>, Record<never, never>>,
     '/random/': RouteRecordInfo<'/random/', '/random', Record<never, never>, Record<never, never>>,
