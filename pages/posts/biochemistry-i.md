@@ -892,7 +892,7 @@ Watson and Crick, 1953.
 
 #### ==米氏酶动力学==
 
-对于一个单底物-单产物的反应可建立 Michaelis-Menten 模型：$\ce{E + S <=>[$k_1$][$k_{-1}$] ES ->[$k_2$] E + P}$，有米氏方程：
+对于一个单底物-单产物的反应可建立 Michaelis-Menten 模型：$\ce{E + S <=>[k_1][k_{-1}] ES ->[k_2] E + P}$，有米氏方程：
 $$
 % \left[\text{ES}\right] = \frac{\left[\text E_t\right]\left[\text S\right]}{\left[\text S \right] + K_\text m}\\
 % v = \frac{k_2\left[\text E_t\right]\left[\text S\right]}{\left[\text S \right] + K_\text m}\\

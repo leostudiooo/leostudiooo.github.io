@@ -1,6 +1,10 @@
-import type { UserThemeConfig } from 'valaxy-theme-yun'
+import type { ThemeConfig } from 'valaxy-theme-yun'
+import 'katex/contrib/mhchem'
 import { defineValaxyConfig } from 'valaxy'
+import { addonAlgolia } from 'valaxy-addon-algolia'
+import { addonComponents } from 'valaxy-addon-components'
 import { addonMeting } from 'valaxy-addon-meting'
+import { addonWaline } from 'valaxy-addon-waline'
 
 // add icons what you will need
 const safelist = [
@@ -10,10 +14,22 @@ const safelist = [
 /**
  * User Config
  */
-export default defineValaxyConfig<UserThemeConfig>({
+export default defineValaxyConfig<ThemeConfig>({
   // site config see site.config.ts
 
   theme: 'yun',
+
+  vite: {
+    server: {
+      watch: {
+        ignored: [
+          '**/dist/**',
+          '**/.git/**',
+          '**/node_modules/**',
+        ],
+      },
+    },
+  },
 
   themeConfig: {
     banner: {
@@ -25,7 +41,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
 
     colors: {
-      primary: '#00a2ff'
+      primary: '#00a2ff',
     },
 
     pages: [
@@ -72,6 +88,7 @@ export default defineValaxyConfig<UserThemeConfig>({
       beian: {
         enable: false,
         icp: '萌ICP备20247120号',
+        police: '',
       },
       powered: true
     },
@@ -86,7 +103,10 @@ export default defineValaxyConfig<UserThemeConfig>({
         server: 'netease',
         type: 'playlist',
       },
-    })
+    }),
+    addonComponents(),
+    addonAlgolia(),
+    addonWaline(),
   ],
 
   unocss: { safelist },
