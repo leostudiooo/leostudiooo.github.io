@@ -1,0 +1,1 @@
+import"./chunks/vue-i18n.WB_PustC.js";import{a as l}from"./chunks/vue-router.DvtZXfXu.js";import{w as t}from"./framework.Bp6N5YBG.js";const e=[];function a(){return{collections:t(()=>e)}}function p(){const o=l(),n=t(()=>o.path.startsWith("/collections/")?o.path.split("/")[2]:"");return{collection:t(()=>e.find(c=>c.key===n.value))}}export{p as a,a as u};
