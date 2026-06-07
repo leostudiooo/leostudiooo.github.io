@@ -57,6 +57,12 @@ export default defineValaxyConfig<ThemeConfig>({
         icon: 'i-ri-archive-line',
         color: '#41B883',
       },
+      {
+        name: 'Radio Logbook',
+        url: 'https://radio.xn--huu92dpwpaa217f909c.top/',
+        icon: 'i-ri-router-line',
+        color: '#FF5722',
+      },
       // {
       //   name: '时钟',
       //   url: '/time/index.html',
@@ -75,12 +81,12 @@ export default defineValaxyConfig<ThemeConfig>({
         icon: 'i-ri-shuffle-line',
         color: '#80BBFF',
       },
-      {
-        name: 'B707o',
-        url: '/b707o/',
-        icon: 'i-ri-plane-line',
-        color: '#FFBF00',
-      },
+      // {
+      //   name: 'B707o',
+      //   url: '/b707o/',
+      //   icon: 'i-ri-plane-line',
+      //   color: '#FFBF00',
+      // },
     ],
 
     footer: {
