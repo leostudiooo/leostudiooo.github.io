@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Number Generator</title>
+	<style>
+		#result {
+			font-size: 72px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.input-container {
+			margin-bottom: 10px;
+		}
+
+		.input-container label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		.input-container input {
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+
+		.button-container {
+			margin-top: 10px;
+		}
+
+		.button-container button {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.button-container button:hover {
+			background-color: #45a049;
+		}
+	</style>
+	<script>
+		var intervalId;
+
+		function generateRandomNumber() {
+			var min = parseInt(document.getElementById("min").value);
+			var max = parseInt(document.getElementById("max").value);
+			
+			if (isNaN(min) || isNaN(max)) {
+				alert("Please enter valid numbers for the range.");
+				return;
+			}
+			
+			intervalId = setInterval(function() {
+				var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+				document.getElementById("result").innerHTML = "Random Number: " + "<br>" + randomNumber;
+			}, 50);
+
+			setTimeout(function() {
+				clearInterval(intervalId);
+			}, 2000);
+		}
+		
+		document.addEventListener("keyup", function(event) {
+			if (event.key === "Enter") {
+				generateRandomNumber();
+			}
+		});
+	</script>
+</head>
+<body>
+	<h1>Random Number Generator</h1>
+	
+	<div class="input-container">
+		<label for="min">Minimum:</label>
+		<input type="number" id="min" name="min">
+	</div>
+	
+	<div class="input-container">
+		<label for="max">Maximum:</label>
+		<input type="number" id="max" name="max">
+	</div>
+	
+	<div class="button-container">
+		<button onclick="generateRandomNumber()">Generate</button>
+	</div>
+	
+	<p id="result"></p>
+</body>
+</html>

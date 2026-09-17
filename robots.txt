@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://烫烫烫的锟斤拷.top/sitemap.xml
