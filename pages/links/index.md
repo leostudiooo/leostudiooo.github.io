@@ -120,6 +120,13 @@ links:
     name: 羽毛P
     blog: 羽毛P的星空海
     desc: 这里随便写点什么
+
+  - url: https://1zdigital.space/
+    avatar: https://media.1zdigital.space/raw/avatar.png
+    name: 呖呖李
+    blog: 你好李鑫
+    desc: 'digital 宇宙正在加载中，欢迎来到这个数据驱动的世界。这里记录了“我”在地球的混入人类心得。'
+    color: "#34495E"
 ---
 
 <YunLinks :links="frontmatter.links" :random="frontmatter.random" />
